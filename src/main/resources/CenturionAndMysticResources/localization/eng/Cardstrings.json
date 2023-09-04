@@ -1,0 +1,24 @@
+{
+  "${ModID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Main description",
+    "UPGRADE_DESCRIPTION": "Upgrade description",
+    "EXTENDED_DESCRIPTION": ["Extra Stuff"]
+  },
+  "${ModID}:Catch": {
+    "NAME": "Catch",
+    "DESCRIPTION": "Apply !M! Vulnerable."
+  },
+  "${ModID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${ModID}:PatchUp": {
+    "NAME": "Patch Up",
+    "DESCRIPTION": "Gain !M! Temporary_HP."
+  },
+  "${ModID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  }
+}

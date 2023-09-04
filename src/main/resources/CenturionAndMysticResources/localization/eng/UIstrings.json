@@ -1,0 +1,42 @@
+{
+  "${ModID}:ModConfigs": {
+    "TEXT": [
+      "This does nothing yet.",
+      "Enable random card phrases. Defaults: true, 10%.",
+      "Enable random phrases when attacked. Defaults: true, 20%.",
+      "Enable random pre/post combat phrases. Defaults: true, 50%."
+    ],
+    "EXTRA_TEXT": [
+      "The Professor",
+      "Text."
+    ]
+  },
+  "${ModID}:CrossOver": {
+    "TEXT": [
+      "Enable Professor Crossover Content"
+    ]
+  },
+  "${ModID}:SpectrumizeAction": {
+    "TEXT": [
+      "Spectrumize"
+    ]
+  },
+  "${ModID}:ModifyAction": {
+    "TEXT": [
+      "Modify"
+    ]
+  },
+  "${ModID}:CleanseAction": {
+    "TEXT": [
+      "Cleanse",
+      "Choose a power to Cleanse.",
+      "Choose "," powers to Cleanse."
+    ]
+  },
+  "${ModID}:SynthesisAction": {
+    "TEXT": [
+      "Contribute",
+      "I don't have enough cards."
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "${ModID}:BaronsCrown": {
+    "NAME": "Baron's Crown",
+    "FLAVOR": "Wearing this crown will make anyone look more important.",
+    "DESCRIPTIONS": [
+      "On pickup, choose a card. #yprofessor:Masterwork it and #yUpgrade it.",
+      "Choose a card to Masterwork.",
+      "Card chosen: "
+    ]
+  },
+  "${ModID}:Cosmos": {
+    "NAME": "Cosmos",
+    "FLAVOR": "An amulet that grants the wearer power beyond human knowledge. The effect is powerful, but also puts stress on the body.",
+    "DESCRIPTIONS": [
+      "???"
+    ]
+  },
+  "${ModID}:ElixirRing": {
+    "NAME": "Elixir Ring",
+    "FLAVOR": "An exclusive ring for alchemists. It takes two Philosopher's Stones to craft.",
+    "DESCRIPTIONS": [
+      "Rest sites heal?"
+    ]
+  },
+  "${ModID}:EnergyPendant": {
+    "NAME": "Energy Pendant",
+    "FLAVOR": "Just putting it on makes you feel less tired, so it's recommended for adventurers.",
+    "DESCRIPTIONS": [
+      "Unspent Energy conditional?"
+    ]
+  },
+  "${ModID}:EnlightenedBandana": {
+    "NAME": "Enlightened Bandana",
+    "FLAVOR": "The longer you wear it, the more it will hone your nerves and the stronger the effect will become.",
+    "DESCRIPTIONS": [
+      "Gain Str/Dex every third turn?"
+    ]
+  },
+  "${ModID}:FluffyTail": {
+    "NAME": "Fluffy Tail",
+    "FLAVOR": "Once you put it on, you can't remove it unless you get it wet, so you don't need to worry about losing it. Unless it's raining, of course.",
+    "DESCRIPTIONS": [
+      "Start of combat Draw and Block?"
+    ]
+  },
+  "${ModID}:FocusGlass": {
+    "NAME": "Focus Glass",
+    "FLAVOR": "Wearing these will reveal enemy weaknesses. The design is not very good, making them somewhat difficult to use.",
+    "DESCRIPTIONS": [
+      "Every time you play #b3 #yAttacks in a single turn, your next #yAttack deals #b50% more damage."
+    ]
+  },
+  "${ModID}:FourSpiritsAmulet": {
+    "NAME": "Four Spirits Amulet",
+    "FLAVOR": "An amulet containing the blessings of the four elemental spirits. It's powerful, but extremely difficult to craft.",
+    "DESCRIPTIONS": [
+      "Gain E if you play all 4 elements in 1 turn?"
+    ]
+  },
+  "${ModID}:GloryBelt": {
+    "NAME": "Glory Belt",
+    "FLAVOR": "The belt given to the champion of the yearly battle arena. There is only one of these in the entire world, so it probably shouldn't be here at all...",
+    "DESCRIPTIONS": [
+      "If Fatal, gain Str/Dex/HP?"
+    ]
+  },
+  "${ModID}:GnadeRing": {
+    "NAME": "Gnade Ring",
+    "FLAVOR": "A ring popular among adventurers. Its specific effects change according to how it's made.",
+    "DESCRIPTIONS": [
+      "Start combat Vigor and Braced?"
+    ]
+  },
+  "${ModID}:HotBloodedBandana": {
+    "NAME": "Hot-Blooded Bandana",
+    "FLAVOR": "Wrapping this around your head seems to provide extra motivation, but it will also make you tired much faster.",
+    "DESCRIPTIONS": [
+      "Gain E early, then gain weak?"
+    ]
+  },
+  "${ModID}:InnocentRiches": {
+    "NAME": "Innocent Riches",
+    "FLAVOR": "It's been reported that wearing it for too long can actually cause the tail's movement to affect the wearer's emotions.",
+    "DESCRIPTIONS": [
+      "Upgraded cards exhaust and give gold"
+    ]
+  },
+  "${ModID}:KaiserCape": {
+    "NAME": "Kaiser Cape",
+    "FLAVOR": "A thick cape once worn by a famous emperor when heading to war, raising the morale of soldiers fighting by his side.",
+    "DESCRIPTIONS": [
+      "Whenever you play a cost 2 or higher card, draw a card?"
+    ]
+  },
+  "${ModID}:LocketOfDevotion": {
+    "NAME": "Locket of Devotion",
+    "FLAVOR": "If you place a photo of someone you want to protect inside, it will allow you to shoulder their hardships.",
+    "DESCRIPTIONS": [
+      "Replaces [#c66c8d]Memoria [#c66c8d]Bracelet. At the start of each turn, #yprofessor:Infuse \"Deal 5 damage\" into a random card in your hand.",
+      "Damage dealt: "," NL Per turn: "," NL Per combat: "
+    ]
+  },
+  "${ModID}:MemoriaBracelet": {
+    "NAME": "Memoria Bracelet",
+    "FLAVOR": "The bracelet made as a symbol of affection. It was designed with fashion in mind more than practical use.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, #yprofessor:Infuse \"Deal 5 damage\" into a random card in your hand.",
+      "Damage dealt: "," NL Block gained: "," NL Damage per turn: "," NL Damage per combat: "," NL Block per turn: "," NL Block per combat: "
+
+    ]
+  },
+  "${ModID}:MigratoryCharm": {
+    "NAME": "Migratory Charm",
+    "FLAVOR": "Wearing it helps keep your legs from getting tired or going numb, so it's perfect for long trips.",
+    "DESCRIPTIONS": [
+      "Negates debuff, heals you?"
+    ]
+  },
+  "${ModID}:QuartzNecklace": {
+    "NAME": "Quartz Necklace",
+    "FLAVOR": "A necklace designed to last longer while using less metal. It's the perfect gift to give the object of your affection",
+    "DESCRIPTIONS": [
+      "???"
+    ]
+  },
+  "${ModID}:SageCirclet": {
+    "NAME": "Sage Circlet",
+    "FLAVOR": "A circlet said to contain the knowledge of a legendary sage.",
+    "DESCRIPTIONS": [
+      "Bonus damage to Vuln enemies?"
+    ]
+  },
+  "${ModID}:SamastenNecklace": {
+    "NAME": "Samasten Necklace",
+    "FLAVOR": "A choker decorated with Samasten, a surprisingly brittle ore.",
+    "DESCRIPTIONS": [
+      "Some per turn effect, lost when attacked"
+    ]
+  },
+  "${ModID}:SoulOfFortitude": {
+    "NAME": "Soul of Fortitude",
+    "FLAVOR": "An accessory made for knights defending the kingdom. It's good at absorbing damage, making it great for long, drawn-out battles.",
+    "DESCRIPTIONS": [
+      "???"
+    ]
+  },
+  "${ModID}:UniCharm": {
+    "NAME": "Uni Charm",
+    "FLAVOR": "People always comment how creepily real it looks, which makes sense because it's made with an actual Uni.",
+    "DESCRIPTIONS": [
+      "The first time you are attacked each combat, deal #b8 damage to ALL enemies.",
+      "Damage dealt: "," NL Damage per combat: "
+    ]
+  }
+}

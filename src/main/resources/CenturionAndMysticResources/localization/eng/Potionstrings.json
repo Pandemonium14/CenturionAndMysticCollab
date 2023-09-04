@@ -1,0 +1,10 @@
+{
+  "${ModID}:TabooPotion": {
+    "NAME": "Taboo Potion",
+    "DESCRIPTIONS": ["Apply #b"," #yStagger."]
+  },
+  "${ModID}:LimitBreaker": {
+    "NAME": "Limit Breaker",
+    "DESCRIPTIONS": ["#yUnlock and #yUpgrade all cards in your hand.","#yUnlock and #yUpgrade all cards in your hand #b"," times."]
+  }
+}

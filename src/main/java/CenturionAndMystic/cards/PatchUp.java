@@ -2,6 +2,7 @@ package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.cards.interfaces.MagicAnimation;
+import CenturionAndMystic.patches.CustomTags;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.cards.colorless.BandageUp;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -15,6 +16,7 @@ public class PatchUp extends AbstractMysticCard implements MagicAnimation {
     public PatchUp() {
         super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
         baseMagicNumber = magicNumber = 3;
+        tags.add(CustomTags.CAM_MAGIC_EFFECT);
     }
 
     @Override

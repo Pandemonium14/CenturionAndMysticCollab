@@ -21,7 +21,6 @@ public class Strike extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new AnimateSlowAttackAction(p));
         dmg(m, AbstractGameAction.AttackEffect.BLUNT_HEAVY);
     }
 

@@ -4,7 +4,11 @@ import CenturionAndMystic.cards.Catch;
 import CenturionAndMystic.cards.Defend;
 import CenturionAndMystic.cards.PatchUp;
 import CenturionAndMystic.cards.Strike;
+import CenturionAndMystic.patches.CustomTags;
+import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.relics.MemoriaBracelet;
+import CenturionAndMystic.ui.CenturionEnergyPanel;
+import CenturionAndMystic.ui.MysticEnergyPanel;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpineAnimation;
@@ -31,6 +35,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.RestRoom;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
@@ -71,7 +76,10 @@ public class CenturionAndMystic extends CustomPlayer {
                 SHOULDER1,
                 SHOULDER2,
                 CORPSE,
-                getLoadout(), -14.0F, -20.0F, 250.0F, 330.0F, new EnergyManager(3)); // 20.0F, -10.0F, 166.0F, 327.0F
+                getLoadout(), -14.0F, -20.0F, 250.0F, 330.0F, new EnergyManager(0));
+
+        EnergyPatches.ExtraPanelFields.centurionEnergyPanel.set(this, new CenturionEnergyPanel(2));
+        EnergyPatches.ExtraPanelFields.mysticEnergyPanel.set(this, new MysticEnergyPanel(2));
 
 
         dialogX = (drawX + 0.0F * Settings.scale);
@@ -241,6 +249,22 @@ public class CenturionAndMystic extends CustomPlayer {
     }
 
     @Override
+    public void useFastAttackAnimation() {
+        super.useFastAttackAnimation();
+        state.setAnimation(0, "Attack", false);
+        state.addAnimation(0,"Idle", true, 0.0f);
+    }
+
+    @Override
+    public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {
+        super.useCard(c, monster, energyOnUse);
+        if (c.hasTag(CustomTags.CAM_MAGIC_EFFECT)) {
+            mysticState.setAnimation(0, "Attack", false);
+            mysticState.addAnimation(0,"Idle", true, 0.0f);
+        }
+    }
+
+    @Override
     public void renderPlayerImage(SpriteBatch sb) {
         flipHorizontal = !flipHorizontal;
         super.renderPlayerImage(sb);
@@ -267,6 +291,11 @@ public class CenturionAndMystic extends CustomPlayer {
         sr.draw(CardCrawlGame.psb, mysticSkeleton);// 2167
         CardCrawlGame.psb.end();// 2168
         sb.begin();// 2169
+    }
+
+    public void renderClassOrbs(SpriteBatch sb, float current_x, float current_y) {
+        EnergyPatches.ExtraPanelFields.centurionEnergyPanel.get(this).render(sb, current_x, current_y);
+        EnergyPatches.ExtraPanelFields.mysticEnergyPanel.get(this).render(sb, current_x, current_y);
     }
 
     public float[] _lightsOutGetCharSelectXYRI() {

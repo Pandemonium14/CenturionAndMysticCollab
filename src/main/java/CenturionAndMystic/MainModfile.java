@@ -6,6 +6,7 @@ import CenturionAndMystic.cardmods.GainBlockMod;
 import CenturionAndMystic.cards.cardvars.*;
 import CenturionAndMystic.cards.interfaces.GlowAdjacentCard;
 import CenturionAndMystic.icons.IconContainer;
+import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.patches.GlowChangePatch;
 import CenturionAndMystic.powers.BracedPower;
 import CenturionAndMystic.powers.FocusedPower;
@@ -16,6 +17,8 @@ import CenturionAndMystic.powers.interfaces.OnUpgradePower;
 import CenturionAndMystic.relics.AbstractEasyRelic;
 import CenturionAndMystic.relics.LocketOfDevotion;
 import CenturionAndMystic.relics.MemoriaBracelet;
+import CenturionAndMystic.ui.CenturionEnergyPanel;
+import CenturionAndMystic.ui.MysticEnergyPanel;
 import CenturionAndMystic.util.*;
 import CenturionAndMystic.vfx.ShaderTest;
 import basemod.AutoAdd;
@@ -35,12 +38,15 @@ import com.evacipated.cardcrawl.mod.stslib.icons.CustomIconHelper;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -54,7 +60,7 @@ public class MainModfile implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, OnPlayerTurnStartSubscriber, StartGameSubscriber {
+        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, OnPlayerTurnStartSubscriber, OnStartBattleSubscriber {
 
     public static final String modID = "CenturionAndMystic";
     public static final Logger logger = LogManager.getLogger(MainModfile.class.getName());
@@ -293,8 +299,13 @@ public class MainModfile implements
             ChimeraHelper.applyBans();
         }
 
+        //Custom Saveable
+        BaseMod.addSaveField(makeID("MysticEnergy"), new MysticEnergyPanel(2));
+        BaseMod.addSaveField(makeID("CenturionEnergy"), new CenturionEnergyPanel(2));
+
         //Add Config stuff
 
+        //Card Glows
         CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
             private final Color c = Color.RED.cpy();
             @Override
@@ -356,16 +367,6 @@ public class MainModfile implements
         BaseMod.addAudio(CustomSounds.SYNTH_MIX_KEY, CustomSounds.SYNTH_MIX_PATH);
     }
 
-    @Override
-    public void receiveOnPlayerTurnStart() {
-
-    }
-
-    @Override
-    public void receiveStartGame() {
-
-    }
-
     public static void infusionTrigger(AbstractInfusion infusion, int directAmount, int relicAmount) {
         if (infusion instanceof DealDamageMod) {
             MemoriaBracelet.onDamageInfusionTrigger(relicAmount);
@@ -389,4 +390,30 @@ public class MainModfile implements
             }
         }
     }
+
+    @Override
+    public void receiveOnPlayerTurnStart() {
+        if (GameActionManager.turn == 0) return;
+        MysticEnergyPanel panel = EnergyPatches.ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player);
+        if (panel != null) {
+            panel.atStartOfTurn();
+        }
+        CenturionEnergyPanel Cpanel = EnergyPatches.ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player);
+        if (Cpanel != null) {
+            Cpanel.atStartOfTurn();
+        }
+    }
+
+    @Override
+    public void receiveOnBattleStart(AbstractRoom abstractRoom) {
+        MysticEnergyPanel panel = EnergyPatches.ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player);
+        if (panel != null) {
+            panel.atStartOfBattle();
+        }
+        CenturionEnergyPanel Cpanel = EnergyPatches.ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player);
+        if (Cpanel != null) {
+            Cpanel.atStartOfBattle();
+        }
+    }
+
 }

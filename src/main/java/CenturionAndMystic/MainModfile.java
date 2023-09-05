@@ -1,8 +1,6 @@
 package CenturionAndMystic;
 
 import CenturionAndMystic.cardmods.AbstractInfusion;
-import CenturionAndMystic.cardmods.DealDamageMod;
-import CenturionAndMystic.cardmods.GainBlockMod;
 import CenturionAndMystic.cards.cardvars.*;
 import CenturionAndMystic.cards.interfaces.GlowAdjacentCard;
 import CenturionAndMystic.icons.IconContainer;
@@ -14,8 +12,6 @@ import CenturionAndMystic.powers.UnstablePower;
 import CenturionAndMystic.powers.interfaces.InfusionTriggerPower;
 import CenturionAndMystic.powers.interfaces.OnUpgradePower;
 import CenturionAndMystic.relics.AbstractEasyRelic;
-import CenturionAndMystic.relics.LocketOfDevotion;
-import CenturionAndMystic.relics.MemoriaBracelet;
 import CenturionAndMystic.ui.CenturionEnergyPanel;
 import CenturionAndMystic.ui.MysticEnergyPanel;
 import CenturionAndMystic.util.*;
@@ -93,16 +89,16 @@ public class MainModfile implements
     public static final String SKILL_L_SILVER = modID + "Resources/images/1024/skill_metal.png";
     public static final String POWER_L_SILVER = modID + "Resources/images/1024/power_metal.png";
 
-    public static final String CARD_ENERGY_S_CENTURION = modID + "Resources/images/512/energy_centurion.png";
+    public static final String CARD_ENERGY_S_CENTURION = modID + "Resources/images/512/energyC2.png";
     public static final String TEXT_ENERGY_CENTURION = modID + "Resources/images/512/energy_small_centurion.png";
-    public static final String CARD_ENERGY_L_CENTURION = modID + "Resources/images/1024/energy_large_centurion.png";
-    public static final String CARD_ENERGY_S_MYSTIC = modID + "Resources/images/512/energy_mystic.png";
+    public static final String CARD_ENERGY_L_CENTURION = modID + "Resources/images/1024/energyC2.png";
+    public static final String CARD_ENERGY_S_MYSTIC = modID + "Resources/images/512/energyM2.png";
     public static final String TEXT_ENERGY_MYSTIC = modID + "Resources/images/512/energy_small_mystic.png";
-    public static final String CARD_ENERGY_L_MYSTIC = modID + "Resources/images/1024/energy_large_mystic.png";
+    public static final String CARD_ENERGY_L_MYSTIC = modID + "Resources/images/1024/energyM.png";
 
-    public static final String CARD_ENERGY_S_SILVER = modID + "Resources/images/512/energy_mystic.png";
-    public static final String TEXT_ENERGY_SILVER = modID + "Resources/images/512/energy_small_mystic.png";
-    public static final String CARD_ENERGY_L_SILVER = modID + "Resources/images/1024/energy_large_mystic.png";
+    public static final String CARD_ENERGY_S_SILVER = modID + "Resources/images/512/energy_centurion.png";
+    public static final String TEXT_ENERGY_SILVER = modID + "Resources/images/512/energy_small_centurion.png";
+    public static final String CARD_ENERGY_L_SILVER = modID + "Resources/images/1024/energy_large_centurion.png";
 
     private static final String CHARSELECT_BUTTON = modID + "Resources/images/charSelect/charButton2.png";
     private static final String CHARSELECT_PORTRAIT = modID + "Resources/images/charSelect/charBG.png";
@@ -370,12 +366,6 @@ public class MainModfile implements
     }
 
     public static void infusionTrigger(AbstractInfusion infusion, int directAmount, int relicAmount) {
-        if (infusion instanceof DealDamageMod) {
-            MemoriaBracelet.onDamageInfusionTrigger(relicAmount);
-            LocketOfDevotion.onInfusionTrigger(relicAmount);
-        } else if (infusion instanceof GainBlockMod) {
-            MemoriaBracelet.onBlockInfusionTrigger(relicAmount);
-        }
         for (AbstractPower p : Wiz.adp().powers) {
             if (p instanceof InfusionTriggerPower) {
                 ((InfusionTriggerPower) p).infusionTrigger(infusion, directAmount);

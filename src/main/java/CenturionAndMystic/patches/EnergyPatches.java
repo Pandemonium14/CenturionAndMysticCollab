@@ -65,9 +65,9 @@ public class EnergyPatches {
     public static int energyCheck(AbstractCard c, int panelAmount) {
         if (AbstractDungeon.player instanceof CenturionAndMystic) {
             if (c instanceof AbstractMysticCard) {
-                return ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player).energy;
+                return ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player).energy + panelAmount;
             } else if (c instanceof AbstractEasyCard) {
-                return ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy;
+                return ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy + panelAmount;
             }
         }
         return panelAmount;
@@ -99,9 +99,21 @@ public class EnergyPatches {
 
     public static void spendCost(AbstractCard c) {
         if (c instanceof AbstractMysticCard) {
-            ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player).energy -= c.costForTurn;
+            int overflow = c.costForTurn - ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player).energy;
+            if (overflow > 0) {
+                ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player).energy = 0;
+                AbstractDungeon.player.energy.use(overflow);
+            } else {
+                ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player).energy -= c.costForTurn;
+            }
         } else if (c instanceof AbstractEasyCard) {
-            ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy -= c.costForTurn;
+            int overflow = c.costForTurn - ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy;
+            if (overflow > 0) {
+                ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy = 0;
+                AbstractDungeon.player.energy.use(overflow);
+            } else {
+                ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy -= c.costForTurn;
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 package CenturionAndMystic.cards.abstracts;
 
 import CenturionAndMystic.MainModfile;
+import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.util.CardArtRoller;
 
 public abstract class AbstractMysticCard extends AbstractEasyCard {
@@ -18,6 +19,7 @@ public abstract class AbstractMysticCard extends AbstractEasyCard {
                 break;
         }
         setOrbTexture(MainModfile.CARD_ENERGY_S_MYSTIC, MainModfile.CARD_ENERGY_L_MYSTIC);
+        tags.add(CustomTags.CAM_MYSTIC_CARD);
     }
 
     public AbstractMysticCard(String cardID, int cost, CardType type, CardRarity rarity, CardTarget target, CardColor color) {
@@ -34,6 +36,7 @@ public abstract class AbstractMysticCard extends AbstractEasyCard {
                 break;
         }
         setOrbTexture(MainModfile.CARD_ENERGY_S_MYSTIC, MainModfile.CARD_ENERGY_L_MYSTIC);
+        tags.add(CustomTags.CAM_MYSTIC_CARD);
     }
 
     public CardArtRoller.ReskinInfo reskinInfo(String ID) {

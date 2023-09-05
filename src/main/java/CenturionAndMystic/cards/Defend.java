@@ -1,15 +1,13 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.cards.abstracts.AbstractEasyCard;
-import CenturionAndMystic.util.CardArtRoller;
+import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import com.megacrit.cardcrawl.cards.red.Defend_Red;
-import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class Defend extends AbstractEasyCard {
+public class Defend extends AbstractCenturionCard {
     public final static String ID = makeID(Defend.class.getSimpleName());
 
     public Defend() {

@@ -9,7 +9,6 @@ import CenturionAndMystic.icons.IconContainer;
 import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.patches.GlowChangePatch;
 import CenturionAndMystic.powers.BracedPower;
-import CenturionAndMystic.powers.FocusedPower;
 import CenturionAndMystic.powers.StaggerPower;
 import CenturionAndMystic.powers.UnstablePower;
 import CenturionAndMystic.powers.interfaces.InfusionTriggerPower;
@@ -87,12 +86,12 @@ public class MainModfile implements
     public static final String SKILL_L_MYSTIC = modID + "Resources/images/1024/skillM.png";
     public static final String POWER_L_MYSTIC = modID + "Resources/images/1024/powerM.png";
 
-    public static final String ATTACK_S_ART_PURPLE = modID + "Resources/images/512/bg_attack_purple.png";
-    public static final String SKILL_S_ART_PURPLE = modID + "Resources/images/512/bg_skill_purple.png";
-    public static final String POWER_S_ART_PURPLE = modID + "Resources/images/512/bg_power_purple.png";
-    public static final String ATTACK_L_ART_PURPLE = modID + "Resources/images/1024/bg_attack_purple.png";
-    public static final String SKILL_L_ART_PURPLE = modID + "Resources/images/1024/bg_skill_purple.png";
-    public static final String POWER_L_ART_PURPLE = modID + "Resources/images/1024/bg_power_purple.png";
+    public static final String ATTACK_S_SILVER = modID + "Resources/images/512/attack_metal.png";
+    public static final String SKILL_S_SILVER = modID + "Resources/images/512/skill_metal.png";
+    public static final String POWER_S_SILVER = modID + "Resources/images/512/power_metal.png";
+    public static final String ATTACK_L_SILVER = modID + "Resources/images/1024/attack_metal.png";
+    public static final String SKILL_L_SILVER = modID + "Resources/images/1024/skill_metal.png";
+    public static final String POWER_L_SILVER = modID + "Resources/images/1024/power_metal.png";
 
     public static final String CARD_ENERGY_S_CENTURION = modID + "Resources/images/512/energy_centurion.png";
     public static final String TEXT_ENERGY_CENTURION = modID + "Resources/images/512/energy_small_centurion.png";
@@ -100,6 +99,10 @@ public class MainModfile implements
     public static final String CARD_ENERGY_S_MYSTIC = modID + "Resources/images/512/energy_mystic.png";
     public static final String TEXT_ENERGY_MYSTIC = modID + "Resources/images/512/energy_small_mystic.png";
     public static final String CARD_ENERGY_L_MYSTIC = modID + "Resources/images/1024/energy_large_mystic.png";
+
+    public static final String CARD_ENERGY_S_SILVER = modID + "Resources/images/512/energy_mystic.png";
+    public static final String TEXT_ENERGY_SILVER = modID + "Resources/images/512/energy_small_mystic.png";
+    public static final String CARD_ENERGY_L_SILVER = modID + "Resources/images/1024/energy_large_mystic.png";
 
     private static final String CHARSELECT_BUTTON = modID + "Resources/images/charSelect/charButton2.png";
     private static final String CHARSELECT_PORTRAIT = modID + "Resources/images/charSelect/charBG.png";
@@ -134,8 +137,8 @@ public class MainModfile implements
 
         BaseMod.addColor(CenturionAndMystic.Enums.SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR,
                 SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR,
-                ATTACK_S_CENTURION, SKILL_S_CENTURION, POWER_S_CENTURION, CARD_ENERGY_S_CENTURION,
-                ATTACK_L_CENTURION, SKILL_L_CENTURION, POWER_L_CENTURION,
+                ATTACK_S_SILVER, SKILL_S_SILVER, POWER_S_SILVER, CARD_ENERGY_S_CENTURION,
+                ATTACK_L_SILVER, SKILL_L_SILVER, POWER_L_SILVER,
                 CARD_ENERGY_L_CENTURION, TEXT_ENERGY_CENTURION);
     }
 
@@ -283,7 +286,6 @@ public class MainModfile implements
         BaseMod.registerModBadge(badgeTexture, EXTRA_TEXT[0], AUTHOR, EXTRA_TEXT[1], settingsPanel);
 
         //Add Powers
-        BaseMod.addPower(FocusedPower.class, FocusedPower.POWER_ID);
         BaseMod.addPower(UnstablePower.class, UnstablePower.POWER_ID);
         BaseMod.addPower(BracedPower.class, BracedPower.POWER_ID);
         BaseMod.addPower(StaggerPower.class, StaggerPower.POWER_ID);

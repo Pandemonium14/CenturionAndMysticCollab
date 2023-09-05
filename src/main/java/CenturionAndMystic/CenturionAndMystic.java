@@ -62,12 +62,13 @@ public class CenturionAndMystic extends CustomPlayer {
     static final String[] NAMES = characterStrings.NAMES;
     static final String[] TEXT = characterStrings.TEXT;
 
-
     private final SpineAnimation mysticSpine = new SpineAnimation("images/monsters/theCity/healer/skeleton.atlas", "images/monsters/theCity/healer/skeleton.json", 1f);
     private final TextureAtlas mysticAtlas = new TextureAtlas(mysticSpine.atlasUrl);
     private final Skeleton mysticSkeleton;
     private final AnimationStateData mysticStateData;
     private final AnimationState mysticState;
+
+    private static final Color LIGHT_COLOR = new Color(1.0F, 1.0F, 0.2F, 1.0F);
 
 
     public CenturionAndMystic(String name, PlayerClass setClass) {
@@ -300,21 +301,15 @@ public class CenturionAndMystic extends CustomPlayer {
 
     public float[] _lightsOutGetCharSelectXYRI() {
         return new float[] {
-                1783*Settings.scale, 765*Settings.scale, 500f, 1.5f,
-                60*Settings.scale, 699*Settings.scale, 300f, 1.2f,
-                //311*Settings.scale, 656*Settings.scale, 200f, 1.0f,
-                545*Settings.scale, 633*Settings.scale, 150f, 1.0f,
-                700*Settings.scale, 627*Settings.scale, 100f, 1.0f
+                1524*Settings.scale, 526*Settings.scale, 100f, 1.0f,
+                78*Settings.scale, 351*Settings.scale, 400f, 1.2f
         };
     }
 
     public Color[] _lightsOutGetCharSelectColor() {
         return new Color[] {
-                Color.WHITE,
-                Color.WHITE,
-                //Color.WHITE,
-                Color.WHITE,
-                Color.WHITE
+                LIGHT_COLOR,
+                LIGHT_COLOR
         };
     }
 }

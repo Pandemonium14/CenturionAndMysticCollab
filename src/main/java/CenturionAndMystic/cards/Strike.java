@@ -1,15 +1,14 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.cards.abstracts.AbstractEasyCard;
+import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.AnimateSlowAttackAction;
 import com.megacrit.cardcrawl.cards.red.Bash;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class Strike extends AbstractEasyCard {
+public class Strike extends AbstractCenturionCard {
     public final static String ID = makeID(Strike.class.getSimpleName());
 
     public Strike() {

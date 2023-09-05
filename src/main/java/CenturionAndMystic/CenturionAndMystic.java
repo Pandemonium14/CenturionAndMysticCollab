@@ -1,12 +1,12 @@
 package CenturionAndMystic;
 
-import CenturionAndMystic.cards.Catch;
+import CenturionAndMystic.cards.Rattle;
 import CenturionAndMystic.cards.Defend;
 import CenturionAndMystic.cards.PatchUp;
 import CenturionAndMystic.cards.Strike;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.patches.EnergyPatches;
-import CenturionAndMystic.relics.MemoriaBracelet;
+import CenturionAndMystic.relics.SnakeBook;
 import CenturionAndMystic.ui.CenturionEnergyPanel;
 import CenturionAndMystic.ui.MysticEnergyPanel;
 import basemod.ReflectionHacks;
@@ -115,19 +115,19 @@ public class CenturionAndMystic extends CustomPlayer {
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
-        retVal.add(Strike.ID);
-        retVal.add(Catch.ID);
+        retVal.add(Rattle.ID);
+        retVal.add(Rattle.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
+        retVal.add(PatchUp.ID);
+        retVal.add(PatchUp.ID);
         retVal.add(PatchUp.ID);
         return retVal;
     }
 
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(MemoriaBracelet.ID);
+        retVal.add(SnakeBook.ID);
         return retVal;
     }
 
@@ -170,7 +170,7 @@ public class CenturionAndMystic extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new Catch();
+        return new Rattle();
     }
 
     @Override
@@ -237,32 +237,39 @@ public class CenturionAndMystic extends CustomPlayer {
     public void damage(DamageInfo info) {
         super.damage(info);
         if (info.output>0) {
-            state.setAnimation(0, "Hit", false);
-            state.addAnimation(0,"Idle", true, 0.0f);
+            centurionHurtAnimation();
         }
-    }
-
-    @Override
-    public void useSlowAttackAnimation() {
-        super.useSlowAttackAnimation();
-        state.setAnimation(0, "Attack", false);
-        state.addAnimation(0,"Idle", true, 0.0f);
-    }
-
-    @Override
-    public void useFastAttackAnimation() {
-        super.useFastAttackAnimation();
-        state.setAnimation(0, "Attack", false);
-        state.addAnimation(0,"Idle", true, 0.0f);
     }
 
     @Override
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {
         super.useCard(c, monster, energyOnUse);
         if (c.hasTag(CustomTags.CAM_MAGIC_EFFECT)) {
-            mysticState.setAnimation(0, "Attack", false);
-            mysticState.addAnimation(0,"Idle", true, 0.0f);
+            mysticHealAnimation();
         }
+        if (c.hasTag(CustomTags.CAM_BASH_EFFECT)) {
+            centurionAttackAnimation();
+        }
+    }
+
+    public void centurionAttackAnimation() {
+        state.setAnimation(0, "Attack", false);
+        state.addAnimation(0,"Idle", true, 0.0f);
+    }
+
+    public void centurionHurtAnimation() {
+        state.setAnimation(0, "Hit", false);
+        state.addAnimation(0,"Idle", true, 0.0f);
+    }
+
+    public void mysticHealAnimation() {
+        mysticState.setAnimation(0, "Attack", false);
+        mysticState.addAnimation(0,"Idle", true, 0.0f);
+    }
+
+    public void mysticHurtAnimation() {
+        mysticState.setAnimation(0, "Hit", false);
+        mysticState.addAnimation(0,"Idle", true, 0.0f);
     }
 
     @Override

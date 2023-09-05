@@ -1,6 +1,7 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
+import CenturionAndMystic.patches.CustomTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.red.Bash;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -16,6 +17,7 @@ public class Strike extends AbstractCenturionCard {
         baseDamage = damage = 6;
         tags.add(CardTags.STRIKE);
         tags.add(CardTags.STARTER_STRIKE);
+        tags.add(CustomTags.CAM_BASH_EFFECT);
     }
 
     @Override

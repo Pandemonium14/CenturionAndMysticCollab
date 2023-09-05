@@ -5,10 +5,6 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
-  "${ModID}:Catch": {
-    "NAME": "Catch",
-    "DESCRIPTION": "Apply !M! Vulnerable."
-  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -16,6 +12,10 @@
   "${ModID}:PatchUp": {
     "NAME": "Patch Up",
     "DESCRIPTION": "Gain !M! Temporary_HP."
+  },
+  "${ModID}:Rattle": {
+    "NAME": "Rattle",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",

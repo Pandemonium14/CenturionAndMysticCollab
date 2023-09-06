@@ -9,9 +9,21 @@
     "NAME": "Anchor",
     "DESCRIPTION": "Innate. NL Gain !B! Block. NL Block is not removed at the start of your next turn. NL Exhaust."
   },
+  "${ModID}:Bless": {
+    "NAME": "Bless",
+    "DESCRIPTION": "Gain !M! Temporary_HP. NL Gain !M! Vigor."
+  },
+  "${ModID}:CrackGround": {
+    "NAME": "Crack Ground",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "${ModID}:Empower": {
+    "NAME": "Empower",
+    "DESCRIPTION": "Gain !M! Vigor."
   },
   "${ModID}:PatchUp": {
     "NAME": "Patch Up",

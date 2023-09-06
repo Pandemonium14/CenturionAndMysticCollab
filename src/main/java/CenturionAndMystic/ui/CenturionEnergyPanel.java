@@ -1,6 +1,7 @@
 package CenturionAndMystic.ui;
 
 import CenturionAndMystic.MainModfile;
+import CenturionAndMystic.util.Wiz;
 import basemod.abstracts.CustomSavable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -52,6 +53,7 @@ public class CenturionEnergyPanel implements CustomSavable<Integer> {
     public void gainEnergy(int e) {
         energy += e;
         flash();
+        Wiz.adp().hand.glowCheck();
     }
 
     public void resetEnergy() {

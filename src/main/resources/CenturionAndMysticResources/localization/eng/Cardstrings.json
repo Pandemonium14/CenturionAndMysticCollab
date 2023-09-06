@@ -40,5 +40,9 @@
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:TapTheImmaterial": {
+    "NAME": "Tap the Immaterial",
+    "DESCRIPTION": "Add Ethereal to all cards in your hand. NL Whenever you Exhaust a card this turn, gain !M! Temporary_HP."
   }
 }

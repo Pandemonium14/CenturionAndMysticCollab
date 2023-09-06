@@ -1,114 +1,22 @@
 {
-  "${ModID}:AmmoPower": {
-    "NAME": "Ammo",
-    "DESCRIPTIONS": ["Used to perform #yRanged attacks."]
-  },
-  "${ModID}:AmberOilPower": {
-    "NAME": "Amber Oil",
-    "DESCRIPTIONS": ["Whenever a card is #yRetained, deal #b"," damage to ALL enemies."]
-  },
-  "${ModID}:MistLiquidPower": {
-    "NAME": "Mist Liquid",
-    "DESCRIPTIONS": ["At the end of your turn, gain #b"," #yBlock for each card in your hand."]
-  },
-  "${ModID}:SeptrinPower": {
-    "NAME": "Septrin",
-    "DESCRIPTIONS": ["Whenever you #yExhaust a #ynon-Neutralizer card, #ySpectrumize it."]
-  },
-  "${ModID}:DragonBloodPower": {
-    "NAME": "Dragon Blood",
-    "DESCRIPTIONS": ["Increase the potency of all #yBlock and damage #yInfusisons by #b","."]
-  },
-  "${ModID}:PhilosophersPower": {
-    "NAME": "Philosopher's Form",
-    "DESCRIPTIONS": ["You may play a card you do not have the #yEnergy for once per turn.","You may play a card you do not have the #yEnergy for #b", " times per turn."]
-  },
-  "${ModID}:FireEssencePower": {
-    "NAME": "Fire Essence",
-    "DESCRIPTIONS": ["Whenever you deal unblocked attack damage, deal #b"," damage to ALL enemies."]
-  },
-  "${ModID}:IceEssencePower": {
-    "NAME": "Ice Essence",
-    "DESCRIPTIONS": ["Whenever you gain #yBlock from a card, also gain #b"," #yBlock next turn."]
-  },
-  "${ModID}:BoltEssencePower": {
-    "NAME": "Lightning Essence",
-    "DESCRIPTIONS": ["Attacks that cost #b0 deal #b"," additional damage."]
-  },
-  "${ModID}:WindEssencePower": {
-    "NAME": "Wind Essence",
-    "DESCRIPTIONS": ["Whenever you #yInfuse a card, draw #b"," card."," cards."]
-  },
-  "${ModID}:PoisonPowderPower": {
-    "NAME": "Poison Powder",
-    "DESCRIPTIONS": ["Your next Attack applies #b"," #yPoison on hit."]
-  },
   "${ModID}:BracedPower": {
     "NAME": "Braced",
     "DESCRIPTIONS": ["Your next #yBlock gaining card gains #b", " additional #yBlock."]
-  },
-  "${ModID}:BurnPower": {
-    "NAME": "Burn",
-    "DESCRIPTIONS": ["At the start of its turn, takes #b"," damage."]
   },
   "${ModID}:ExposedPower": {
     "NAME": "Exposed",
     "DESCRIPTIONS": ["Takes #b"," more damage from Attacks this turn."]
   },
-  "${ModID}:UnstablePower": {
-    "NAME": "Unstable",
-    "DESCRIPTIONS": ["Takes #b"," more damage from Attacks. At the end of its turn, reduce #yUnstable by #b1."]
-  },
   "${ModID}:StaggerPower": {
     "NAME": "Staggered",
     "DESCRIPTIONS": ["Deals #b"," less damage with Attacks this turn."]
-  },
-  "${ModID}:FocusedPower": {
-    "NAME": "Focused",
-    "DESCRIPTIONS": ["Your next #yAttack deals #b50% more damage."," Your next #b"," #yAttacks deal #b50% more damage."]
-  },
-  "${ModID}:AnotherPlanetPower": {
-    "NAME": "Another Planet",
-    "DESCRIPTIONS": ["Whenever you #yUpgrade a card, #yUnlock it.","Whenever you #yUpgrade a card, #yUnlock it and #yUpgrade it #b"," additional time."," additional times."]
-  },
-  "${ModID}:BroomPower": {
-    "NAME": "Broom Flight",
-    "DESCRIPTIONS": ["Take an extra turn after this one."]
-  },
-  "${ModID}:ThornyEmbracePower": {
-    "NAME": "Thorny Embrace",
-    "DESCRIPTIONS": ["At the end of your turn, deal #b"," damage to each enemy that intends to attack."]
-  },
-  "${ModID}:BlackWaterPower": {
-    "NAME": "Black Water",
-    "DESCRIPTIONS": ["Whenever you apply Weak of Vulnerable to an enemy, also apply #b"," #yUnstable."]
-  },
-  "${ModID}:ForbiddenElixirPower": {
-    "NAME": "Forbidden Elixir",
-    "DESCRIPTIONS": ["For the next #b"," turns, #yAttacks against this enemy also hit ALL other enemies.","#yAttacks against this enemy also hit ALL other enemies this turn."]
-  },
-  "${ModID}:LunaticDebonyalPower": {
-    "NAME": "Lunatic Debonyal",
-    "DESCRIPTIONS": ["Whenever you #yExhaust a card, deal #b"," damage to ALL enemies."]
   },
   "${ModID}:CardToHandPower": {
     "NAME": " Next Turn",
     "DESCRIPTIONS": ["Next turn, add "," into your hand."," copies of "]
   },
-  "${ModID}:AmalgamPower": {
-    "NAME": "Spectrumize Next Card",
-    "DESCRIPTIONS": ["#ySpectrumize the next card you play this turn.","#ySpectrumize the next #b"," cards you play this turn."]
-  },
-  "${ModID}:AetherEssencePower": {
-    "NAME": "Aurora Essence",
-    "DESCRIPTIONS": ["Whenever a card is created during combat, #yMasterwork it.","Whenever a card is created during combat, #yMasterwork it #b"," times."]
-  },
-  "${ModID}:AstronomicalClockPower": {
-    "NAME": "Astronomical Clock",
-    "DESCRIPTIONS": ["Receives #b","% less damage from #yAttacks while #ySynthesis is prepared."]
-  },
-  "${ModID}:AstronomicalClockPower2": {
-    "NAME": "Astronomical Clock",
-    "DESCRIPTIONS": ["Whenever #ySynthesis is prepared, gain #b"," #yBlock."]
+  "${ModID}:ImmaterialPower": {
+    "NAME": "Immaterial",
+    "DESCRIPTIONS": ["Whenever you #yExhaust a card this turn, gain #b"," #yTemporary #yHP."]
   }
 }

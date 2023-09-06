@@ -19,7 +19,7 @@
   },
   "${ModID}:Rattle": {
     "NAME": "Rattle",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
   "${ModID}:RecklessGuard": {
     "NAME": "Reckless Guard",

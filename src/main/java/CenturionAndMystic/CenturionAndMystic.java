@@ -278,7 +278,7 @@ public class CenturionAndMystic extends CustomPlayer {
         super.renderPlayerImage(sb);
 
 
-        if (!(AbstractDungeon.getCurrRoom() instanceof RestRoom)) {// 2120
+        if (AbstractDungeon.getCurrMapNode() != null && !(AbstractDungeon.getCurrRoom() instanceof RestRoom)) {// 2120
             if (this.atlas != null && !(boolean) ReflectionHacks.getPrivate(this, AbstractPlayer.class, "renderCorpse")) {
                 renderMystic(sb);
             }

@@ -1,7 +1,6 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
-import CenturionAndMystic.cards.interfaces.MagicAnimation;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.util.Wiz;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
@@ -12,7 +11,7 @@ import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class Bless extends AbstractMysticCard implements MagicAnimation {
+public class Bless extends AbstractMysticCard {
     public final static String ID = makeID(Bless.class.getSimpleName());
 
     public Bless() {

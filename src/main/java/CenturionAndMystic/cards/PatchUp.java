@@ -1,7 +1,6 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
-import CenturionAndMystic.cards.interfaces.MagicAnimation;
 import CenturionAndMystic.patches.CustomTags;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.cards.colorless.BandageUp;
@@ -10,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class PatchUp extends AbstractMysticCard implements MagicAnimation {
+public class PatchUp extends AbstractMysticCard {
     public final static String ID = makeID(PatchUp.class.getSimpleName());
 
     public PatchUp() {

@@ -5,6 +5,10 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Anchor": {
+    "NAME": "Anchor",
+    "DESCRIPTION": "Innate. NL Gain !B! Block. NL Block is not removed at the start of your next turn. NL Exhaust."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -16,6 +20,10 @@
   "${ModID}:Rattle": {
     "NAME": "Rattle",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+  "${ModID}:RecklessGuard": {
+    "NAME": "Reckless Guard",
+    "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",

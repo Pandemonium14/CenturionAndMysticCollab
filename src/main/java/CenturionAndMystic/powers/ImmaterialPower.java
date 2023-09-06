@@ -2,14 +2,8 @@ package CenturionAndMystic.powers;
 
 import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.actions.FastAddTemporaryHPAction;
-import CenturionAndMystic.cardmods.GainBlockMod;
-import basemod.helpers.CardModifierManager;
-import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.colorless.RitualDagger;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -39,7 +33,7 @@ public class ImmaterialPower extends AbstractPower {
     @Override
     public void onExhaust(AbstractCard card) {
         flash();
-        addToBot(new FastAddTemporaryHPAction(owner, owner, amount));
+        addToTop(new FastAddTemporaryHPAction(owner, owner, amount));
     }
 
     @Override

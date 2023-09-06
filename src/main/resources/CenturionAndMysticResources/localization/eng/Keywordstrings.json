@@ -35,5 +35,14 @@
       "infusions"
     ],
     "DESCRIPTION": "Add an extra effect onto a card this combat."
+  },
+  {
+    "ID": "charged",
+    "PROPER_NAME": "Charged",
+    "NAMES": [
+      "charge",
+      "charged"
+    ],
+    "DESCRIPTION": "Consumes all #yTemporary #yHP to raise its damage and #yBlock for the rest of combat."
   }
 ]

@@ -31,5 +31,8 @@
   },
   "${ModID}:ApplyDestabilizedMod": {
     "EXTENDED_DESCRIPTION": [" NL Apply %s professor:Unstable."]
+  },
+  "${ModID}:ChargedMod": {
+    "EXTENDED_DESCRIPTION": ["${ModID}:Charged. NL "]
   }
 }

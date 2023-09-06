@@ -69,7 +69,7 @@ public class LimitBreaker extends CustomPotion implements CustomLighting {
         }
         tips.clear();
         tips.add(new PowerTip(name, description));
-        tips.add(new PowerTip(BaseMod.getKeywordTitle(KeywordManager.UNLOCK), BaseMod.getKeywordDescription(KeywordManager.UNLOCK)));
+        //tips.add(new PowerTip(BaseMod.getKeywordTitle(KeywordManager.UNLOCK), BaseMod.getKeywordDescription(KeywordManager.UNLOCK)));
         tips.add(new PowerTip(TipHelper.capitalize(GameDictionary.UPGRADE.NAMES[0]), GameDictionary.keywords.get(GameDictionary.UPGRADE.NAMES[0])));
     }
 

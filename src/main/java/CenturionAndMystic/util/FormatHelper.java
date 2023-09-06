@@ -12,8 +12,8 @@ public class FormatHelper {
     private static final String ETHEREAL_TEXT = capitalize(GameDictionary.ETHEREAL.NAMES[0]) + LocalizedStrings.PERIOD + " NL ";
     private static final String RETAIN_TEXT = capitalize(GameDictionary.RETAIN.NAMES[0]) + LocalizedStrings.PERIOD + " NL ";
     private static final String UNPLAYABLE_TEXT = capitalize(GameDictionary.UNPLAYABLE.NAMES[0]) + LocalizedStrings.PERIOD + " NL ";
-    private static final String CATALYST_TEXT = capitalize(KeywordManager.CATALYST) + LocalizedStrings.PERIOD + " NL ";
-    private static final String REACTANT_TEXT = capitalize(KeywordManager.REACTANT) + LocalizedStrings.PERIOD + " NL ";
+    //private static final String CATALYST_TEXT = capitalize(KeywordManager.CATALYST) + LocalizedStrings.PERIOD + " NL ";
+    //private static final String REACTANT_TEXT = capitalize(KeywordManager.REACTANT) + LocalizedStrings.PERIOD + " NL ";
     private static final StringBuilder newMsg = new StringBuilder();
 
     public static String capitalize(String str) {
@@ -44,7 +44,7 @@ public class FormatHelper {
 
     public static String insertBeforeText(String rawDescription, String text) {
         StringBuilder removed = new StringBuilder();
-        ArrayList<String> matches = makeMatchers(INNATE_TEXT, ETHEREAL_TEXT, RETAIN_TEXT, UNPLAYABLE_TEXT, CATALYST_TEXT, REACTANT_TEXT);
+        ArrayList<String> matches = makeMatchers(INNATE_TEXT, ETHEREAL_TEXT, RETAIN_TEXT, UNPLAYABLE_TEXT);
         while (matches.stream().anyMatch(rawDescription::startsWith)) {
             for (String match : matches) {
                 if (rawDescription.startsWith(match)) {

@@ -8,7 +8,7 @@ public class KeywordManager {
     public static String BRACED;
     public static String EXPOSED;
     public static String STAGGER;
-    public static String INFUSE;
+    public static String IMBUE;
     public static String CHARGED;
 
     public static String getKeyword(String ID) {

@@ -26,13 +26,11 @@
     "DESCRIPTION": "Staggered creatures deal less damage with Attacks this turn."
   },
   {
-    "ID": "infuse",
-    "PROPER_NAME": "Infuse",
+    "ID": "imbue",
+    "PROPER_NAME": "Imbue",
     "NAMES": [
-      "infuse",
-      "infused",
-      "infusion",
-      "infusions"
+      "imbue",
+      "imbued"
     ],
     "DESCRIPTION": "Add an extra effect onto a card this combat."
   },

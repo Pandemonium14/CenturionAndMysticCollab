@@ -11,13 +11,13 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.function.Predicate;
 
-public class InfuseCardsInHandAction extends ModifyCardsInHandAction {
+public class ImbueCardsInHandAction extends ModifyCardsInHandAction {
     public static Predicate<AbstractCard> shenaniganFilter = c -> AbstractInfusion.usesVanillaTargeting(c) && c.costForTurn > -2;
-    public InfuseCardsInHandAction(int amount, AbstractCardModifier mod) {
+    public ImbueCardsInHandAction(int amount, AbstractCardModifier mod) {
         this(amount, false, c -> true, mod);
     }
 
-    public InfuseCardsInHandAction(int amount, boolean anyAmount, Predicate<AbstractCard> filter, AbstractCardModifier mod) {
+    public ImbueCardsInHandAction(int amount, boolean anyAmount, Predicate<AbstractCard> filter, AbstractCardModifier mod) {
         super(amount, anyAmount, filter.and(shenaniganFilter), l -> {
             for (AbstractCard c : l) {
                 doInfusion(c, mod);

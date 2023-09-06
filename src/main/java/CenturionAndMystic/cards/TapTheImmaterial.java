@@ -1,6 +1,6 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.actions.InfuseCardsInHandAction;
+import CenturionAndMystic.actions.ImbueCardsInHandAction;
 import CenturionAndMystic.cardmods.EtherealMod;
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.powers.ImmaterialPower;
@@ -21,7 +21,7 @@ public class TapTheImmaterial extends AbstractMysticCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new InfuseCardsInHandAction(p.hand.size(), new EtherealMod()));
+        addToBot(new ImbueCardsInHandAction(p.hand.size(), new EtherealMod()));
         Wiz.applyToSelf(new ImmaterialPower(p, magicNumber));
     }
 

@@ -13,6 +13,11 @@
     "NAME": "Bless",
     "DESCRIPTION": "Gain !M! Temporary_HP. NL Gain !M! Vigor."
   },
+  "${ModID}:Connection": {
+    "NAME": "Connection",
+    "DESCRIPTION": "Lose all [${ModID}:CenturionIcon] and [${ModID}:MysticIcon] . NL Gain that much [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Lose all [${ModID}:CenturionIcon] and [${ModID}:MysticIcon] . NL Gain that much [E]."
+  },
   "${ModID}:CrackGround": {
     "NAME": "Crack Ground",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."

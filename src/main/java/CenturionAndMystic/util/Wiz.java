@@ -1,7 +1,9 @@
 package CenturionAndMystic.util;
 
+import CenturionAndMystic.CenturionAndMystic;
 import CenturionAndMystic.actions.TimedVFXAction;
 import CenturionAndMystic.patches.CardCounterPatches;
+import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.powers.LosePowerPower;
 import CenturionAndMystic.powers.NextTurnPowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -280,5 +282,19 @@ public class Wiz {
         ArrayList<AbstractCard> ret = new ArrayList<>();
         forAdjacentCards(thisCard, ret::add);
         return ret;
+    }
+
+    public static int mysticEnergy() {
+        if (AbstractDungeon.player instanceof CenturionAndMystic && EnergyPatches.ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player) != null) {
+            return EnergyPatches.ExtraPanelFields.mysticEnergyPanel.get(AbstractDungeon.player).energy;
+        }
+        return 0;
+    }
+
+    public static int centurionEnergy() {
+        if (AbstractDungeon.player instanceof CenturionAndMystic && EnergyPatches.ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player) != null) {
+            return EnergyPatches.ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy;
+        }
+        return 0;
     }
 }

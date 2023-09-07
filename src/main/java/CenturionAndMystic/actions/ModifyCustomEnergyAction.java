@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class GainCustomEnergyAction extends AbstractGameAction {
+public class ModifyCustomEnergyAction extends AbstractGameAction {
     public enum EnergyType {
         CENTURION,
         MYSTIC,
@@ -16,7 +16,7 @@ public class GainCustomEnergyAction extends AbstractGameAction {
     }
     private final EnergyType type;
 
-    public GainCustomEnergyAction(int amount, EnergyType type) {
+    public ModifyCustomEnergyAction(int amount, EnergyType type) {
         setValues(AbstractDungeon.player, AbstractDungeon.player, amount);
         duration = Settings.ACTION_DUR_FAST;
         this.type = type;

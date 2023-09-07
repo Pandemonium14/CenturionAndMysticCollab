@@ -52,6 +52,9 @@ public class CenturionEnergyPanel implements CustomSavable<Integer> {
 
     public void gainEnergy(int e) {
         energy += e;
+        if (energy < 0) {
+            energy = 0;
+        }
         flash();
         Wiz.adp().hand.glowCheck();
     }

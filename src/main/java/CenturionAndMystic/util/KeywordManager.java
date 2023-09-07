@@ -14,6 +14,7 @@ public class KeywordManager {
     public static String CHARGED;
     public static String INFUSE;
     public static String SURVEY;
+    public static String VENOM;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

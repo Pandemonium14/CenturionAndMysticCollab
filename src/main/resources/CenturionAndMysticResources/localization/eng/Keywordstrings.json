@@ -76,5 +76,13 @@
       "called"
     ],
     "DESCRIPTION": "Put a card of a certain type from your draw pile in your hand. If your draw pile contains no card of that type, put a random card of that type from your discard pile to your hand."
+  },
+  {
+    "ID": "venom",
+    "PROPER_NAME": "Venom",
+    "NAMES": [
+      "venom"
+    ],
+    "DESCRIPTION": "Venom is spent to increase unblocked damage received, up to double the original damage."
   }
 ]

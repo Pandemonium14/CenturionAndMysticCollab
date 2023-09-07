@@ -18,5 +18,9 @@
   "${ModID}:ImmaterialPower": {
     "NAME": "Immaterial",
     "DESCRIPTIONS": ["Whenever you #yExhaust a card this turn, gain #b"," #yTemporary #yHP."]
+  },
+  "${ModID}:VenomPower": {
+    "NAME": "Venom",
+    "DESCRIPTIONS": ["Venom is spent to increase unblocked damage received, up to double the original damage."]
   }
 }

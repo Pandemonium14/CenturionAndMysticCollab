@@ -6,18 +6,14 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 
-public class VenomDamage extends AbstractDamageModifier {
-    private static final float PER_STACK = 0.25f;
-    boolean inherent;
-    int amount;
+public class VenomDamage extends AbstractDamageType {
 
     public VenomDamage(boolean inherent) {
-        this(inherent, (int) (1/PER_STACK));
+        super(inherent);
     }
 
     public VenomDamage(boolean inherent, int amount) {
-        this.amount = amount;
-        this.inherent = inherent;
+        super(inherent, amount);
     }
 
     @Override
@@ -28,11 +24,6 @@ public class VenomDamage extends AbstractDamageModifier {
                 addToTop(new ApplyPowerAction(target, info.owner, new VenomPower(target, value)));
             }
         }
-    }
-
-    @Override
-    public boolean isInherent() {
-        return inherent;
     }
 
     @Override

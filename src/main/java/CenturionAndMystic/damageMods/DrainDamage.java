@@ -5,18 +5,14 @@ import com.evacipated.cardcrawl.mod.stslib.damagemods.AbstractDamageModifier;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 
-public class DrainDamage extends AbstractDamageModifier {
-    private static final float PER_STACK = 0.25f;
-    boolean inherent;
-    int amount;
+public class DrainDamage extends AbstractDamageType {
 
     public DrainDamage(boolean inherent) {
-        this(inherent, (int) (1/PER_STACK));
+        super(inherent);
     }
 
     public DrainDamage(boolean inherent, int amount) {
-        this.amount = amount;
-        this.inherent = inherent;
+        super(inherent, amount);
     }
 
     @Override
@@ -27,11 +23,6 @@ public class DrainDamage extends AbstractDamageModifier {
                 addToTop(new AddTemporaryHPAction(info.owner, info.owner, value));
             }
         }
-    }
-
-    @Override
-    public boolean isInherent() {
-        return inherent;
     }
 
     @Override

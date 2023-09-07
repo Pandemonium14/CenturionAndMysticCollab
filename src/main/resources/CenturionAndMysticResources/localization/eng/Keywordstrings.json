@@ -83,6 +83,42 @@
     "NAMES": [
       "venom"
     ],
-    "DESCRIPTION": "Venom is spent to increase unblocked damage received, up to double the original damage."
+    "DESCRIPTION": "Venom is spent to increase unblocked damage received, up to twice the original damage."
+  },
+  {
+    "ID": "infuse",
+    "PROPER_NAME": "Infuse",
+    "NAMES": [
+      "infuse",
+      "infused"
+    ],
+    "DESCRIPTION": "Your next Attack applies an additional effect on hit."
+  },
+  {
+    "ID": "venom_damage",
+    "PROPER_NAME": "Venom Damage",
+    "NAMES": [
+      "venom damage",
+      "venom_damage"
+    ],
+    "DESCRIPTION": "Applies #yVenom equal to #b25% of unblocked damage dealt per stack. Venom is spent to increase unblocked damage received, up to twice the original damage."
+  },
+  {
+    "ID": "poison_damage",
+    "PROPER_NAME": "Poison Damage",
+    "NAMES": [
+      "poison damage",
+      "poison_damage"
+    ],
+    "DESCRIPTION": "Applies #yPoison equal to #b25% of unblocked damage dealt per stack. Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by #b1."
+  },
+  {
+    "ID": "drain_damage",
+    "PROPER_NAME": "Drain Damage",
+    "NAMES": [
+      "drain damage",
+      "drain_damage"
+    ],
+    "DESCRIPTION": "Provides #yTemporary #HP equal to #b25% of unblocked damage dealt per stack. Temporary HP disappears at the end of combat."
   }
 ]

@@ -4,6 +4,7 @@ import CenturionAndMystic.CenturionAndMystic;
 import CenturionAndMystic.actions.TimedVFXAction;
 import CenturionAndMystic.patches.CardCounterPatches;
 import CenturionAndMystic.patches.EnergyPatches;
+import CenturionAndMystic.powers.AbstractInfusionPower;
 import CenturionAndMystic.powers.LosePowerPower;
 import CenturionAndMystic.powers.NextTurnPowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -296,5 +297,9 @@ public class Wiz {
             return EnergyPatches.ExtraPanelFields.centurionEnergyPanel.get(AbstractDungeon.player).energy;
         }
         return 0;
+    }
+
+    public static boolean hasInfusion() {
+        return AbstractDungeon.player.powers.stream().anyMatch(p -> p instanceof AbstractInfusionPower);
     }
 }

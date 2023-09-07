@@ -12,9 +12,11 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.patches.FlavorText;
+import com.evacipated.cardcrawl.mod.stslib.patches.HitboxRightClick;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -355,7 +357,19 @@ public abstract class AbstractEasyCard extends CustomCard {
                 }
             }
         }
+        if (AbstractDungeon.player != null) {
+            clickUpdate();
+        }
     }
+
+    public void clickUpdate() {
+        if (!AbstractDungeon.isScreenUp && HitboxRightClick.rightClicked.get(this.hb) && !AbstractDungeon.actionManager.turnHasEnded && AbstractDungeon.player.hand.contains(this)) {
+            addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand, true));
+            onRightClick();
+        }
+    }
+
+    public void onRightClick() {}
 
     protected float getRotationTimeNeeded() {
         return 2.5f;

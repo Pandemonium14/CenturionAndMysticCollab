@@ -1,5 +1,21 @@
 [
   {
+    "ID": "centurion",
+    "PROPER_NAME": "Centurion Energy [${ModID}:CenturionIcon] ",
+    "NAMES": [
+      "centurion"
+    ],
+    "DESCRIPTION": "Centurion Energy may only be spent on Centurion cards."
+  },
+  {
+    "ID": "mystic",
+    "PROPER_NAME": "Mystic Energy [${ModID}:MysticIcon] ",
+    "NAMES": [
+      "mystic"
+    ],
+    "DESCRIPTION": "Mystic Energy may only be spent on Mystic cards."
+  },
+  {
     "ID": "braced",
     "PROPER_NAME": "Braced",
     "NAMES": [

@@ -5,11 +5,14 @@ import java.util.HashMap;
 
 public class KeywordManager {
     public static HashMap<String, String> keywordMap = new HashMap<>();
+    public static String CENTURION;
+    public static String MYSTIC;
     public static String BRACED;
     public static String EXPOSED;
     public static String STAGGER;
     public static String IMBUE;
     public static String CHARGED;
+    public static String INFUSE;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

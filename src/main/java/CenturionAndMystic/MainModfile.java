@@ -90,14 +90,14 @@ public class MainModfile implements
     public static final String POWER_L_SILVER = modID + "Resources/images/1024/power_metal.png";
 
     public static final String CARD_ENERGY_S_CENTURION = modID + "Resources/images/512/energyC2.png";
-    public static final String TEXT_ENERGY_CENTURION = modID + "Resources/images/512/energy_small_centurion.png";
+    public static final String TEXT_ENERGY_CENTURION = modID + "Resources/images/512/text_centurion.png";
     public static final String CARD_ENERGY_L_CENTURION = modID + "Resources/images/1024/energyC2.png";
     public static final String CARD_ENERGY_S_MYSTIC = modID + "Resources/images/512/energyM2.png";
-    public static final String TEXT_ENERGY_MYSTIC = modID + "Resources/images/512/energy_small_mystic.png";
+    public static final String TEXT_ENERGY_MYSTIC = modID + "Resources/images/512/text_mystic.png";
     public static final String CARD_ENERGY_L_MYSTIC = modID + "Resources/images/1024/energyM.png";
 
     public static final String CARD_ENERGY_S_SILVER = modID + "Resources/images/512/energy_centurion.png";
-    public static final String TEXT_ENERGY_SILVER = modID + "Resources/images/512/energy_small_centurion.png";
+    public static final String TEXT_ENERGY_SILVER = modID + "Resources/images/512/text_colorless.png";
     public static final String CARD_ENERGY_L_SILVER = modID + "Resources/images/1024/energy_large_centurion.png";
 
     private static final String CHARSELECT_BUTTON = modID + "Resources/images/charSelect/charButton2.png";
@@ -133,9 +133,8 @@ public class MainModfile implements
 
         BaseMod.addColor(CenturionAndMystic.Enums.SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR,
                 SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR, SHADOW_BLUE_COLOR,
-                ATTACK_S_SILVER, SKILL_S_SILVER, POWER_S_SILVER, CARD_ENERGY_S_CENTURION,
-                ATTACK_L_SILVER, SKILL_L_SILVER, POWER_L_SILVER,
-                CARD_ENERGY_L_CENTURION, TEXT_ENERGY_CENTURION);
+                ATTACK_S_SILVER, SKILL_S_SILVER, POWER_S_SILVER, CARD_ENERGY_S_SILVER,
+                ATTACK_L_SILVER, SKILL_L_SILVER, POWER_L_SILVER, CARD_ENERGY_L_SILVER, TEXT_ENERGY_SILVER);
     }
 
     public static String makePath(String resourcePath) {
@@ -193,10 +192,8 @@ public class MainModfile implements
         BaseMod.addDynamicVariable(new SecondBlock());
         BaseMod.addDynamicVariable(new DynvarInterfaceManager());
 
-        CustomIconHelper.addCustomIcon(IconContainer.FireIcon.get());
-        CustomIconHelper.addCustomIcon(IconContainer.IceIcon.get());
-        CustomIconHelper.addCustomIcon(IconContainer.BoltIcon.get());
-        CustomIconHelper.addCustomIcon(IconContainer.WindIcon.get());
+        CustomIconHelper.addCustomIcon(IconContainer.CenturionEnergyIcon.get());
+        CustomIconHelper.addCustomIcon(IconContainer.MysticEnergyIcon.get());
 
         new AutoAdd(modID)
                 .packageFilter(modID+".cards")
@@ -219,7 +216,7 @@ public class MainModfile implements
         if (keywords != null) {
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(modID.toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
-                if(keyword.NAMES.length > 0 && !keyword.ID.isEmpty()) {
+                if (keyword.NAMES.length > 0 && !keyword.ID.isEmpty()) {
                     KeywordManager.setupKeyword(keyword.ID, keyword.NAMES[0]);
                 }
             }

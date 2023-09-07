@@ -8,14 +8,16 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 
 public class VenomDamage extends AbstractDamageModifier {
     private static final float PER_STACK = 0.25f;
+    boolean inherent;
     int amount;
 
-    public VenomDamage() {
-        this((int) (1/PER_STACK));
+    public VenomDamage(boolean inherent) {
+        this(inherent, (int) (1/PER_STACK));
     }
 
-    public VenomDamage(int amount) {
+    public VenomDamage(boolean inherent, int amount) {
         this.amount = amount;
+        this.inherent = inherent;
     }
 
     @Override
@@ -29,7 +31,12 @@ public class VenomDamage extends AbstractDamageModifier {
     }
 
     @Override
+    public boolean isInherent() {
+        return inherent;
+    }
+
+    @Override
     public AbstractDamageModifier makeCopy() {
-        return new VenomDamage(amount);
+        return new VenomDamage(inherent, amount);
     }
 }

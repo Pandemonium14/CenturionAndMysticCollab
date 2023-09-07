@@ -7,14 +7,16 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 
 public class DrainDamage extends AbstractDamageModifier {
     private static final float PER_STACK = 0.25f;
+    boolean inherent;
     int amount;
 
-    public DrainDamage() {
-        this((int) (1/PER_STACK));
+    public DrainDamage(boolean inherent) {
+        this(inherent, (int) (1/PER_STACK));
     }
 
-    public DrainDamage(int amount) {
+    public DrainDamage(boolean inherent, int amount) {
         this.amount = amount;
+        this.inherent = inherent;
     }
 
     @Override
@@ -28,7 +30,12 @@ public class DrainDamage extends AbstractDamageModifier {
     }
 
     @Override
+    public boolean isInherent() {
+        return inherent;
+    }
+
+    @Override
     public AbstractDamageModifier makeCopy() {
-        return new DrainDamage(amount);
+        return new DrainDamage(inherent, amount);
     }
 }

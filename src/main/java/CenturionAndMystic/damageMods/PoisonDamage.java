@@ -8,14 +8,16 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 
 public class PoisonDamage extends AbstractDamageModifier {
     private static final float PER_STACK = 0.25f;
+    boolean inherent;
     int amount;
 
-    public PoisonDamage() {
-        this((int) (1/PER_STACK));
+    public PoisonDamage(boolean inherent) {
+        this(inherent, (int) (1/PER_STACK));
     }
 
-    public PoisonDamage(int amount) {
+    public PoisonDamage(boolean inherent, int amount) {
         this.amount = amount;
+        this.inherent = inherent;
     }
 
     @Override
@@ -29,7 +31,12 @@ public class PoisonDamage extends AbstractDamageModifier {
     }
 
     @Override
+    public boolean isInherent() {
+        return inherent;
+    }
+
+    @Override
     public AbstractDamageModifier makeCopy() {
-        return new PoisonDamage(amount);
+        return new PoisonDamage(inherent, amount);
     }
 }

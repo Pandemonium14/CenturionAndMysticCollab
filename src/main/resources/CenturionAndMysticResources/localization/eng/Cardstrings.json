@@ -26,9 +26,17 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:Distract": {
+    "NAME": "Distract",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Call !M! ${ModID}:Mystic card{@@}{!M!|>1=s}."
+  },
   "${ModID}:Empower": {
     "NAME": "Empower",
     "DESCRIPTION": "Gain !M! Vigor."
+  },
+  "${ModID}:FieldTactics": {
+    "NAME": "Field Tactics",
+    "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card and a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
   },
   "${ModID}:PatchUp": {
     "NAME": "Patch Up",

@@ -1,7 +1,7 @@
 [
   {
     "ID": "centurion",
-    "PROPER_NAME": "Centurion Energy [${ModID}:CenturionIcon] ",
+    "PROPER_NAME": "Centurion [${ModID}:CenturionIcon] ",
     "NAMES": [
       "centurion"
     ],
@@ -9,7 +9,7 @@
   },
   {
     "ID": "mystic",
-    "PROPER_NAME": "Mystic Energy [${ModID}:MysticIcon] ",
+    "PROPER_NAME": "Mystic [${ModID}:MysticIcon] ",
     "NAMES": [
       "mystic"
     ],
@@ -67,5 +67,14 @@
       "surveyed"
     ],
     "DESCRIPTION": "Look at X random cards in your draw pile. You may add one of them to your hand."
+  },
+  {
+    "ID": "call",
+    "PROPER_NAME": "Call",
+    "NAMES": [
+      "call",
+      "called"
+    ],
+    "DESCRIPTION": "Put a card of a certain type from your draw pile in your hand. If your draw pile contains no card of that type, put a random card of that type from your discard pile to your hand."
   }
 ]

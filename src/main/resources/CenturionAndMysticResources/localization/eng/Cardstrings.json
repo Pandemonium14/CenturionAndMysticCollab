@@ -9,6 +9,10 @@
     "NAME": "Anchor",
     "DESCRIPTION": "Innate. NL Gain !B! Block. NL Block is not removed at the start of your next turn. NL Exhaust."
   },
+  "${ModID}:BlackMist": {
+    "NAME": "Black Mist",
+    "DESCRIPTION": "Apply !M! ${ModID}:Venom and !${ModID}:M2! Weak to ALL enemies."
+  },
   "${ModID}:Bless": {
     "NAME": "Bless",
     "DESCRIPTION": "Gain !M! Temporary_HP. NL Gain !M! Vigor."

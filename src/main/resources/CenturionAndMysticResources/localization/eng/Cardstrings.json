@@ -17,6 +17,10 @@
     "NAME": "Bless",
     "DESCRIPTION": "Gain !M! Temporary_HP. NL Gain !M! Vigor."
   },
+  "${ModID}:Clairvoyance": {
+    "NAME": "Clairvoyance",
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL ${ModID}:Survey !M! card{!M!|>1=s}."
+  },
   "${ModID}:Connection": {
     "NAME": "Connection",
     "DESCRIPTION": "Lose all [${ModID}:CenturionIcon] and [${ModID}:MysticIcon] . NL Gain that much [E]. NL Exhaust.",
@@ -42,9 +46,18 @@
     "NAME": "Field Tactics",
     "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card and a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
   },
+  "${ModID}:Hasten": {
+    "NAME": "Hasten",
+    "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s} and Upgrade {!M!|1=it|@=them}. NL {!M!|1=It costs|@=They cost} 0 this turn."
+  },
   "${ModID}:PatchUp": {
     "NAME": "Patch Up",
     "DESCRIPTION": "Gain !M! Temporary_HP."
+  },
+  "${ModID}:QuickThinking": {
+    "NAME": "Quick Thinking",
+    "DESCRIPTION": "Whenever you ${ModID}:Survey, you may take !M! additional card{@@}{!M!|>1=s}."
   },
   "${ModID}:Rattle": {
     "NAME": "Rattle",
@@ -69,5 +82,9 @@
   "${ModID}:TapTheImmaterial": {
     "NAME": "Tap the Immaterial",
     "DESCRIPTION": "Add Ethereal to all cards in your hand. NL Whenever you Exhaust a card this turn, gain !M! Temporary_HP."
+  },
+  "${ModID}:WideGuard": {
+    "NAME": "Wide Guard",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block."
   }
 }

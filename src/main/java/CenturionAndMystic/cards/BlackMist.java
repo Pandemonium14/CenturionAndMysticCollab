@@ -6,7 +6,7 @@ import CenturionAndMystic.util.Wiz;
 import CenturionAndMystic.vfx.ColoredSmokeBombEffect;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.cards.green.NoxiousFumes;
+import com.megacrit.cardcrawl.cards.green.CripplingPoison;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
@@ -40,7 +40,7 @@ public class BlackMist extends AbstractMysticCard {
 
     @Override
     public String cardArtCopy() {
-        return NoxiousFumes.ID;
+        return CripplingPoison.ID;
     }
 
 }

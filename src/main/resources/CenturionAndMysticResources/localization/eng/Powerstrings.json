@@ -34,5 +34,9 @@
   "${ModID}:InfuseDrainPower": {
     "NAME": "Infuse Drain",
     "DESCRIPTIONS": ["Your next #yAttack grants #yTemporary #yHP equal to #b","% of unblocked damage dealt."]
+  },
+  "${ModID}:QuickThinkingPower": {
+    "NAME": "Quick Thinking",
+    "DESCRIPTIONS": ["Whenever you #ySurvey, you may take #b"," additional card."," additional cards."]
   }
 }

@@ -58,5 +58,14 @@
       "charged"
     ],
     "DESCRIPTION": "Consumes all #yTemporary #yHP to raise its damage and #yBlock for the rest of combat."
+  },
+  {
+    "ID": "survey",
+    "PROPER_NAME": "Survey",
+    "NAMES": [
+      "survey",
+      "surveyed"
+    ],
+    "DESCRIPTION": "Look at X random cards in your draw pile. You may add one of them to your hand."
   }
 ]

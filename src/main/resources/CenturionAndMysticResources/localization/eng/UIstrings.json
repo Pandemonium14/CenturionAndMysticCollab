@@ -7,18 +7,13 @@
       "Enable random pre/post combat phrases. Defaults: true, 50%."
     ],
     "EXTRA_TEXT": [
-      "The Professor",
+      "The No",
       "Text."
     ]
   },
   "${ModID}:CrossOver": {
     "TEXT": [
-      "Enable Professor Crossover Content"
-    ]
-  },
-  "${ModID}:SpectrumizeAction": {
-    "TEXT": [
-      "Spectrumize"
+      "Enable Centurion and Mystic Crossover Content"
     ]
   },
   "${ModID}:ModifyAction": {
@@ -33,10 +28,10 @@
       "Choose "," powers to Cleanse."
     ]
   },
-  "${ModID}:SynthesisAction": {
+  "${ModID}:SurveyAction": {
     "TEXT": [
-      "Contribute",
-      "I don't have enough cards."
+      "Choose a card to add to your hand.",
+      "Choose up to "," cards to add to your hand."
     ]
   }
 }

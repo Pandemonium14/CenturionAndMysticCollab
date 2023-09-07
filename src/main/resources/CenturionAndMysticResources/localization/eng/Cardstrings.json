@@ -50,6 +50,14 @@
     "NAME": "Reckless Guard",
     "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
   },
+  "${ModID}:SmashAndGrab": {
+    "NAME": "Smash and Grab",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Survey !M! card{@@}{!M!|>1=s}."
+  },
+  "${ModID}:SnakeBite": {
+    "NAME": "Snake Bite",
+    "DESCRIPTION": "Deal !D! damage. NL Apply ${ModID}:Venom equal to unblocked damage dealt."
+  },
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."

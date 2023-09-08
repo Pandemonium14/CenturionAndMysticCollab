@@ -1,12 +1,12 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
+import CenturionAndMystic.powers.InfuseSmitePower;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.colorless.DarkShackles;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
@@ -15,19 +15,19 @@ public class Rattle extends AbstractMysticCard {
 
     public Rattle() {
         super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
-        baseDamage = damage = 4;
-        baseMagicNumber = magicNumber = 1;
+        baseDamage = damage = 3;
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.BLUNT_LIGHT);
-        Wiz.applyToEnemy(m, new WeakPower(m, magicNumber, false));
+        Wiz.applyToSelf(new InfuseSmitePower(p, magicNumber));
     }
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(1);
         upgradeMagicNumber(1);
     }
 

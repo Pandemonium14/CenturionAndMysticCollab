@@ -93,7 +93,7 @@
   },
   "${ModID}:Rattle": {
     "NAME": "Rattle",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse !M! ${ModID}:Smite_Damage."
   },
   "${ModID}:RecklessGuard": {
     "NAME": "Reckless Guard",

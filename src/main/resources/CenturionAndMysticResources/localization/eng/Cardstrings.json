@@ -21,9 +21,17 @@
     "NAME": "Book Club",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
   },
+  "${ModID}:BreatheLife": {
+    "NAME": "Breathe Life",
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage. NL Gain !M! Vigor."
+  },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
     "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL ${ModID}:Survey !M! card{!M!|>1=s}."
+  },
+  "${ModID}:ConduitStrike": {
+    "NAME": "Conduit Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Reapplies ${ModID}:Infused effects."
   },
   "${ModID}:Connection": {
     "NAME": "Connection",
@@ -86,6 +94,10 @@
   "${ModID}:SnakeBite": {
     "NAME": "Snake Bite",
     "DESCRIPTION": "Deal !D! damage. NL Apply ${ModID}:Venom equal to unblocked damage dealt."
+  },
+  "${ModID}:StandStrong": {
+    "NAME": "Stand Strong",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! cards in your hand. NL Exhaust."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",

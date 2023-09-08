@@ -100,8 +100,8 @@ public class EmpowerRedirectPatches {
                 @Override
                 public void edit(MethodCall m) throws CannotCompileException {
                     if (m.getClassName().equals(ArrayList.class.getName()) && m.getMethodName().equals("add")) {
-                        m.replace("if (Professor.patches.EmpowerRedirectPatches.shouldRedirect(this.card)) {" +
-                                    "Professor.patches.EmpowerRedirectPatches.getNewEffect(this.card);" +
+                        m.replace("if (CenturionAndMystic.patches.EmpowerRedirectPatches.shouldRedirect(this.card)) {" +
+                                    "CenturionAndMystic.patches.EmpowerRedirectPatches.getNewEffect(this.card);" +
                                 "} else {" +
                                 "$_ = $proceed($$);}");
                     }

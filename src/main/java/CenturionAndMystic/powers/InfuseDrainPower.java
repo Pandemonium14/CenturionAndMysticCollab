@@ -6,6 +6,7 @@ import CenturionAndMystic.damageMods.DrainDamage;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class InfuseDrainPower extends AbstractInfusionPower {
     public static final String POWER_ID = MainModfile.makeID(InfuseDrainPower.class.getSimpleName());

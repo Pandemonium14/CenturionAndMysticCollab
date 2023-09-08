@@ -1,9 +1,10 @@
 package CenturionAndMystic.powers;
 
 import CenturionAndMystic.damageMods.AbstractDamageType;
+import basemod.interfaces.CloneablePowerInterface;
 import com.evacipated.cardcrawl.mod.stslib.damagemods.AbstractDamageModifier;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.DamageModApplyingPower;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -12,7 +13,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class AbstractInfusionPower extends AbstractPower implements DamageModApplyingPower {
+public abstract class AbstractInfusionPower extends AbstractPower implements DamageModApplyingPower, CloneablePowerInterface {
 
     public AbstractInfusionPower(String ID, String name, AbstractCreature owner, int amount) {
         this.ID = ID;
@@ -28,7 +29,7 @@ public abstract class AbstractInfusionPower extends AbstractPower implements Dam
     @Override
     public void onAddedDamageModsToDamageInfo(DamageInfo info, Object instigator) {
         flash();
-        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        addToBot(new ReducePowerAction(owner, owner, this, amount));
     }
 
     @Override

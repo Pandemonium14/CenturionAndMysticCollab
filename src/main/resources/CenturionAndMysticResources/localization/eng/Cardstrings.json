@@ -55,6 +55,10 @@
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",
     "UPGRADE_DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s} and Upgrade {!M!|1=it|@=them}. NL {!M!|1=It costs|@=They cost} 0 this turn."
   },
+  "${ModID}:LesserPolymorph": {
+    "NAME": "Lesser Polymorph",
+    "DESCRIPTION": "Enemy becomes a Louse. Reverts back in !M! turns or when killed. NL Exhaust."
+  },
   "${ModID}:Lifeblood": {
     "NAME": "Lifeblood",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage."

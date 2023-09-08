@@ -38,5 +38,12 @@
   "${ModID}:QuickThinkingPower": {
     "NAME": "Quick Thinking",
     "DESCRIPTIONS": ["Whenever you #ySurvey, you may take #b"," additional card."," additional cards."]
+  },
+  "${ModID}:PolymorphPower": {
+    "NAME": "Polymorphed",
+    "DESCRIPTIONS": [
+      "Next turn, or upon death, reverts back to ",
+      "In #b"," turns, or upon death, reverts back to ",
+      ". HP lost is transferred."]
   }
 }

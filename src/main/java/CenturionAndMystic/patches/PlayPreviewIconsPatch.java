@@ -15,18 +15,6 @@ public class PlayPreviewIconsPatch {
         AbstractCard card = __instance.hoveredCard;
         if (card != null) {
             if (card.baseDamage >= 0 && card.target != AbstractCard.CardTarget.ENEMY) card.calculateCardDamage(null);
-
-            /*if (card.multiDamage != null && card.multiDamage.length > 1) {
-                int i = 0;
-                for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                    for (AbstractPower p : AbstractDungeon.player.powers) {
-                        if (p instanceof PlayPreviewIconPower) {
-                            ((PlayPreviewIconPower) p).queueIconForAoE(card.multiDamage[i], m);
-                        }
-                    }
-                    i++;
-                }
-            }*/
         }
 
     }

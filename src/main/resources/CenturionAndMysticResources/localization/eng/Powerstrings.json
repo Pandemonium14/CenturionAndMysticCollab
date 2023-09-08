@@ -35,8 +35,8 @@
     "NAME": "Infuse Drain",
     "DESCRIPTIONS": ["Your next #yAttack grants #yTemporary #yHP equal to #b","% of unblocked damage dealt."]
   },
-  "${ModID}:InfuseSmitePower": {
-    "NAME": "Infuse Smite",
+  "${ModID}:InfuseHexPower": {
+    "NAME": "Infuse Hex",
     "DESCRIPTIONS": ["Your next #yAttack deals #b","% additional damage."]
   },
   "${ModID}:QuickThinkingPower": {

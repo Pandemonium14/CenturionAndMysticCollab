@@ -2,7 +2,7 @@ package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.patches.CustomTags;
-import CenturionAndMystic.powers.InfuseSmitePower;
+import CenturionAndMystic.powers.InfuseHexPower;
 import CenturionAndMystic.util.CardArtRoller;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.purple.Halt;
@@ -22,7 +22,7 @@ public class Enforce extends AbstractMysticCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Wiz.applyToSelf(new InfuseSmitePower(p, magicNumber));
+        Wiz.applyToSelf(new InfuseHexPower(p, magicNumber));
     }
 
     @Override

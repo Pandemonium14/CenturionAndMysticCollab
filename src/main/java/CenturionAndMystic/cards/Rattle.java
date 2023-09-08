@@ -1,7 +1,7 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
-import CenturionAndMystic.powers.InfuseSmitePower;
+import CenturionAndMystic.powers.InfuseHexPower;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.colorless.DarkShackles;
@@ -22,7 +22,7 @@ public class Rattle extends AbstractMysticCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.BLUNT_LIGHT);
-        Wiz.applyToSelf(new InfuseSmitePower(p, magicNumber));
+        Wiz.applyToSelf(new InfuseHexPower(p, magicNumber));
     }
 
     @Override

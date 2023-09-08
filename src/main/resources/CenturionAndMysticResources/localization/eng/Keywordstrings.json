@@ -123,11 +123,11 @@
     "DESCRIPTION": "Provides #yTemporary #HP equal to #b25% of unblocked damage dealt per stack. Temporary HP disappears at the end of combat."
   },
   {
-    "ID": "smite_damage",
-    "PROPER_NAME": "Smite Damage",
+    "ID": "hex_damage",
+    "PROPER_NAME": "Hex Damage",
     "NAMES": [
-      "smite damage",
-      "smite_damage"
+      "hex damage",
+      "hex_damage"
     ],
     "DESCRIPTION": "Your next Attack deals #b25% additional damage per stack."
   }

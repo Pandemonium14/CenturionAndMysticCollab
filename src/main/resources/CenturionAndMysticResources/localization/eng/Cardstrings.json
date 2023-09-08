@@ -60,7 +60,7 @@
   },
   "${ModID}:Enforce": {
     "NAME": "Enforce",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Smite_Damage."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex_Damage."
   },
   "${ModID}:FieldTactics": {
     "NAME": "Field Tactics",
@@ -93,15 +93,11 @@
   },
   "${ModID}:Rattle": {
     "NAME": "Rattle",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse !M! ${ModID}:Smite_Damage."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse !M! ${ModID}:Hex_Damage."
   },
   "${ModID}:RecklessGuard": {
     "NAME": "Reckless Guard",
     "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
-  },
-  "${ModID}:SacredFlame": {
-    "NAME": "Sacred Flame",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse !M! ${ModID}:Smite_Damage."
   },
   "${ModID}:SheerPower": {
     "NAME": "Sheer Power",

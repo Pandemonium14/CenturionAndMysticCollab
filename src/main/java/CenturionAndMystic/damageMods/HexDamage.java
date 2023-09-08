@@ -5,13 +5,13 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 
-public class SmiteDamage extends AbstractDamageType {
+public class HexDamage extends AbstractDamageType {
 
-    public SmiteDamage(boolean inherent) {
+    public HexDamage(boolean inherent) {
         super(inherent);
     }
 
-    public SmiteDamage(boolean inherent, int amount) {
+    public HexDamage(boolean inherent, int amount) {
         super(inherent, amount);
     }
 
@@ -22,6 +22,6 @@ public class SmiteDamage extends AbstractDamageType {
 
     @Override
     public AbstractDamageModifier makeCopy() {
-        return new SmiteDamage(inherent, amount);
+        return new HexDamage(inherent, amount);
     }
 }

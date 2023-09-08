@@ -42,6 +42,10 @@
     "NAME": "Crack Ground",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
+  "${ModID}:Crush": {
+    "NAME": "Crush",
+    "DESCRIPTION": "Deal !D! damage. NL If you do not have an ${ModID}:Infusion, deal !D! damage again."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -74,6 +78,10 @@
   "${ModID}:Lifeblood": {
     "NAME": "Lifeblood",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage."
+  },
+  "${ModID}:MaceCrash": {
+    "NAME": "Mace Crash",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage if you have an ${ModID}:Infusion."
   },
   "${ModID}:PatchUp": {
     "NAME": "Patch Up",

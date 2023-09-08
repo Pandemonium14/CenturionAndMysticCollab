@@ -14,6 +14,7 @@ import CenturionAndMystic.powers.interfaces.OnUpgradePower;
 import CenturionAndMystic.relics.AbstractEasyRelic;
 import CenturionAndMystic.ui.CenturionEnergyPanel;
 import CenturionAndMystic.ui.MysticEnergyPanel;
+import CenturionAndMystic.ui.PlayPreviewManager;
 import CenturionAndMystic.util.*;
 import CenturionAndMystic.vfx.ShaderTest;
 import basemod.AutoAdd;
@@ -26,6 +27,7 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
@@ -55,7 +57,7 @@ public class MainModfile implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, OnPlayerTurnStartSubscriber, OnStartBattleSubscriber {
+        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, OnPlayerTurnStartSubscriber, OnStartBattleSubscriber, PostRenderSubscriber {
 
     public static final String modID = "CenturionAndMystic";
     public static final Logger logger = LogManager.getLogger(MainModfile.class.getName());
@@ -405,4 +407,8 @@ public class MainModfile implements
         }
     }
 
+    @Override
+    public void receivePostRender(SpriteBatch spriteBatch) {
+        PlayPreviewManager.renderIcons(spriteBatch);
+    }
 }

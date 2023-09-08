@@ -99,6 +99,10 @@
     "NAME": "Reckless Guard",
     "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
   },
+  "${ModID}:SacredFlame": {
+    "NAME": "Sacred Flame",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse !M! ${ModID}:Smite_Damage."
+  },
   "${ModID}:SheerPower": {
     "NAME": "Sheer Power",
     "DESCRIPTION": "Attacks deal !M! additional damage while you do not have an ${ModID}:Infusion."

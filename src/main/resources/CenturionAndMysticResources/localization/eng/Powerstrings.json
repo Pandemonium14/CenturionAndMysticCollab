@@ -35,6 +35,10 @@
     "NAME": "Infuse Drain",
     "DESCRIPTIONS": ["Your next #yAttack grants #yTemporary #yHP equal to #b","% of unblocked damage dealt."]
   },
+  "${ModID}:InfuseSmitePower": {
+    "NAME": "Infuse Smite",
+    "DESCRIPTIONS": ["Your next #yAttack deals #b","% additional damage."]
+  },
   "${ModID}:QuickThinkingPower": {
     "NAME": "Quick Thinking",
     "DESCRIPTIONS": ["Whenever you #ySurvey, you may take #b"," additional card."," additional cards."]
@@ -45,5 +49,9 @@
       "Next turn, or upon death, reverts back to ",
       "In #b"," turns, or upon death, reverts back to ",
       " and HP lost is transferred."]
+  },
+  "${ModID}:SheerPowerPower": {
+    "NAME": "Sheer Power",
+    "DESCRIPTIONS": ["Attacks deal #b"," additional damage while you do not have an #yInfusion."]
   }
 }

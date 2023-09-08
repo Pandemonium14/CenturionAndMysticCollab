@@ -1,6 +1,6 @@
 package CenturionAndMystic.damageMods;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import CenturionAndMystic.actions.FastAddTemporaryHPAction;
 import com.evacipated.cardcrawl.mod.stslib.damagemods.AbstractDamageModifier;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -20,7 +20,7 @@ public class DrainDamage extends AbstractDamageType {
         if (info.type == DamageInfo.DamageType.NORMAL && info.owner != target) {
             int value = (int) (lastDamageTaken * amount * PER_STACK);
             if (lastDamageTaken > 0) {
-                addToTop(new AddTemporaryHPAction(info.owner, info.owner, value));
+                addToTop(new FastAddTemporaryHPAction(info.owner, info.owner, value));
             }
         }
     }

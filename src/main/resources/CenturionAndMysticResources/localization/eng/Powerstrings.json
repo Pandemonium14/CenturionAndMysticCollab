@@ -44,6 +44,6 @@
     "DESCRIPTIONS": [
       "Next turn, or upon death, reverts back to ",
       "In #b"," turns, or upon death, reverts back to ",
-      ". HP lost is transferred."]
+      " and HP lost is transferred."]
   }
 }

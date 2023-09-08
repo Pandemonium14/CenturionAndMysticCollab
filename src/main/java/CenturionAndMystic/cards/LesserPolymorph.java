@@ -13,7 +13,7 @@ public class LesserPolymorph extends AbstractMysticCard {
 
     public LesserPolymorph() {
         super(ID, 3, CardType.SKILL, CardRarity.RARE, CardTarget.ENEMY);
-        baseMagicNumber = magicNumber = 2;
+        baseMagicNumber = magicNumber = 1;
         exhaust = true;
     }
 

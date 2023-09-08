@@ -57,7 +57,7 @@
   },
   "${ModID}:LesserPolymorph": {
     "NAME": "Lesser Polymorph",
-    "DESCRIPTION": "Enemy becomes a Louse. Reverts back in !M! turns or when killed. NL Exhaust."
+    "DESCRIPTION": "Enemy becomes a Louse. Reverts back in !M! turn{@@}{!M!|>1=s} or when killed. NL Exhaust."
   },
   "${ModID}:Lifeblood": {
     "NAME": "Lifeblood",

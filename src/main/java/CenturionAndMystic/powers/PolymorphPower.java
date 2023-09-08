@@ -3,6 +3,7 @@ package CenturionAndMystic.powers;
 import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.combat.SmokeBombEffect;
 
 public class PolymorphPower extends AbstractPower {
     public static final String POWER_ID = MainModfile.makeID(PolymorphPower.class.getSimpleName());
@@ -85,6 +87,7 @@ public class PolymorphPower extends AbstractPower {
                 this.isDone = true;
             }
         });
+        Wiz.att(new VFXAction(new SmokeBombEffect(owner.drawX, owner.drawY)));
     }
 
     @Override

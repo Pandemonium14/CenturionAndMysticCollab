@@ -6,6 +6,7 @@ import CenturionAndMystic.damageMods.VenomDamage;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class InfuseVenomPower extends AbstractInfusionPower {
     public static final String POWER_ID = MainModfile.makeID(InfuseVenomPower.class.getSimpleName());
@@ -27,5 +28,10 @@ public class InfuseVenomPower extends AbstractInfusionPower {
     @Override
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + (int)(100*amount* AbstractDamageType.PER_STACK) + DESCRIPTIONS[1];
+    }
+
+    @Override
+    public AbstractPower makeCopy() {
+        return new InfuseVenomPower(owner, amount);
     }
 }

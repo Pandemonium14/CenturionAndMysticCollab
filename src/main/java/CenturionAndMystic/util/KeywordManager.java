@@ -19,6 +19,7 @@ public class KeywordManager {
     public static String VENOM_DAMAGE;
     public static String POISON_DAMAGE;
     public static String DRAIN_DAMAGE;
+    public static String SMITE_DAMAGE;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

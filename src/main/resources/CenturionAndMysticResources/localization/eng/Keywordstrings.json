@@ -121,5 +121,14 @@
       "drain_damage"
     ],
     "DESCRIPTION": "Provides #yTemporary #HP equal to #b25% of unblocked damage dealt per stack. Temporary HP disappears at the end of combat."
+  },
+  {
+    "ID": "smite_damage",
+    "PROPER_NAME": "Smite Damage",
+    "NAMES": [
+      "smite damage",
+      "smite_damage"
+    ],
+    "DESCRIPTION": "Your next Attack deals #b25% additional damage per stack."
   }
 ]

@@ -2,26 +2,27 @@ package CenturionAndMystic.powers;
 
 import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.damageMods.AbstractDamageType;
-import CenturionAndMystic.damageMods.DrainDamage;
+import CenturionAndMystic.damageMods.SmiteDamage;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class InfuseDrainPower extends AbstractInfusionPower {
-    public static final String POWER_ID = MainModfile.makeID(InfuseDrainPower.class.getSimpleName());
+public class InfuseSmitePower extends AbstractInfusionPower {
+    public static final String POWER_ID = MainModfile.makeID(InfuseSmitePower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public InfuseDrainPower(AbstractCreature owner, int amount) {
+    public InfuseSmitePower(AbstractCreature owner, int amount) {
         super(POWER_ID, NAME, owner, amount);
-        this.loadRegion("brutality");
+        this.loadRegion("master_smite");
         updateDescription();
     }
 
     @Override
     AbstractDamageType getDamageType() {
-        return new DrainDamage(false, amount);
+        return new SmiteDamage(false, amount);
     }
 
     @Override
@@ -31,6 +32,6 @@ public class InfuseDrainPower extends AbstractInfusionPower {
 
     @Override
     public AbstractPower makeCopy() {
-        return new InfuseDrainPower(owner, amount);
+        return new InfuseSmitePower(owner, amount);
     }
 }

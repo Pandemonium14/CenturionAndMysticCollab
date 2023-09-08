@@ -23,4 +23,9 @@ public class InfuseVenomPower extends AbstractInfusionPower {
     AbstractDamageType getDamageType() {
         return new VenomDamage(false, amount);
     }
+
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + (int)(100*amount* AbstractDamageType.PER_STACK) + DESCRIPTIONS[1];
+    }
 }

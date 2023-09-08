@@ -87,12 +87,13 @@
   },
   {
     "ID": "infuse",
-    "PROPER_NAME": "Infuse",
+    "PROPER_NAME": "Infusion",
     "NAMES": [
       "infuse",
-      "infused"
+      "infused",
+      "infusion"
     ],
-    "DESCRIPTION": "Your next Attack applies an additional effect on hit."
+    "DESCRIPTION": "Your next Attack receives an additional effect."
   },
   {
     "ID": "venom_damage",

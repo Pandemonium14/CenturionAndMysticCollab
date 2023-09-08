@@ -23,4 +23,9 @@ public class InfuseDrainPower extends AbstractInfusionPower {
     AbstractDamageType getDamageType() {
         return new DrainDamage(false, amount);
     }
+
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + (int)(100*amount* AbstractDamageType.PER_STACK) + DESCRIPTIONS[1];
+    }
 }

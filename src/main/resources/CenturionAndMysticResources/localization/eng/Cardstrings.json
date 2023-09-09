@@ -23,7 +23,7 @@
   },
   "${ModID}:BreatheLife": {
     "NAME": "Breathe Life",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage. NL Gain !M! Vigor."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage. NL Gain !M! Vigor. NL Exhaust."
   },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",

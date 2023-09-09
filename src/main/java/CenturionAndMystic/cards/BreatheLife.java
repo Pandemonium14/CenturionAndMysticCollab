@@ -17,6 +17,7 @@ public class BreatheLife extends AbstractMysticCard {
     public BreatheLife() {
         super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         baseMagicNumber = magicNumber = 4;
+        exhaust = true;
         tags.add(CustomTags.CAM_MAGIC_EFFECT);
     }
 

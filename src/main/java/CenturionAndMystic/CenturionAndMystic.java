@@ -1,9 +1,6 @@
 package CenturionAndMystic;
 
-import CenturionAndMystic.cards.Rattle;
-import CenturionAndMystic.cards.Defend;
-import CenturionAndMystic.cards.PatchUp;
-import CenturionAndMystic.cards.Strike;
+import CenturionAndMystic.cards.*;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.relics.SnakeBook;
@@ -115,13 +112,13 @@ public class CenturionAndMystic extends CustomPlayer {
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
-        retVal.add(Rattle.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Taunt.ID);
         retVal.add(Rattle.ID);
         retVal.add(Rattle.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(PatchUp.ID);
         return retVal;
     }
 

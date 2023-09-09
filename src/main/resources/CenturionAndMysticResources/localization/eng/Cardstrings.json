@@ -131,6 +131,10 @@
     "NAME": "Tap the Immaterial",
     "DESCRIPTION": "Add Ethereal to all cards in your hand. NL Whenever you Exhaust a card this turn, gain !M! Temporary_HP."
   },
+  "${ModID}:Taunt": {
+    "NAME": "Taunt",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable."
+  },
   "${ModID}:Venomize": {
     "NAME": "Venomize",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Venom_Damage."

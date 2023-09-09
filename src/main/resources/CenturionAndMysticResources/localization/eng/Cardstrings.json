@@ -66,6 +66,10 @@
     "NAME": "Field Tactics",
     "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card and a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
   },
+  "${ModID}:Fury": {
+    "NAME": "Fury",
+    "DESCRIPTION": "Deal !D! damage !M! times."
+  },
   "${ModID}:Hasten": {
     "NAME": "Hasten",
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",

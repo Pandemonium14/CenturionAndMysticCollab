@@ -15,7 +15,7 @@ public class Rattle extends AbstractMysticCard {
 
     public Rattle() {
         super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
-        baseDamage = damage = 3;
+        baseDamage = damage = 4;
         baseMagicNumber = magicNumber = 2;
     }
 

@@ -117,10 +117,10 @@ public class CenturionAndMystic extends CustomPlayer {
         retVal.add(Strike.ID);
         retVal.add(Rattle.ID);
         retVal.add(Rattle.ID);
+        retVal.add(Rattle.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(PatchUp.ID);
-        retVal.add(PatchUp.ID);
+        retVal.add(Defend.ID);
         retVal.add(PatchUp.ID);
         return retVal;
     }

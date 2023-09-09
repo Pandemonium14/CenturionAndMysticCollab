@@ -13,8 +13,8 @@ public class PatchUp extends AbstractMysticCard {
     public final static String ID = makeID(PatchUp.class.getSimpleName());
 
     public PatchUp() {
-        super(ID, 1, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 3;
+        super(ID, 2, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 7;
         tags.add(CustomTags.CAM_MAGIC_EFFECT);
     }
 

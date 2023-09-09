@@ -3,10 +3,7 @@ package CenturionAndMystic.patches;
 import CenturionAndMystic.vfx.CustomEmpowerEffect;
 import basemod.ReflectionHacks;
 import com.badlogic.gdx.math.Vector2;
-import com.evacipated.cardcrawl.modthespire.lib.SpireField;
-import com.evacipated.cardcrawl.modthespire.lib.SpireInstrumentPatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
+import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.Soul;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -65,32 +62,14 @@ public class EmpowerRedirectPatches {
 
     @SpirePatch(clz = Soul.class, method = "empower")
     public static class EmpowerRedirect {
-        public static void Postfix(Soul __instance, AbstractCard card) {
+        @SpirePostfixPatch
+        public static void patch(Soul __instance, AbstractCard card) {
             if (shouldRedirect(card)) {
                 ReflectionHacks.setPrivate(__instance, Soul.class, "target", new Vector2(getRedirectX(card), getRedirectY(card)));
                 //resetRedirect(card);
             }
         }
     }
-
-    /*@SpirePatch2(clz = Soul.class, method = "update")
-    public static class DoCirclesInTheCorrectSpotPls {
-        @SpireInstrumentPatch
-        public static ExprEditor patch() {
-            return new ExprEditor() {
-                @Override
-                public void edit(NewExpr m) throws CannotCompileException {
-                    if (m.getClassName().equals(EmpowerEffect.class.getName())) {
-                        m.replace("if (Professor.patches.EmpowerRedirectPatches.shouldRedirect(this.card)) {" +
-                                    "$1 = Professor.patches.EmpowerRedirectPatches.getRedirectX(this.card);" +
-                                    "$2 = Professor.patches.EmpowerRedirectPatches.getRedirectY(this.card);" +
-                                "}" +
-                                "$_ = $proceed($$);");
-                    }
-                }
-            };
-        }
-    }*/
 
     @SpirePatch2(clz = Soul.class, method = "update")
     public static class DoCirclesInTheCorrectSpotPls {
@@ -100,8 +79,8 @@ public class EmpowerRedirectPatches {
                 @Override
                 public void edit(MethodCall m) throws CannotCompileException {
                     if (m.getClassName().equals(ArrayList.class.getName()) && m.getMethodName().equals("add")) {
-                        m.replace("if (CenturionAndMystic.patches.EmpowerRedirectPatches.shouldRedirect(this.card)) {" +
-                                    "CenturionAndMystic.patches.EmpowerRedirectPatches.getNewEffect(this.card);" +
+                        m.replace("if ("+EmpowerRedirectPatches.class.getName()+".shouldRedirect(this.card)) {" +
+                                EmpowerRedirectPatches.class.getName()+".getNewEffect(this.card);" +
                                 "} else {" +
                                 "$_ = $proceed($$);}");
                     }

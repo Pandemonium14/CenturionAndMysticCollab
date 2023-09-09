@@ -21,7 +21,7 @@ public class ZeroAmountPowerPatches {
                     if (e.getClassName().equals(PowerBuffEffect.class.getName())) {
                         match++;
                         if (match == 2) {
-                            e.replace("$3 = CenturionAndMystic.patches.ZeroAmountPowerPatches.changeText(powerToApply, $3); $_ = $proceed($$);");
+                            e.replace("$3 = "+ZeroAmountPowerPatches.class.getName()+".changeText(powerToApply, $3); $_ = $proceed($$);");
                         }
                     }
                 }

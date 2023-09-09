@@ -121,7 +121,7 @@
   },
   "${ModID}:StandStrong": {
     "NAME": "Stand Strong",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! cards in your hand. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Shed !M! cards. NL Exhaust."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",

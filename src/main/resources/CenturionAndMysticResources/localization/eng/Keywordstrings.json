@@ -78,6 +78,15 @@
     "DESCRIPTION": "Put a card of a certain type from your draw pile in your hand. If your draw pile contains no card of that type, put a random card of that type from your discard pile to your hand."
   },
   {
+    "ID": "shed",
+    "PROPER_NAME": "Shed",
+    "NAMES": [
+      "shed",
+      "shedding"
+    ],
+    "DESCRIPTION": "#yExhaust a card in your hand. If you do, draw a card."
+  },
+  {
     "ID": "venom",
     "PROPER_NAME": "Venom",
     "NAMES": [

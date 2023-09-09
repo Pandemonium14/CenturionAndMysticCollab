@@ -32,11 +32,11 @@ public class BetterSelectCardsInHandAction extends AbstractGameAction {
         this.callback = callback;
         this.hand = AbstractDungeon.player.hand.group;
         this.tempHand = new ArrayList<>();
-        this.tempHand.addAll(this.hand);
     }
 
     public void update() {
         if (this.duration == this.startDuration) {
+            tempHand.addAll(hand);
             cardOrder.addAll(hand);
             if (this.hand.size() != 0 && this.hand.stream().anyMatch(this.predicate) && this.callback != null) {
                 if (hand.stream().filter(predicate).count() <= amount && !anyNumber && !canPickZero) {

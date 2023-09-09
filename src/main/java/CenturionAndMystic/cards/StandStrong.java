@@ -1,7 +1,7 @@
 package CenturionAndMystic.cards;
 
+import CenturionAndMystic.actions.ShedAction;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.green.Survivor;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -21,7 +21,8 @@ public class StandStrong extends AbstractCenturionCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        addToBot(new ExhaustAction(magicNumber, false, true, true));
+        addToBot(new ShedAction(magicNumber));
+        //addToBot(new ExhaustAction(magicNumber, false, true, true));
     }
 
     @Override

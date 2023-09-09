@@ -17,7 +17,7 @@ public class SnakeBite extends AbstractCenturionCard {
     public final static String ID = makeID(SnakeBite.class.getSimpleName());
 
     public SnakeBite() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 8;
         DamageModifierManager.addModifier(this, new VenomDamage(true));
     }

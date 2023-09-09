@@ -87,6 +87,10 @@
     "NAME": "Mace Crash",
     "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage if you have an ${ModID}:Infusion."
   },
+  "${ModID}:OpenWound": {
+    "NAME": "Open Wound",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Venom."
+  },
   "${ModID}:PatchUp": {
     "NAME": "Patch Up",
     "DESCRIPTION": "Gain !M! Temporary_HP."

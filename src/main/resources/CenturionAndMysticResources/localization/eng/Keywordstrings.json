@@ -120,7 +120,7 @@
       "drain damage",
       "drain_damage"
     ],
-    "DESCRIPTION": "Provides #yTemporary #HP equal to #b25% of unblocked damage dealt per stack. Temporary HP disappears at the end of combat."
+    "DESCRIPTION": "Provides #yTemporary #yHP equal to #b25% of unblocked damage dealt per stack. Temporary HP disappears at the end of combat."
   },
   {
     "ID": "hex_damage",

@@ -64,7 +64,8 @@
   },
   "${ModID}:Enforce": {
     "NAME": "Enforce",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex_Damage."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex_Damage.",
+    "UPGRADE_DESCRIPTION": "Retain. NL ${ModID}:Infuse !M! ${ModID}:Hex_Damage."
   },
   "${ModID}:FieldTactics": {
     "NAME": "Field Tactics",

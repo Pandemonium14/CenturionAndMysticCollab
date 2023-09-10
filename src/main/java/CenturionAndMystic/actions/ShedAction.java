@@ -18,6 +18,10 @@ public class ShedAction extends BetterSelectCardsInHandAction {
         this(amount, filter, l -> {});
     }
 
+    public ShedAction(int amount, Consumer<List<AbstractCard>> callback) {
+        this(amount, c -> true, callback);
+    }
+
     public ShedAction(int amount, Predicate<AbstractCard> filter, Consumer<List<AbstractCard>> callback) {
         super(amount, ExhaustAction.TEXT[0], false, false, filter, l -> {
             for (AbstractCard c : l) {

@@ -23,10 +23,13 @@ public class PolymorphAction extends AbstractGameAction {
     public void update() {
         if (AbstractDungeon.getMonsters().monsters.contains(replacedMonster)) {
             LouseDefensive lad = new LouseDefensive((replacedMonster.drawX - Settings.WIDTH * 0.75F)/Settings.xScale, (replacedMonster.drawY - AbstractDungeon.floorY)/Settings.yScale);
+            boolean old = AbstractDungeon.getCurrRoom().cannotLose;
+            AbstractDungeon.getCurrRoom().cannotLose = true;
             Wiz.applyToEnemyTop(lad, new PolymorphPower(lad, amount, replacedMonster));
             Wiz.att(new AbstractGameAction() {
                 @Override
                 public void update() {
+                    AbstractDungeon.getCurrRoom().cannotLose = old;
                     lad.usePreBattleAction();
                     lad.createIntent();
                     this.isDone = true;

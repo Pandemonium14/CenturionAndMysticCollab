@@ -104,6 +104,10 @@
     "NAME": "Patch Up",
     "DESCRIPTION": "Gain !M! Temporary_HP."
   },
+  "${ModID}:PurestSteel": {
+    "NAME": "Purest Steel",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Shed all Attack cards in your hand."
+  },
   "${ModID}:QuickThinking": {
     "NAME": "Quick Thinking",
     "DESCRIPTION": "Whenever you ${ModID}:Survey, you may take !M! additional card{@@}{!M!|>1=s}."

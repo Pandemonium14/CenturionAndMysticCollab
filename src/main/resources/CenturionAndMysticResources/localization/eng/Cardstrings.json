@@ -124,6 +124,11 @@
     "NAME": "Sheer Power",
     "DESCRIPTION": "Attacks deal !M! additional damage while you do not have an ${ModID}:Infusion."
   },
+  "${ModID}:Slither": {
+    "NAME": "Slither",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Shed !M! card{@@}{!M!|>1=s} at random.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL ${ModID}:Shed !M! card{@@}{!M!|>1=s}."
+  },
   "${ModID}:SmashAndGrab": {
     "NAME": "Smash and Grab",
     "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Survey !M! card{@@}{!M!|>1=s}."

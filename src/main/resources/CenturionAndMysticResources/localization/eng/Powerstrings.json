@@ -53,5 +53,13 @@
   "${ModID}:SheerPowerPower": {
     "NAME": "Sheer Power",
     "DESCRIPTIONS": ["Attacks deal #b"," additional damage while you do not have an #yInfusion."]
+  },
+  "${ModID}:AftermathPower": {
+    "NAME": "Aftermath",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, apply #b"," #yVenom to ALL enemies."]
+  },
+  "${ModID}:FollowMePower": {
+    "NAME": "Follow Me",
+    "DESCRIPTIONS": ["Whenever you #yCall a card, gain #b"," #yBlock."]
   }
 }

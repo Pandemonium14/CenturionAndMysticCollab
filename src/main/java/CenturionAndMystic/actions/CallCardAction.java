@@ -1,9 +1,11 @@
 package CenturionAndMystic.actions;
 
+import CenturionAndMystic.util.Wiz;
 import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,7 +57,16 @@ public class CallCardAction extends AbstractGameAction {
             validCards.remove(card);
             cardsGot++;
         }
+        for (AbstractPower p : Wiz.adp().powers) {
+            if (p instanceof OnCallPower) {
+                ((OnCallPower) p).onCall(cardsMoved);
+            }
+        }
         callback.accept(cardsMoved);
         isDone = true;
+    }
+
+    public interface OnCallPower {
+        void onCall(List<AbstractCard> calledCards);
     }
 }

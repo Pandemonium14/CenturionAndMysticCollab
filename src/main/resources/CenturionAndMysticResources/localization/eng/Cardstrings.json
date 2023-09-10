@@ -5,6 +5,10 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Aftermath": {
+    "NAME": "Aftermath",
+    "DESCRIPTION": "Whenever a card is Exhausted, apply !M! ${ModID}:Venom to ALL enemies."
+  },
   "${ModID}:Anchor": {
     "NAME": "Anchor",
     "DESCRIPTION": "Innate. NL Gain !B! Block. NL Block is not removed at the start of your next turn. NL Exhaust."
@@ -65,6 +69,10 @@
   "${ModID}:FieldTactics": {
     "NAME": "Field Tactics",
     "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card and a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
+  },
+  "${ModID}:FollowMe": {
+    "NAME": "Follow Me",
+    "DESCRIPTION": "Whenever you ${ModID}:Call a card, gain !M! Block."
   },
   "${ModID}:Fury": {
     "NAME": "Fury",

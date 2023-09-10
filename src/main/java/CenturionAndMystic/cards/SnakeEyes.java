@@ -1,7 +1,7 @@
 package CenturionAndMystic.cards;
 
+import CenturionAndMystic.actions.SnakeEyesAction;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
-import CenturionAndMystic.powers.SnakeEyesPower;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.red.SeeingRed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,13 +13,13 @@ public class SnakeEyes extends AbstractCenturionCard {
     public final static String ID = makeID(SnakeEyes.class.getSimpleName());
 
     public SnakeEyes() {
-        super(ID, 2, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 1;
+        super(ID, 2, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
+        exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Wiz.applyToSelf(new SnakeEyesPower(p));
+        Wiz.atb(new SnakeEyesAction());
     }
 
     @Override

@@ -129,7 +129,7 @@
   },
   "${ModID}:SnakeEyes": {
     "NAME": "Snake Eyes",
-    "DESCRIPTION": "This combat, set the cost of ALL cards to 1."
+    "DESCRIPTION": "Set the cost of ALL your cards to 1 for the rest of combat. NL Exhaust."
   },
   "${ModID}:StandStrong": {
     "NAME": "Stand Strong",

@@ -61,5 +61,9 @@
   "${ModID}:FollowMePower": {
     "NAME": "Follow Me",
     "DESCRIPTIONS": ["Whenever you #yCall a card, gain #b"," #yBlock."]
+  },
+  "${ModID}:SnakeEyesPower": {
+    "NAME": "Snake Eyes",
+    "DESCRIPTIONS": ["The cost of ALL cards become #b1."]
   }
 }

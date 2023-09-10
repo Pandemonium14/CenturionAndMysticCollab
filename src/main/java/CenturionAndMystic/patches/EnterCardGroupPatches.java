@@ -32,4 +32,8 @@ public class EnterCardGroupPatches {
     public interface OnEnterCardGroupCard {
         void onEnter(CardGroup g);
     }
+
+    public interface OnEnterCardGroupPower {
+        void onEnter(AbstractCard card, CardGroup group);
+    }
 }

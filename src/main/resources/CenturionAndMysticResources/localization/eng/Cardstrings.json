@@ -127,6 +127,10 @@
     "NAME": "Snake Bite",
     "DESCRIPTION": "Deal !D! damage. NL Apply ${ModID}:Venom equal to unblocked damage dealt."
   },
+  "${ModID}:SnakeEyes": {
+    "NAME": "Snake Eyes",
+    "DESCRIPTION": "This combat, set the cost of ALL cards to 1."
+  },
   "${ModID}:StandStrong": {
     "NAME": "Stand Strong",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Shed !M! cards. NL Exhaust."

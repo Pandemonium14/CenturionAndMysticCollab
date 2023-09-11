@@ -172,5 +172,9 @@
   "${ModID}:WideGuard": {
     "NAME": "Wide Guard",
     "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block."
+  },
+  "${ModID}:WindingStrike": {
+    "NAME": "Winding Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Coil."
   }
 }

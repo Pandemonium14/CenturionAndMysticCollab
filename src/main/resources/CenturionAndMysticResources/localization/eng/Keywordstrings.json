@@ -61,6 +61,14 @@
     "DESCRIPTION": "Consumes all #yTemporary #yHP to raise its damage and #yBlock for the rest of combat."
   },
   {
+    "ID": "poised",
+    "PROPER_NAME": "Poised",
+    "NAMES": [
+      "poised"
+    ],
+    "DESCRIPTION": "Deals additional damage equal to your #yCoil."
+  },
+  {
     "ID": "survey",
     "PROPER_NAME": "Survey",
     "NAMES": [

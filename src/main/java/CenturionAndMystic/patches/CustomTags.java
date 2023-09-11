@@ -12,4 +12,6 @@ public class CustomTags {
     public static AbstractCard.CardTags CAM_MAGIC_EFFECT;
     @SpireEnum
     public static AbstractCard.CardTags CAM_BASH_EFFECT;
+    @SpireEnum
+    public static AbstractCard.CardTags CAM_POISED;
 }

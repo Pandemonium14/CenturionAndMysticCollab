@@ -34,5 +34,8 @@
   },
   "${ModID}:ChargedMod": {
     "EXTENDED_DESCRIPTION": ["${ModID}:Charged. NL "]
+  },
+  "${ModID}:PoisedMod": {
+    "EXTENDED_DESCRIPTION": ["${ModID}:Poised. NL "]
   }
 }

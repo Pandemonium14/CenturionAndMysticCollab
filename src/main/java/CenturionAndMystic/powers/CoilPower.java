@@ -2,10 +2,12 @@ package CenturionAndMystic.powers;
 
 import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.cardmods.GainBlockMod;
+import CenturionAndMystic.patches.CustomTags;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.colorless.RitualDagger;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -34,7 +36,15 @@ public class CoilPower extends AbstractPower {
     }
 
     public float modifyBlock(float blockAmount) {
-        return (blockAmount += (float)this.amount) < 0.0F ? 0.0F : blockAmount;
+        return blockAmount + amount;
+    }
+
+    @Override
+    public float atDamageGive(float damage, DamageInfo.DamageType type, AbstractCard card) {
+        if (type == DamageInfo.DamageType.NORMAL && card.hasTag(CustomTags.CAM_POISED)) {
+            damage += amount;
+        }
+        return damage;
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {

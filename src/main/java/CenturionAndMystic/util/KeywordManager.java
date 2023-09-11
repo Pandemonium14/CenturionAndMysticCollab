@@ -12,6 +12,7 @@ public class KeywordManager {
     public static String STAGGER;
     public static String IMBUE;
     public static String CHARGED;
+    public static String POISED;
     public static String INFUSE;
     public static String SURVEY;
     public static String VENOM;

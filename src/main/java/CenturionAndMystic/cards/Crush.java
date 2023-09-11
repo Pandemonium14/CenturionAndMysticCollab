@@ -1,8 +1,10 @@
 package CenturionAndMystic.cards;
 
+import CenturionAndMystic.cardmods.PoisedMod;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.util.Wiz;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -20,6 +22,7 @@ public class Crush extends AbstractCenturionCard {
         super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 10;
         tags.add(CustomTags.CAM_BASH_EFFECT);
+        CardModifierManager.addModifier(this, new PoisedMod(true));
     }
 
     @Override

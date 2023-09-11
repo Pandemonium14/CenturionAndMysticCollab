@@ -1,4 +1,4 @@
-package CenturionAndMystic.cards;
+package CenturionAndMystic.cutStuff;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.powers.InfuseHexPower;

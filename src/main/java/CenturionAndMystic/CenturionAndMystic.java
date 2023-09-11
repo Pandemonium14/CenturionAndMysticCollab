@@ -111,14 +111,14 @@ public class CenturionAndMystic extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
-        retVal.add(Strike.ID);
-        retVal.add(Strike.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
         retVal.add(Taunt.ID);
-        retVal.add(Rattle.ID);
-        retVal.add(Rattle.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
+        retVal.add(Strike2.ID);
+        retVal.add(Strike2.ID);
+        retVal.add(Bless.ID);
+        retVal.add(Bless.ID);
+        retVal.add(PatchUp.ID);
         return retVal;
     }
 
@@ -167,7 +167,7 @@ public class CenturionAndMystic extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new Rattle();
+        return new Taunt();
     }
 
     @Override

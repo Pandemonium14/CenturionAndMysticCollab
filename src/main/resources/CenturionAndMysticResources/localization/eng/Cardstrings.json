@@ -19,7 +19,7 @@
   },
   "${ModID}:Bless": {
     "NAME": "Bless",
-    "DESCRIPTION": "Gain !M! Temporary_HP. NL Gain !M! Vigor."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex_Damage."
   },
   "${ModID}:BookClub": {
     "NAME": "Book Club",
@@ -154,6 +154,10 @@
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Shed !M! cards. NL Exhaust."
   },
   "${ModID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:Strike2": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },

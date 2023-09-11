@@ -7,7 +7,7 @@ public class KeywordManager {
     public static HashMap<String, String> keywordMap = new HashMap<>();
     public static String CENTURION;
     public static String MYSTIC;
-    public static String BRACED;
+    public static String COIL;
     public static String EXPOSED;
     public static String STAGGER;
     public static String IMBUE;

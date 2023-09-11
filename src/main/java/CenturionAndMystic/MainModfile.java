@@ -6,7 +6,7 @@ import CenturionAndMystic.cards.interfaces.GlowAdjacentCard;
 import CenturionAndMystic.icons.IconContainer;
 import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.patches.GlowChangePatch;
-import CenturionAndMystic.powers.BracedPower;
+import CenturionAndMystic.powers.CoilPower;
 import CenturionAndMystic.powers.StaggerPower;
 import CenturionAndMystic.powers.UnstablePower;
 import CenturionAndMystic.powers.interfaces.InfusionTriggerPower;
@@ -282,7 +282,7 @@ public class MainModfile implements
 
         //Add Powers
         BaseMod.addPower(UnstablePower.class, UnstablePower.POWER_ID);
-        BaseMod.addPower(BracedPower.class, BracedPower.POWER_ID);
+        BaseMod.addPower(CoilPower.class, CoilPower.POWER_ID);
         BaseMod.addPower(StaggerPower.class, StaggerPower.POWER_ID);
 
         //Wide Potions

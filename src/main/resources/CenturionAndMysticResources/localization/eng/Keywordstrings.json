@@ -16,10 +16,11 @@
     "DESCRIPTION": "Mystic Energy may only be spent on Mystic cards."
   },
   {
-    "ID": "braced",
-    "PROPER_NAME": "Braced",
+    "ID": "coil",
+    "PROPER_NAME": "Coil",
     "NAMES": [
-      "braced"
+      "coil",
+      "coiled"
     ],
     "DESCRIPTION": "Your next #yBlock gaining card gains additional #yBlock."
   },

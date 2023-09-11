@@ -75,6 +75,10 @@
     "NAME": "Follow Me",
     "DESCRIPTION": "Whenever you ${ModID}:Call a card, gain !M! Block."
   },
+  "${ModID}:FullForce": {
+    "NAME": "Full Force",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
   "${ModID}:Fury": {
     "NAME": "Fury",
     "DESCRIPTION": "Deal !D! damage !M! times."

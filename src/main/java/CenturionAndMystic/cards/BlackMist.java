@@ -35,7 +35,7 @@ public class BlackMist extends AbstractMysticCard {
     @Override
     public void upp() {
         upgradeMagicNumber(1);
-        upgradeSecondDamage(1);
+        upgradeSecondMagic(1);
     }
 
     @Override

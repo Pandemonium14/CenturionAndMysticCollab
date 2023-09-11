@@ -1,7 +1,7 @@
 package CenturionAndMystic.cards.abstracts;
 
-import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.CenturionAndMystic;
+import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.util.CardArtRoller;
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
@@ -16,7 +16,6 @@ import com.evacipated.cardcrawl.mod.stslib.patches.HitboxRightClick;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -364,7 +363,6 @@ public abstract class AbstractEasyCard extends CustomCard {
 
     public void clickUpdate() {
         if (!AbstractDungeon.isScreenUp && HitboxRightClick.rightClicked.get(this.hb) && !AbstractDungeon.actionManager.turnHasEnded && AbstractDungeon.player.hand.contains(this)) {
-            addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand, true));
             onRightClick();
         }
     }

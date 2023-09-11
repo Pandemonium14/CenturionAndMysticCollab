@@ -17,7 +17,7 @@ public class Crush extends AbstractCenturionCard {
     public final static String ID = makeID(Crush.class.getSimpleName());
 
     public Crush() {
-        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 10;
         tags.add(CustomTags.CAM_BASH_EFFECT);
     }

@@ -120,6 +120,10 @@
     "NAME": "Reckless Guard",
     "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
   },
+  "${ModID}:Sequester": {
+    "NAME": "Sequester",
+    "DESCRIPTION": "Exhaust a card. NL At the start of your next !M! turns, add a copy of it into your hand."
+  },
   "${ModID}:SheerPower": {
     "NAME": "Sheer Power",
     "DESCRIPTION": "Attacks deal !M! additional damage while you do not have an ${ModID}:Infusion."

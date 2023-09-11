@@ -65,5 +65,10 @@
   "${ModID}:SnakeEyesPower": {
     "NAME": "Snake Eyes",
     "DESCRIPTIONS": ["The cost of ALL cards become #b1."]
+  },
+  "${ModID}:SequesterPower": {
+    "NAME": "Sequester",
+    "DESCRIPTIONS": ["At the start of your next turn, add a "," into your hand.",
+      "At the start of your next #b"," turns, add a "," into your hand."]
   }
 }

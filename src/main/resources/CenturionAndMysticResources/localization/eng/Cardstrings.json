@@ -180,5 +180,9 @@
   "${ModID}:WindingStrike": {
     "NAME": "Winding Strike",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Coil."
+  },
+  "${ModID}:InstigatingBlow": {
+    "NAME": "Instigating Blow",
+    "DESCRIPTION": "${ModID}:Starter. NL Deal !D! damage."
   }
 }

@@ -27,6 +27,7 @@ import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -34,6 +35,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.RestRoom;
+import com.megacrit.cardcrawl.scenes.TheCityScene;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
@@ -273,8 +275,6 @@ public class CenturionAndMystic extends CustomPlayer {
     public void renderPlayerImage(SpriteBatch sb) {
         flipHorizontal = !flipHorizontal;
         super.renderPlayerImage(sb);
-
-
         if (AbstractDungeon.getCurrMapNode() != null && !(AbstractDungeon.getCurrRoom() instanceof RestRoom)) {// 2120
             if (this.atlas != null && !(boolean) ReflectionHacks.getPrivate(this, AbstractPlayer.class, "renderCorpse")) {
                 renderMystic(sb);
@@ -285,10 +285,15 @@ public class CenturionAndMystic extends CustomPlayer {
 
     private void renderMystic(SpriteBatch sb) {
         float mX = drawX - 240 * Settings.scale;
+        float mY = drawY;
+        if (AbstractDungeon.scene instanceof TheCityScene && ReflectionHacks.<Boolean>getPrivate(AbstractDungeon.scene, TheCityScene.class, "renderMg")) {
+            mX += 85f * Settings.scale;
+            mY -= 15f * Settings.scale;
+        }
         mysticState.update(Gdx.graphics.getDeltaTime());// 2157
         mysticState.apply(mysticSkeleton);// 2158
         mysticSkeleton.updateWorldTransform();// 2159
-        mysticSkeleton.setPosition(mX + this.animX, this.drawY + this.animY);// 2160
+        mysticSkeleton.setPosition(mX + this.animX, mY + this.animY);// 2160
         mysticSkeleton.setColor(this.tint.color);// 2163
         mysticSkeleton.setFlip(this.flipHorizontal, this.flipVertical);// 2164
         sb.end();// 2165

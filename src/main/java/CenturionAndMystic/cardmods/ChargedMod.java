@@ -51,7 +51,7 @@ public class ChargedMod extends AbstractCardModifier {
         if (card.baseBlock >= 0 && !(card instanceof RitualDagger)) {
             Wiz.atb(new ModifyBlockAction(card.uuid, TempHPField.tempHp.get(Wiz.adp())));
         }
-        Wiz.atb(new RemoveAllTemporaryHPAction(Wiz.adp(), Wiz.adp()));
+        Wiz.att(new RemoveAllTemporaryHPAction(Wiz.adp(), Wiz.adp()));
     }
 
     @Override

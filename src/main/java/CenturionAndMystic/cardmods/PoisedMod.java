@@ -3,6 +3,7 @@ package CenturionAndMystic.cardmods;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.util.FormatHelper;
 import basemod.abstracts.AbstractCardModifier;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 
@@ -18,7 +19,7 @@ public class PoisedMod extends AbstractCardModifier {
     }
 
     public boolean shouldApply(AbstractCard card) {
-        return !card.hasTag(CustomTags.CAM_POISED);
+        return !CardModifierManager.hasModifier(card, ID);
     }
 
     public void onInitialApplication(AbstractCard card) {

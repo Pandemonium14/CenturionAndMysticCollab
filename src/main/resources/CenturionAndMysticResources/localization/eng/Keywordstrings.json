@@ -148,5 +148,22 @@
       "hex_damage"
     ],
     "DESCRIPTION": "Your next Attack deals #b25% additional damage per stack."
+  },
+  {
+    "ID": "starter",
+    "PROPER_NAME": "Starter",
+    "NAMES": [
+      "starter"
+    ],
+    "DESCRIPTION": "Start a #yCombo. Whenever you play a card during a #yCombo, gain #yVigor equal to the number of cards played during this #yCombo. Ends at the end of your turn or if you play two cards of the same energy type in a row."
+  },
+  {
+    "ID": "combo",
+    "PROPER_NAME": "Combo",
+    "NAMES": [
+      "combo"
+    ],
+    "DESCRIPTION": "Whenever you play a card during a #yCombo, gain #yVigor equal to the number of cards played during this #yCombo. Ends at the end of your turn or if you play two cards of the same energy type in a row."
   }
+
 ]

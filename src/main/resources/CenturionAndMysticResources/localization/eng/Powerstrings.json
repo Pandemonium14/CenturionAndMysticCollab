@@ -70,5 +70,9 @@
     "NAME": "Sequester",
     "DESCRIPTIONS": ["At the start of your next turn, add a "," into your hand.",
       "At the start of your next #b"," turns, add a "," into your hand."]
+  },
+  "${ModID}:ComboPower": {
+    "NAME": "Combo",
+    "DESCRIPTIONS": ["Gain #b", " #yVigor when you play a card. Ends instead if you play two cards of the same energy type in a row."]
   }
 }

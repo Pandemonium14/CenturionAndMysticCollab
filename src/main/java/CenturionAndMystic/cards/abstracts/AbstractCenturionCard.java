@@ -3,8 +3,10 @@ package CenturionAndMystic.cards.abstracts;
 import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.util.CardArtRoller;
+import com.badlogic.gdx.graphics.Color;
 
 public abstract class AbstractCenturionCard extends AbstractEasyCard {
+    public static final Color CENTURION_ART_COLOR = mix(BLACK, pastel(AZURE));
     public AbstractCenturionCard(String cardID, int cost, CardType type, CardRarity rarity, CardTarget target) {
         super(cardID, cost, type, rarity, target);
         switch (type) {
@@ -40,6 +42,6 @@ public abstract class AbstractCenturionCard extends AbstractEasyCard {
     }
 
     public CardArtRoller.ReskinInfo reskinInfo(String ID) {
-        return new CardArtRoller.ReskinInfo(ID, WHITE, BLACK, WHITE, WHITE, false);
+        return new CardArtRoller.ReskinInfo(ID, WHITE, BLACK, WHITE, CENTURION_ART_COLOR, false);
     }
 }

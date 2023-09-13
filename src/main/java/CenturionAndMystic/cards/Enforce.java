@@ -3,7 +3,6 @@ package CenturionAndMystic.cards;
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.powers.InfuseHexPower;
-import CenturionAndMystic.util.CardArtRoller;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.purple.Halt;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -36,10 +35,5 @@ public class Enforce extends AbstractMysticCard {
     @Override
     public String cardArtCopy() {
         return Halt.ID;
-    }
-
-    @Override
-    public CardArtRoller.ReskinInfo reskinInfo(String ID) {
-        return new CardArtRoller.ReskinInfo(ID, WHITE, BLACK, WHITE, BLACK, false);
     }
 }

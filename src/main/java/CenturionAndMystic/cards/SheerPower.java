@@ -2,7 +2,6 @@ package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.powers.SheerPowerPower;
-import CenturionAndMystic.util.CardArtRoller;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.red.LimitBreak;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -31,10 +30,5 @@ public class SheerPower extends AbstractMysticCard {
     @Override
     public String cardArtCopy() {
         return LimitBreak.ID;
-    }
-
-    @Override
-    public CardArtRoller.ReskinInfo reskinInfo(String ID) {
-        return new CardArtRoller.ReskinInfo(ID, WHITE, BLACK, WHITE, BLACK, false);
     }
 }

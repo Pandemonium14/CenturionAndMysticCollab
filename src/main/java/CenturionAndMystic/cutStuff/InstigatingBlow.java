@@ -1,10 +1,9 @@
-package CenturionAndMystic.cards;
+package CenturionAndMystic.cutStuff;
 
 import CenturionAndMystic.actions.StarterAction;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.patches.CustomTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.red.Rage;
 import com.megacrit.cardcrawl.cards.red.SecondWind;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;

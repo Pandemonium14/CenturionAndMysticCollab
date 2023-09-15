@@ -21,6 +21,7 @@ public class KeywordManager {
     public static String NOX;
     public static String DRAIN;
     public static String HEX;
+    public static String MIGHT;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

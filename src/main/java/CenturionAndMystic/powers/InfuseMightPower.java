@@ -46,7 +46,7 @@ public class InfuseMightPower extends AbstractInfusionPower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + (int)(100*amount* AbstractDamageType.PER_STACK) + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 
     @Override

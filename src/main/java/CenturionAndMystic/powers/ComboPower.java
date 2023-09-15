@@ -13,8 +13,7 @@ import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import static CenturionAndMystic.MainModfile.makeID;
 
 public class ComboPower extends AbstractEasyPower {
-
-    public static String POWER_ID = makeID(AftermathPower.class.getSimpleName());
+    public static String POWER_ID = makeID(ComboPower.class.getSimpleName());
     public static PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = strings.NAME;
     public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;

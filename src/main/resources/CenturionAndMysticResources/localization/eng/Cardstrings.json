@@ -27,7 +27,7 @@
   },
   "${ModID}:BreatheLife": {
     "NAME": "Breathe Life",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain. NL Gain !M! Vigor. NL Exhaust."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain. NL ${ModID}:Infuse !M! ${ModID}:Might. NL Exhaust."
   },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
@@ -65,7 +65,7 @@
   },
   "${ModID}:Empower": {
     "NAME": "Empower",
-    "DESCRIPTION": "Gain !M! Vigor."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Might."
   },
   "${ModID}:Enforce": {
     "NAME": "Enforce",

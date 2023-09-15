@@ -97,6 +97,10 @@
     "NAME": "Lifeblood",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage."
   },
+  "${ModID}:LifeToLifeless": {
+    "NAME": "Life to Lifeless",
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, they lose HP equal to {@@}{!M!|>1=!M! times }its amount."
+  },
   "${ModID}:MaceCrash": {
     "NAME": "Mace Crash",
     "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage if you have an ${ModID}:Infusion."

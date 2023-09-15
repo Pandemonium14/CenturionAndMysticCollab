@@ -74,5 +74,9 @@
   "${ModID}:ComboPower": {
     "NAME": "Combo",
     "DESCRIPTIONS": ["Gain #b", " #yVigor when you play a card. Ends instead if you play two cards of the same energy type in a row."]
+  },
+  "${ModID}:LifeToLifelessPower": {
+    "NAME": "Lifeless",
+    "DESCRIPTIONS": ["Whenever you apply a debuff to an enemy, they lose HP equal to its amount.","Whenever you apply a debuff to an enemy, they lose HP equal to #b"," times its amount."]
   }
 }

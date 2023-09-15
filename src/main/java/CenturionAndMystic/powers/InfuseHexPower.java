@@ -3,8 +3,11 @@ package CenturionAndMystic.powers;
 import CenturionAndMystic.MainModfile;
 import CenturionAndMystic.damageMods.AbstractDamageType;
 import CenturionAndMystic.damageMods.HexDamage;
+import CenturionAndMystic.vfx.ColoredWrathParticleEffect;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -23,6 +26,11 @@ public class InfuseHexPower extends AbstractInfusionPower {
     @Override
     AbstractDamageType getDamageType() {
         return new HexDamage(false, amount);
+    }
+
+    @Override
+    void doVFX() {
+        AbstractDungeon.effectsQueue.add(new ColoredWrathParticleEffect(Color.RED));
     }
 
     @Override

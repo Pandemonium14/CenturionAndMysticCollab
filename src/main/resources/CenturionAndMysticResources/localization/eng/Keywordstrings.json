@@ -146,6 +146,14 @@
     "DESCRIPTION": "This #yInfusion makes your next Attack deal #b25% additional damage per stack."
   },
   {
+    "ID": "might",
+    "PROPER_NAME": "Might",
+    "NAMES": [
+      "might"
+    ],
+    "DESCRIPTION": "This #yInfusion makes your next Attack deal additional damage for the rest of combat."
+  },
+  {
     "ID": "starter",
     "PROPER_NAME": "Starter",
     "NAMES": [

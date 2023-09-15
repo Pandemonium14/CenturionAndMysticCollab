@@ -6,9 +6,7 @@ import CenturionAndMystic.cards.interfaces.GlowAdjacentCard;
 import CenturionAndMystic.icons.IconContainer;
 import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.patches.GlowChangePatch;
-import CenturionAndMystic.powers.CoilPower;
-import CenturionAndMystic.powers.StaggerPower;
-import CenturionAndMystic.powers.UnstablePower;
+import CenturionAndMystic.powers.*;
 import CenturionAndMystic.powers.interfaces.InfusionTriggerPower;
 import CenturionAndMystic.powers.interfaces.OnUpgradePower;
 import CenturionAndMystic.relics.AbstractEasyRelic;
@@ -284,6 +282,12 @@ public class MainModfile implements
         BaseMod.addPower(UnstablePower.class, UnstablePower.POWER_ID);
         BaseMod.addPower(CoilPower.class, CoilPower.POWER_ID);
         BaseMod.addPower(StaggerPower.class, StaggerPower.POWER_ID);
+
+        BaseMod.addPower(InfuseMightPower.class, InfuseMightPower.POWER_ID);
+        BaseMod.addPower(InfuseHexPower.class, InfuseHexPower.POWER_ID);
+        BaseMod.addPower(InfusePoisonPower.class, InfusePoisonPower.POWER_ID);
+        BaseMod.addPower(InfuseDrainPower.class, InfuseDrainPower.POWER_ID);
+        BaseMod.addPower(InfuseVenomPower.class, InfuseVenomPower.POWER_ID);
 
         //Wide Potions
         if (Loader.isModLoaded("widepotions")) {

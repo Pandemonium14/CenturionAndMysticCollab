@@ -39,6 +39,10 @@
     "NAME": "Hex Infusion",
     "DESCRIPTIONS": ["Your next #yAttack deals #b","% additional damage."]
   },
+  "${ModID}:InfuseMightPower": {
+    "NAME": "Might Infusion",
+    "DESCRIPTIONS": ["Your next #yAttack deals #b"," additional damage for the rest of combat."]
+  },
   "${ModID}:QuickThinkingPower": {
     "NAME": "Quick Thinking",
     "DESCRIPTIONS": ["Whenever you #ySurvey, you may take #b"," additional card."," additional cards."]

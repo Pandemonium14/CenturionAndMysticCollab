@@ -19,7 +19,7 @@
   },
   "${ModID}:Bless": {
     "NAME": "Bless",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Might. NL Gain !M! Temporary_HP."
   },
   "${ModID}:BookClub": {
     "NAME": "Book Club",

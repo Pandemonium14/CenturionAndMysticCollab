@@ -114,40 +114,36 @@
     "DESCRIPTION": "Your next Attack receives an additional effect."
   },
   {
-    "ID": "venom_damage",
-    "PROPER_NAME": "Venom Damage",
+    "ID": "toxin",
+    "PROPER_NAME": "Toxin",
     "NAMES": [
-      "venom damage",
-      "venom_damage"
+      "toxin"
     ],
-    "DESCRIPTION": "Applies #yVenom equal to #b25% of unblocked damage dealt per stack. Venom is spent to increase unblocked damage received, up to twice the original damage."
+    "DESCRIPTION": "This #yInfusion applies #yVenom equal to #b25% of unblocked damage dealt per stack. Venom is spent to increase unblocked damage received, up to twice the original damage."
   },
   {
-    "ID": "poison_damage",
-    "PROPER_NAME": "Poison Damage",
+    "ID": "nox",
+    "PROPER_NAME": "Nox",
     "NAMES": [
-      "poison damage",
-      "poison_damage"
+      "nox"
     ],
-    "DESCRIPTION": "Applies #yPoison equal to #b25% of unblocked damage dealt per stack. Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by #b1."
+    "DESCRIPTION": "This #yInfusion applies #yPoison equal to #b25% of unblocked damage dealt per stack. Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by #b1."
   },
   {
-    "ID": "drain_damage",
-    "PROPER_NAME": "Drain Damage",
+    "ID": "drain",
+    "PROPER_NAME": "Drain",
     "NAMES": [
-      "drain damage",
-      "drain_damage"
+      "drain"
     ],
-    "DESCRIPTION": "Provides #yTemporary #yHP equal to #b25% of unblocked damage dealt per stack. Temporary HP disappears at the end of combat."
+    "DESCRIPTION": "This #yInfusion provides #yTemporary #yHP equal to #b25% of unblocked damage dealt per stack. Temporary HP disappears at the end of combat."
   },
   {
-    "ID": "hex_damage",
-    "PROPER_NAME": "Hex Damage",
+    "ID": "hex",
+    "PROPER_NAME": "Hex",
     "NAMES": [
-      "hex damage",
-      "hex_damage"
+      "hex"
     ],
-    "DESCRIPTION": "Your next Attack deals #b25% additional damage per stack."
+    "DESCRIPTION": "This #yInfusion makes your next Attack deal #b25% additional damage per stack."
   },
   {
     "ID": "starter",

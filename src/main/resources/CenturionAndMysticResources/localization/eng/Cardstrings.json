@@ -19,7 +19,7 @@
   },
   "${ModID}:Bless": {
     "NAME": "Bless",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex_Damage."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex."
   },
   "${ModID}:BookClub": {
     "NAME": "Book Club",
@@ -27,7 +27,7 @@
   },
   "${ModID}:BreatheLife": {
     "NAME": "Breathe Life",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage. NL Gain !M! Vigor. NL Exhaust."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain. NL Gain !M! Vigor. NL Exhaust."
   },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
@@ -65,8 +65,8 @@
   },
   "${ModID}:Enforce": {
     "NAME": "Enforce",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex_Damage.",
-    "UPGRADE_DESCRIPTION": "Retain. NL ${ModID}:Infuse !M! ${ModID}:Hex_Damage."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex.",
+    "UPGRADE_DESCRIPTION": "Retain. NL ${ModID}:Infuse !M! ${ModID}:Hex."
   },
   "${ModID}:FieldTactics": {
     "NAME": "Field Tactics",
@@ -99,7 +99,7 @@
   },
   "${ModID}:Lifeblood": {
     "NAME": "Lifeblood",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain_Damage."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain."
   },
   "${ModID}:LifeToLifeless": {
     "NAME": "Life to Lifeless",
@@ -127,7 +127,7 @@
   },
   "${ModID}:Rattle": {
     "NAME": "Rattle",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse !M! ${ModID}:Hex_Damage."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse !M! ${ModID}:Hex."
   },
   "${ModID}:RecklessGuard": {
     "NAME": "Reckless Guard",
@@ -180,7 +180,7 @@
   },
   "${ModID}:Venomize": {
     "NAME": "Venomize",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Venom_Damage."
+    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Toxin."
   },
   "${ModID}:WideGuard": {
     "NAME": "Wide Guard",

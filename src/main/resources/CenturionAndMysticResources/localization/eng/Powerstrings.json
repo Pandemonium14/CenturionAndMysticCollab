@@ -24,19 +24,19 @@
     "DESCRIPTIONS": ["Venom is spent to increase unblocked damage received, up to double the original damage."]
   },
   "${ModID}:InfusePoisonPower": {
-    "NAME": "Infuse Poison",
+    "NAME": "Nox Infusion",
     "DESCRIPTIONS": ["Your next #yAttack applies #yPoison equal to #b","% of unblocked damage dealt."]
   },
   "${ModID}:InfuseVenomPower": {
-    "NAME": "Infuse Venom",
+    "NAME": "Toxin Infusion",
     "DESCRIPTIONS": ["Your next #yAttack applies #yVenom equal to #b","% of unblocked damage dealt."]
   },
   "${ModID}:InfuseDrainPower": {
-    "NAME": "Infuse Drain",
+    "NAME": "Drain Infusion",
     "DESCRIPTIONS": ["Your next #yAttack grants #yTemporary #yHP equal to #b","% of unblocked damage dealt."]
   },
   "${ModID}:InfuseHexPower": {
-    "NAME": "Infuse Hex",
+    "NAME": "Hex Infusion",
     "DESCRIPTIONS": ["Your next #yAttack deals #b","% additional damage."]
   },
   "${ModID}:QuickThinkingPower": {

@@ -17,10 +17,10 @@ public class KeywordManager {
     public static String SURVEY;
     public static String VENOM;
 
-    public static String VENOM_DAMAGE;
-    public static String POISON_DAMAGE;
-    public static String DRAIN_DAMAGE;
-    public static String HEX_DAMAGE;
+    public static String TOXIN;
+    public static String NOX;
+    public static String DRAIN;
+    public static String HEX;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

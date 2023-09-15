@@ -27,7 +27,6 @@ import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -118,9 +117,9 @@ public class CenturionAndMystic extends CustomPlayer {
         retVal.add(Taunt.ID);
         retVal.add(Strike2.ID);
         retVal.add(Strike2.ID);
-        retVal.add(Bless.ID);
-        retVal.add(Bless.ID);
-        retVal.add(PatchUp.ID);
+        retVal.add(Defend2.ID);
+        retVal.add(Defend2.ID);
+        retVal.add(Rattle.ID);
         return retVal;
     }
 

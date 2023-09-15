@@ -55,6 +55,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:Defend2": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
   "${ModID}:Distract": {
     "NAME": "Distract",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Call !M! ${ModID}:Mystic card{@@}{!M!|>1=s}."

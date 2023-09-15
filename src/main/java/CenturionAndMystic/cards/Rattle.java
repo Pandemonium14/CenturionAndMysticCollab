@@ -1,4 +1,4 @@
-package CenturionAndMystic.cutStuff;
+package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.powers.InfuseHexPower;
@@ -14,8 +14,8 @@ public class Rattle extends AbstractMysticCard {
     public final static String ID = makeID(Rattle.class.getSimpleName());
 
     public Rattle() {
-        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
-        baseDamage = damage = 4;
+        super(ID, 2, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
+        baseDamage = damage = 9;
         baseMagicNumber = magicNumber = 2;
     }
 
@@ -27,7 +27,7 @@ public class Rattle extends AbstractMysticCard {
 
     @Override
     public void upp() {
-        upgradeDamage(1);
+        upgradeDamage(2);
         upgradeMagicNumber(1);
     }
 

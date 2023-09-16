@@ -47,6 +47,10 @@
     "NAME": "Crack Ground",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
+  "${ModID}:CripplingDarts": {
+    "NAME": "Crippling Darts",
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply !M! Weak."
+  },
   "${ModID}:Crush": {
     "NAME": "Crush",
     "DESCRIPTION": "Deal !D! damage. NL If you do not have an ${ModID}:Infusion, deal !D! damage again."

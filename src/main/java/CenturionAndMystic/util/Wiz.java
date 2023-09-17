@@ -3,6 +3,7 @@ package CenturionAndMystic.util;
 import CenturionAndMystic.CenturionAndMystic;
 import CenturionAndMystic.actions.TimedVFXAction;
 import CenturionAndMystic.patches.CardCounterPatches;
+import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.powers.AbstractInfusionPower;
 import CenturionAndMystic.powers.LosePowerPower;
@@ -301,5 +302,13 @@ public class Wiz {
 
     public static boolean hasInfusion() {
         return AbstractDungeon.player.powers.stream().anyMatch(p -> p instanceof AbstractInfusionPower);
+    }
+
+    public static boolean isMysticCard(AbstractCard c) {
+        return EnergyPatches.isMysticCard(c);
+    }
+
+    public static boolean isCenturionCard(AbstractCard c) {
+        return EnergyPatches.isCenturionCard(c);
     }
 }

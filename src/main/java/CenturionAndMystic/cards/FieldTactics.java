@@ -2,7 +2,6 @@ package CenturionAndMystic.cards;
 
 import CenturionAndMystic.actions.CallCardAction;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
-import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.colorless.MasterOfStrategy;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -21,8 +20,8 @@ public class FieldTactics extends AbstractCenturionCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new CallCardAction(1, c -> c.hasTag(CustomTags.CAM_CENTURION_CARD)));
-        addToBot(new CallCardAction(1, c -> c.hasTag(CustomTags.CAM_MYSTIC_CARD)));
+        addToBot(new CallCardAction(1, Wiz::isCenturionCard));
+        addToBot(new CallCardAction(1, Wiz::isMysticCard));
         Wiz.applyToSelf(new DrawCardNextTurnPower(p, magicNumber));
     }
 

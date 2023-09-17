@@ -13,7 +13,6 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class CallCardAction extends AbstractGameAction {
-    private final int amount;
     private final Predicate<AbstractCard> filter;
     private final Consumer<List<AbstractCard>> callback;
     private final List<AbstractCard> cardsMoved = new ArrayList<>();
@@ -30,6 +29,11 @@ public class CallCardAction extends AbstractGameAction {
 
     @Override
     public void update() {
+        for (AbstractPower p : Wiz.adp().powers) {
+            if (p instanceof CallMoreCardsPower) {
+                amount += ((CallMoreCardsPower) p).bonusCalls();
+            }
+        }
         ArrayList<AbstractCard> validCards = new ArrayList<>();
         boolean fromDiscardPile = false;
         for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
@@ -71,6 +75,10 @@ public class CallCardAction extends AbstractGameAction {
 
     public interface OnCallPower {
         void onCall(List<AbstractCard> calledCards);
+    }
+
+    public interface CallMoreCardsPower {
+        int bonusCalls();
     }
 
     public interface OnCallThisCard {

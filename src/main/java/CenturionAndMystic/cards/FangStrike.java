@@ -3,7 +3,7 @@ package CenturionAndMystic.cards;
 import CenturionAndMystic.actions.CallCardAction;
 import CenturionAndMystic.cardmods.PoisedMod;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
-import CenturionAndMystic.patches.CustomTags;
+import CenturionAndMystic.util.Wiz;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.red.Disarm;
@@ -41,6 +41,6 @@ public class FangStrike extends AbstractCenturionCard implements CallCardAction.
     @Override
     public void onCalled() {
         superFlash();
-        addToBot(new CallCardAction(magicNumber, c -> c.hasTag(CustomTags.CAM_CENTURION_CARD)));
+        addToBot(new CallCardAction(magicNumber, Wiz::isCenturionCard));
     }
 }

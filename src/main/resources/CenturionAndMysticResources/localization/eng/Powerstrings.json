@@ -45,7 +45,7 @@
   },
   "${ModID}:QuickThinkingPower": {
     "NAME": "Quick Thinking",
-    "DESCRIPTIONS": ["Whenever you #ySurvey, you may take #b"," additional card."," additional cards."]
+    "DESCRIPTIONS": ["Whenever you #yCall, #yCall #b"," additional card."," additional cards."]
   },
   "${ModID}:PolymorphPower": {
     "NAME": "Polymorphed",

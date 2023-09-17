@@ -2,7 +2,7 @@ package CenturionAndMystic.cards;
 
 import CenturionAndMystic.actions.CallCardAction;
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
-import CenturionAndMystic.patches.CustomTags;
+import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Blur;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -20,7 +20,7 @@ public class Hasten extends AbstractMysticCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new CallCardAction(magicNumber, c -> c.hasTag(CustomTags.CAM_CENTURION_CARD), l -> {
+        addToBot(new CallCardAction(magicNumber, Wiz::isCenturionCard, l -> {
             for (AbstractCard c : l) {
                 c.setCostForTurn(0);
                 if (upgraded && c.canUpgrade()) {

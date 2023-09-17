@@ -86,7 +86,7 @@
   },
   "${ModID}:FieldTactics": {
     "NAME": "Field Tactics",
-    "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card and a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
+    "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card. NL ${ModID}:Call a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
   },
   "${ModID}:FollowMe": {
     "NAME": "Follow Me",
@@ -143,7 +143,7 @@
   },
   "${ModID}:QuickThinking": {
     "NAME": "Quick Thinking",
-    "DESCRIPTION": "Whenever you ${ModID}:Survey, you may take !M! additional card{@@}{!M!|>1=s}."
+    "DESCRIPTION": "Whenever you ${ModID}:Call, ${ModID}:Call !M! additional card{@@}{!M!|>1=s}."
   },
   "${ModID}:Rattle": {
     "NAME": "Rattle",

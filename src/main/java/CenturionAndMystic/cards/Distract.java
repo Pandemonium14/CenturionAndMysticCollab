@@ -2,7 +2,7 @@ package CenturionAndMystic.cards;
 
 import CenturionAndMystic.actions.CallCardAction;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
-import CenturionAndMystic.patches.CustomTags;
+import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.green.Distraction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -21,7 +21,7 @@ public class Distract extends AbstractCenturionCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        addToBot(new CallCardAction(magicNumber, c -> c.hasTag(CustomTags.CAM_MYSTIC_CARD)));
+        addToBot(new CallCardAction(magicNumber, Wiz::isMysticCard));
     }
 
     @Override

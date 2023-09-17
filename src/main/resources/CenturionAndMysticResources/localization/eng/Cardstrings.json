@@ -31,7 +31,7 @@
   },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
-    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL ${ModID}:Survey !M! card{!M!|>1=s}."
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Choose 1 of !M! random card{!M!|>1=s} in your draw pile to add into your hand."
   },
   "${ModID}:Concoct": {
     "NAME": "Concoct",

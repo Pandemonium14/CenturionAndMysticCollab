@@ -16,7 +16,7 @@ public class CripplingDarts extends AbstractMysticCard {
     public final static String ID = makeID(CripplingDarts.class.getSimpleName());
 
     public CripplingDarts() {
-        super(ID, 2, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
         baseDamage = damage = 5;
         baseMagicNumber = magicNumber = 2;
     }

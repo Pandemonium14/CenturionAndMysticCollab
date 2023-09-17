@@ -43,8 +43,8 @@
   },
   "${ModID}:Connection": {
     "NAME": "Connection",
-    "DESCRIPTION": "Ethereal. NL When you draw this card, lose all [${ModID}:CenturionIcon] and [${ModID}:MysticIcon] . NL Gain that much [E].",
-    "UPGRADE_DESCRIPTION": "When you draw this card, lose all [${ModID}:CenturionIcon] and [${ModID}:MysticIcon] . NL Gain that much [E].",
+    "DESCRIPTION": "Unplayable. Ethereal. NL When you draw this card, lose all [${ModID}:CenturionIcon] and [${ModID}:MysticIcon] . NL Gain that much [E].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When you draw this card, lose all [${ModID}:CenturionIcon] and [${ModID}:MysticIcon] . NL Gain that much [E].",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "${ModID}:CrackGround": {

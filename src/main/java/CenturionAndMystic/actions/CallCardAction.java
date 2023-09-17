@@ -54,6 +54,9 @@ public class CallCardAction extends AbstractGameAction {
                 AbstractDungeon.player.hand.moveToHand(card, AbstractDungeon.player.drawPile);
             }
             cardsMoved.add(card);
+            if (card instanceof OnCallThisCard) {
+                ((OnCallThisCard) card).onCalled();
+            }
             validCards.remove(card);
             cardsGot++;
         }
@@ -68,5 +71,9 @@ public class CallCardAction extends AbstractGameAction {
 
     public interface OnCallPower {
         void onCall(List<AbstractCard> calledCards);
+    }
+
+    public interface OnCallThisCard {
+        void onCalled();
     }
 }

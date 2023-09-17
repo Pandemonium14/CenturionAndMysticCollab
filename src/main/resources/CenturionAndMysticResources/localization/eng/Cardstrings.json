@@ -80,6 +80,10 @@
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Hex.",
     "UPGRADE_DESCRIPTION": "Retain. NL ${ModID}:Infuse !M! ${ModID}:Hex."
   },
+  "${ModID}:FangStrike": {
+    "NAME": "Fang Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you ${ModID}:Call this card, ${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}."
+  },
   "${ModID}:FieldTactics": {
     "NAME": "Field Tactics",
     "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card and a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."

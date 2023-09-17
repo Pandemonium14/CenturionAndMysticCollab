@@ -105,6 +105,10 @@
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",
     "UPGRADE_DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s} and Upgrade {!M!|1=it|@=them}. NL {!M!|1=It costs|@=They cost} 0 this turn."
   },
+  "${ModID}:Indefatigable": {
+    "NAME": "Indefatigable",
+    "DESCRIPTION": "Whenever a card is Exhausted, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
+  },
   "${ModID}:IronHead": {
     "NAME": "Iron Head",
     "DESCRIPTION": "Deal !D! damage. NL Shuffle a *Dazed into your draw pile."

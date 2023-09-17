@@ -90,5 +90,9 @@
   "${ModID}:NextTurnDamagePower": {
     "NAME": "Next Turn Damage",
     "DESCRIPTIONS": ["Deal #b"," damage to "," next turn."]
+  },
+  "${ModID}:IndefatigablePower": {
+    "NAME": "Indefatigable",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," [E] ."]
   }
 }

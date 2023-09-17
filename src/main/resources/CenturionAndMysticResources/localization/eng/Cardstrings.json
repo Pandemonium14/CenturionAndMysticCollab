@@ -105,10 +105,6 @@
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",
     "UPGRADE_DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s} and Upgrade {!M!|1=it|@=them}. NL {!M!|1=It costs|@=They cost} 0 this turn."
   },
-  "${ModID}:Indomitable": {
-    "NAME": "Indomitable",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
-  },
   "${ModID}:IronHead": {
     "NAME": "Iron Head",
     "DESCRIPTION": "Deal !D! damage. NL Shuffle a *Dazed into your draw pile."
@@ -205,6 +201,10 @@
   "${ModID}:Taunt": {
     "NAME": "Taunt",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable."
+  },
+  "${ModID}:Unyielding": {
+    "NAME": "Unyielding",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
   },
   "${ModID}:Venomize": {
     "NAME": "Venomize",

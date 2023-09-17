@@ -10,10 +10,10 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class Indomitable extends AbstractCenturionCard {
-    public final static String ID = makeID(Indomitable.class.getSimpleName());
+public class Unyielding extends AbstractCenturionCard {
+    public final static String ID = makeID(Unyielding.class.getSimpleName());
 
-    public Indomitable() {
+    public Unyielding() {
         super(ID, 2, AbstractCard.CardType.SKILL, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
         baseBlock = block = 18;
         baseMagicNumber = magicNumber = 2;

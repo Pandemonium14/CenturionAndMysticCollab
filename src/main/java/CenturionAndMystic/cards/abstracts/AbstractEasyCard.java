@@ -487,19 +487,19 @@ public abstract class AbstractEasyCard extends CustomCard {
         return delta / (1 - Math.abs(2*lightness - 1));
     }
 
-    public static Color colorFromHSL(float hue, float sat, float light, float alpha) {
+    public static Color colorFromHSL(float hueDeg, float sat, float light, float alpha) {
         float d = sat * (1 - Math.abs(2*light - 1));
-        float x = d * (1 - Math.abs(((hue/60f)%2) - 1));
+        float x = d * (1 - Math.abs(((hueDeg/60f)%2) - 1));
         float m = light - d/2f;
-        if (0 <= hue && hue < 60) {
+        if (0 <= hueDeg && hueDeg < 60) {
             return new Color(d+m, x+m, m, alpha);
-        } else if (60 <= hue && hue < 120) {
+        } else if (60 <= hueDeg && hueDeg < 120) {
             return new Color(x+m, d+m, m, alpha);
-        } else if (120 <= hue && hue < 180) {
+        } else if (120 <= hueDeg && hueDeg < 180) {
             return new Color(m, d+m, x+m, alpha);
-        } else if (180 <= hue && hue < 240) {
+        } else if (180 <= hueDeg && hueDeg < 240) {
             return new Color(m, x+m, d+m, alpha);
-        } else if (240 <= hue && hue < 300) {
+        } else if (240 <= hueDeg && hueDeg < 300) {
             return new Color(x+m, m, d+m, alpha);
         } else {
             return new Color(d+m, m, x+m, alpha);

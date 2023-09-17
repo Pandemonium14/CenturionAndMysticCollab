@@ -6,7 +6,7 @@ import CenturionAndMystic.util.CardArtRoller;
 import com.badlogic.gdx.graphics.Color;
 
 public abstract class AbstractCenturionCard extends AbstractEasyCard {
-    public static final Color CENTURION_ART_COLOR = mix(BLACK, pastel(AZURE));
+    public static final Color CENTURION_ART_COLOR = colorFromHSL(20, 1f, 0.25f, 1.0f);
     public AbstractCenturionCard(String cardID, int cost, CardType type, CardRarity rarity, CardTarget target) {
         super(cardID, cost, type, rarity, target);
         switch (type) {

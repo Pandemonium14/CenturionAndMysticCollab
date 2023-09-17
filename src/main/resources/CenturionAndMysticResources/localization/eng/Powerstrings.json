@@ -82,5 +82,9 @@
   "${ModID}:LifeToLifelessPower": {
     "NAME": "Lifeless",
     "DESCRIPTIONS": ["Whenever you apply a debuff to an enemy, they lose HP equal to its amount.","Whenever you apply a debuff to an enemy, they lose HP equal to #b"," times its amount."]
+  },
+  "${ModID}:ConcoctPower": {
+    "NAME": "Concoct",
+    "DESCRIPTIONS": ["Whenever you draw an #yUnplayable card, #yInfuse #b"," #yToxin."]
   }
 }

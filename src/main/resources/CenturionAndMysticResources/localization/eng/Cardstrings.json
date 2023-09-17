@@ -33,6 +33,10 @@
     "NAME": "Clairvoyance",
     "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL ${ModID}:Survey !M! card{!M!|>1=s}."
   },
+  "${ModID}:Concoct": {
+    "NAME": "Concoct",
+    "DESCRIPTION": "Whenever you draw an Unplayable card, ${ModID}:Infuse !M! ${ModID}:Toxin."
+  },
   "${ModID}:ConduitStrike": {
     "NAME": "Conduit Strike",
     "DESCRIPTION": "Deal !D! damage. NL Reapplies ${ModID}:Infused effects."
@@ -100,6 +104,10 @@
   "${ModID}:Indomitable": {
     "NAME": "Indomitable",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
+  },
+  "${ModID}:IronHead": {
+    "NAME": "Iron Head",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a *Dazed into your draw pile."
   },
   "${ModID}:LesserPolymorph": {
     "NAME": "Lesser Polymorph",

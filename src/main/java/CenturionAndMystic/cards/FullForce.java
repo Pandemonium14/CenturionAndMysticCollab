@@ -5,7 +5,7 @@ import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.patches.CustomTags;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.red.Headbutt;
+import com.megacrit.cardcrawl.cards.red.WildStrike;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -36,6 +36,6 @@ public class FullForce extends AbstractCenturionCard {
 
     @Override
     public String cardArtCopy() {
-        return Headbutt.ID;
+        return WildStrike.ID;
     }
 }

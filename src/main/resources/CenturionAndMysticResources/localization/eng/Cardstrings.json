@@ -133,6 +133,10 @@
     "NAME": "Open Wound",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Venom."
   },
+  "${ModID}:PileUp": {
+    "NAME": "Pile Up",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}. NL Exhaust."
+  },
   "${ModID}:PatchUp": {
     "NAME": "Patch Up",
     "DESCRIPTION": "Gain !M! Temporary_HP."
@@ -177,6 +181,10 @@
   "${ModID}:SnakeEyes": {
     "NAME": "Snake Eyes",
     "DESCRIPTION": "Set the cost of ALL your cards to 1 for the rest of combat. NL Exhaust."
+  },
+  "${ModID}:Springload": {
+    "NAME": "Springload",
+    "DESCRIPTION": "Gain !M! ${ModID}:Coil. NL Next turn, gain [E] and !B! Block."
   },
   "${ModID}:StandStrong": {
     "NAME": "Stand Strong",

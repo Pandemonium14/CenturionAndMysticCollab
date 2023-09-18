@@ -13,6 +13,10 @@
     "NAME": "Anchor",
     "DESCRIPTION": "Innate. NL Gain !B! Block. NL Block is not removed at the start of your next turn. NL Exhaust."
   },
+  "${ModID}:Backswing": {
+    "NAME": "Backswing",
+    "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile into your hand."
+  },
   "${ModID}:BlackMist": {
     "NAME": "Black Mist",
     "DESCRIPTION": "Apply !M! ${ModID}:Venom and !${ModID}:M2! Weak to ALL enemies."

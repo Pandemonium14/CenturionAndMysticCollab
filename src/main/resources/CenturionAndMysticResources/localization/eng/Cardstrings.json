@@ -53,7 +53,7 @@
   },
   "${ModID}:CrackGround": {
     "NAME": "Crack Ground",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL If you have an ${ModID}:Infusion, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
   },
   "${ModID}:CripplingDarts": {
     "NAME": "Crippling Darts",
@@ -165,7 +165,7 @@
   },
   "${ModID}:RecklessGuard": {
     "NAME": "Reckless Guard",
-    "DESCRIPTION": "Lose !M! HP. NL Gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block. NL Shuffle a *Wound into your draw pile."
   },
   "${ModID}:Sequester": {
     "NAME": "Sequester",

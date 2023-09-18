@@ -119,6 +119,10 @@
     "NAME": "Indefatigable",
     "DESCRIPTION": "Whenever a card is Exhausted, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
   },
+  "${ModID}:Infiltrate": {
+    "NAME": "Infiltrate",
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL ${ModID}:Shed 1 card."
+  },
   "${ModID}:IronHead": {
     "NAME": "Iron Head",
     "DESCRIPTION": "Deal !D! damage. NL Shuffle a *Dazed into your draw pile."

@@ -1,10 +1,8 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.cardmods.PoisedMod;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.patches.CustomTags;
 import CenturionAndMystic.util.Wiz;
-import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.cards.red.ThunderClap;
@@ -22,7 +20,7 @@ public class CrackGround extends AbstractCenturionCard {
         baseDamage = damage = 7;
         tags.add(CustomTags.CAM_BASH_EFFECT);
         isMultiDamage = true;
-        CardModifierManager.addModifier(this, new PoisedMod(true));
+        //CardModifierManager.addModifier(this, new PoisedMod(true));
     }
 
     @Override

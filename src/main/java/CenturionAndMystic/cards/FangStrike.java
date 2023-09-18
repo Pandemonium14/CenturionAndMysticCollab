@@ -1,10 +1,8 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.actions.CallCardAction;
-import CenturionAndMystic.cardmods.PoisedMod;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.util.Wiz;
-import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.red.Disarm;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,7 +17,7 @@ public class FangStrike extends AbstractCenturionCard implements CallCardAction.
         super(ID, 0, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 7;
         baseMagicNumber = magicNumber = 1;
-        CardModifierManager.addModifier(this, new PoisedMod(true));
+        //CardModifierManager.addModifier(this, new PoisedMod(true));
     }
 
     @Override

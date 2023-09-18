@@ -1,9 +1,7 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.cardmods.PoisedMod;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.patches.CustomTags;
-import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.red.WildStrike;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,7 +17,7 @@ public class FullForce extends AbstractCenturionCard {
         baseDamage = damage = 8;
         baseBlock = block = 8;
         tags.add(CustomTags.CAM_BASH_EFFECT);
-        CardModifierManager.addModifier(this, new PoisedMod(true));
+        //CardModifierManager.addModifier(this, new PoisedMod(true));
     }
 
     @Override

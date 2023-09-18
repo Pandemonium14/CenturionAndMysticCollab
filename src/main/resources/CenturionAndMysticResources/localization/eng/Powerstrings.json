@@ -94,5 +94,9 @@
   "${ModID}:IndefatigablePower": {
     "NAME": "Indefatigable",
     "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," [E] ."]
+  },
+  "${ModID}:WillBreakerPower": {
+    "NAME": "Will Breaker",
+    "DESCRIPTIONS": ["Whenever you play a card that costs #b2 or more, deal #b"," damage to ALL enemies."]
   }
 }

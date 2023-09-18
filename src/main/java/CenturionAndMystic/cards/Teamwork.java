@@ -1,19 +1,19 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.actions.ModifyCustomEnergyAction;
+import CenturionAndMystic.actions.CallCardAction;
 import CenturionAndMystic.cards.abstracts.AbstractEasyCard;
 import CenturionAndMystic.util.Wiz;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.cards.purple.ThirdEye;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.green.Doppelganger;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class Connection extends AbstractEasyCard {
-    public final static String ID = makeID(Connection.class.getSimpleName());
+public class Teamwork extends AbstractEasyCard {
+    public final static String ID = makeID(Teamwork.class.getSimpleName());
 
-    public Connection() {
+    public Teamwork() {
         super(ID, -2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         isEthereal = true;
     }
@@ -27,11 +27,13 @@ public class Connection extends AbstractEasyCard {
     }
 
     @Override
-    public void triggerWhenDrawn() {
+    public void triggerOnOtherCardPlayed(AbstractCard c) {
         superFlash();
-        addToTop(new GainEnergyAction(Wiz.mysticEnergy()+Wiz.centurionEnergy()));
-        addToTop(new ModifyCustomEnergyAction(-Wiz.mysticEnergy(), ModifyCustomEnergyAction.EnergyType.MYSTIC));
-        addToTop(new ModifyCustomEnergyAction(-Wiz.centurionEnergy(), ModifyCustomEnergyAction.EnergyType.CENTURION));
+        if (Wiz.isCenturionCard(c)) {
+            addToBot(new CallCardAction(1, Wiz::isMysticCard));
+        } else {
+            addToTop(new CallCardAction(1, Wiz::isCenturionCard));
+        }
     }
 
     @Override
@@ -42,6 +44,6 @@ public class Connection extends AbstractEasyCard {
 
     @Override
     public String cardArtCopy() {
-        return ThirdEye.ID;
+        return Doppelganger.ID;
     }
 }

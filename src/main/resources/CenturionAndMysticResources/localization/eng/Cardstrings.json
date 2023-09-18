@@ -100,6 +100,12 @@
     "NAME": "Fury",
     "DESCRIPTION": "Deal !D! damage !M! times."
   },
+  "${ModID}:Harmony": {
+    "NAME": "Harmony",
+    "DESCRIPTION": "Unplayable. Ethereal. NL Whenever this enters your hand, ALL enemies lose !M! Strength this turn.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Whenever this enters your hand, ALL enemies lose !M! Strength this turn.",
+    "EXTENDED_DESCRIPTION": ["I can't play this card."]
+  },
   "${ModID}:Hasten": {
     "NAME": "Hasten",
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",
@@ -206,6 +212,12 @@
     "NAME": "Taunt",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable."
   },
+  "${ModID}:Teamwork": {
+    "NAME": "Teamwork",
+    "DESCRIPTION": "Unplayable. Ethereal. NL While held, whenever you play a ${ModID}:Centurion card, ${ModID}:Call a ${ModID}:Mystic card, and vice versa.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL While held, whenever you play a ${ModID}:Centurion card, ${ModID}:Call a ${ModID}:Mystic card, and vice versa.",
+    "EXTENDED_DESCRIPTION": ["I can't play this card."]
+  },
   "${ModID}:Unyielding": {
     "NAME": "Unyielding",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
@@ -225,5 +237,9 @@
   "${ModID}:InstigatingBlow": {
     "NAME": "Instigating Blow",
     "DESCRIPTION": "${ModID}:Starter. NL Deal !D! damage."
+  },
+  "${ModID}:WillBreaker": {
+    "NAME": "Will Breaker",
+    "DESCRIPTION": "Whenever you play a card that costs 2 or more, deal !M! damage to ALL enemies."
   }
 }

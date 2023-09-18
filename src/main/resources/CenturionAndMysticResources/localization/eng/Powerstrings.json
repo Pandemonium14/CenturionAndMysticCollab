@@ -98,5 +98,12 @@
   "${ModID}:WillBreakerPower": {
     "NAME": "Will Breaker",
     "DESCRIPTIONS": ["Whenever you play a card that costs #b2 or more, deal #b"," damage to ALL enemies."]
+  },
+  "${ModID}:TeamworkPower": {
+    "NAME": "Teamwork",
+    "DESCRIPTIONS": [
+      "This turn, whenever you play a #yCenturion or #yMystic card that costs #b1 or more, #yCall a card of the other type.",
+      "For #b"," turns, whenever you play a #yCenturion or #yMystic card that costs #b1 or more, #yCall a card of the other type."
+    ]
   }
 }

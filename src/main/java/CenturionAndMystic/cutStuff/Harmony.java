@@ -1,4 +1,4 @@
-package CenturionAndMystic.cards;
+package CenturionAndMystic.cutStuff;
 
 import CenturionAndMystic.actions.ApplyPowerActionWithFollowup;
 import CenturionAndMystic.cards.abstracts.AbstractEasyCard;

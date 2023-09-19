@@ -37,6 +37,10 @@
     "NAME": "Breathe Life",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain. NL ${ModID}:Infuse !M! ${ModID}:Might. NL Exhaust."
   },
+  "${ModID}:CallOfTheWild": {
+    "NAME": "Call of the Wild",
+    "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Exhaust."
+  },
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
     "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Choose 1 of !M! random card{!M!|>1=s} in your draw pile to add into your hand."
@@ -206,6 +210,11 @@
   "${ModID}:StandStrong": {
     "NAME": "Stand Strong",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Shed !M! cards. NL Exhaust."
+  },
+  "${ModID}:Strategize": {
+    "NAME": "Strategize",
+    "DESCRIPTION": "Discard any number of cards. For each ${ModID}:Centurion or ${ModID}:Mystic card discarded, ${ModID}:Call a card of the other type. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard any number of cards. For each ${ModID}:Centurion or ${ModID}:Mystic card discarded, ${ModID}:Call a card of the other type."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",

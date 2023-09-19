@@ -17,6 +17,10 @@
     "NAME": "Backswing",
     "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile into your hand."
   },
+  "${ModID}:Bide": {
+    "NAME": "Bide",
+    "DESCRIPTION": "Add a *Wound into your hand. NL Next turn, NL gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
+  },
   "${ModID}:BlackMist": {
     "NAME": "Black Mist",
     "DESCRIPTION": "Apply !M! ${ModID}:Venom and !${ModID}:M2! Weak to ALL enemies."
@@ -197,7 +201,7 @@
   },
   "${ModID}:Springload": {
     "NAME": "Springload",
-    "DESCRIPTION": "Add a *Wound into your hand. NL Next turn, gain [E] and !B! Block."
+    "DESCRIPTION": "Your next Block gaining card gains !M! additional Block. NL Next turn, gain !B! Block."
   },
   "${ModID}:StandStrong": {
     "NAME": "Stand Strong",

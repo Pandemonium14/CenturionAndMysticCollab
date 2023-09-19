@@ -1,6 +1,6 @@
 {
   "${ModID}:CoilPower": {
-    "NAME": "Coil",
+    "NAME": "Coiled",
     "DESCRIPTIONS": ["Your next #yBlock gaining card gains #b", " additional #yBlock."]
   },
   "${ModID}:ExposedPower": {

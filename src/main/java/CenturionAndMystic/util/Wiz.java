@@ -304,6 +304,10 @@ public class Wiz {
         return AbstractDungeon.player.powers.stream().anyMatch(p -> p instanceof AbstractInfusionPower);
     }
 
+    public static int infusionCount() {
+        return (int) AbstractDungeon.player.powers.stream().filter(p -> p instanceof AbstractInfusionPower).count();
+    }
+
     public static boolean isMysticCard(AbstractCard c) {
         return EnergyPatches.isMysticCard(c);
     }

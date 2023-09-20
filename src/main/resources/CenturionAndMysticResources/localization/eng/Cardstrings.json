@@ -70,6 +70,10 @@
     "NAME": "Crush",
     "DESCRIPTION": "Deal !D! damage. NL If you do not have an ${ModID}:Infusion, deal !D! damage again."
   },
+  "${ModID}:CursedBlade": {
+    "NAME": "Cursed Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak and Vulnerable for each ${ModID}:Infusion you have."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."

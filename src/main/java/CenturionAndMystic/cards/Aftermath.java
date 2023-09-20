@@ -1,6 +1,6 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
+import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.powers.AftermathPower;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.green.NoxiousFumes;
@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class Aftermath extends AbstractCenturionCard {
+public class Aftermath extends AbstractMysticCard {
     public final static String ID = makeID(Aftermath.class.getSimpleName());
 
     public Aftermath() {

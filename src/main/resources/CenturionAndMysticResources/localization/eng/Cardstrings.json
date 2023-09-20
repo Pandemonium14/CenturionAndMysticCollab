@@ -162,6 +162,10 @@
     "NAME": "Patch Up",
     "DESCRIPTION": "Gain !M! Temporary_HP."
   },
+  "${ModID}:PreemptiveStrike": {
+    "NAME": "Preemptive Strike",
+    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Apply !M! Weak. NL Apply !M! Vulnerable. NL Exhaust."
+  },
   "${ModID}:PurestSteel": {
     "NAME": "Purest Steel",
     "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Shed all Attack cards in your hand."

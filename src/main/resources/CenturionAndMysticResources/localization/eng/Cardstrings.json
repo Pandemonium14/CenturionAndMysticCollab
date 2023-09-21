@@ -111,6 +111,10 @@
     "NAME": "Field Tactics",
     "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card. NL ${ModID}:Call a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
   },
+  "${ModID}:FinalImpact": {
+    "NAME": "Final Impact",
+    "DESCRIPTION": "Costs 1 less [${ModID}:CenturionIcon] for each Attack played this turn. NL Deal !D! damage."
+  },
   "${ModID}:FollowMe": {
     "NAME": "Follow Me",
     "DESCRIPTION": "Whenever you ${ModID}:Call a card, gain !M! Block."

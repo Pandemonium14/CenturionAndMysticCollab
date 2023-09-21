@@ -29,6 +29,10 @@
     "NAME": "Bless",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Might. NL Gain !M! Temporary_HP."
   },
+  "${ModID}:BlessedWeapon": {
+    "NAME": "Blessed Weapon",
+    "DESCRIPTION": "At the end of your turn, if you have an ${ModID}:Infusion, gain !M! Block."
+  },
   "${ModID}:BookClub": {
     "NAME": "Book Club",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
@@ -89,6 +93,10 @@
   "${ModID}:Empower": {
     "NAME": "Empower",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Might."
+  },
+  "${ModID}:EnchantingForm": {
+    "NAME": "Enchanting Form",
+    "DESCRIPTION": "Whenever you gain an ${ModID}:Infusion, gain !M! Strength."
   },
   "${ModID}:Enforce": {
     "NAME": "Enforce",
@@ -244,6 +252,14 @@
     "NAME": "Teamwork",
     "DESCRIPTION": "This turn, whenever you play a ${ModID}:Centurion or ${ModID}:Mystic card, ${ModID}:Call a card of the other type. NL Exhaust."
   },
+  "${ModID}:TemperedForm": {
+    "NAME": "Tempered Form",
+    "DESCRIPTION": "Whenever you gain Block, deal !M! damage to ALL enemies."
+  },
+  "${ModID}:TempleWithin": {
+    "NAME": "Temple Within",
+    "DESCRIPTION": "Whenever you draw a Status or Curse card, draw !M! card{@@}{!M!|>1=s}."
+  },
   "${ModID}:Unyielding": {
     "NAME": "Unyielding",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
@@ -251,6 +267,10 @@
   "${ModID}:Venomize": {
     "NAME": "Venomize",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Toxin."
+  },
+  "${ModID}:VisionsOfSnecko": {
+    "NAME": "Visions of Snecko",
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Randomize the cost of cards in your hand (between 0 and 2). NL Exhaust."
   },
   "${ModID}:WideGuard": {
     "NAME": "Wide Guard",

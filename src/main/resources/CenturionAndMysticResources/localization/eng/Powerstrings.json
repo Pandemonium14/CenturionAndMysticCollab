@@ -105,5 +105,21 @@
       "This turn, whenever you play a #yCenturion or #yMystic card that costs #b1 or more, #yCall a card of the other type.",
       "For #b"," turns, whenever you play a #yCenturion or #yMystic card that costs #b1 or more, #yCall a card of the other type."
     ]
+  },
+  "${ModID}:TemperedPower": {
+    "NAME": "Tempered Form",
+    "DESCRIPTIONS": ["Whenever you gain #yBlock, deal #b"," damage to ALL enemies."]
+  },
+  "${ModID}:EnchantingPower": {
+    "NAME": "Enchanting Form",
+    "DESCRIPTIONS": ["Whenever you gain an #yInfusion, gain #b"," #yStrength."]
+  },
+  "${ModID}:BlessedWeaponPower": {
+    "NAME": "Blessed Weapon",
+    "DESCRIPTIONS": ["At the end of your turn, if you have an #yInfusion, gain #b"," #yBlock."]
+  },
+  "${ModID}:TempleWithinPower": {
+    "NAME": "Temple Within",
+    "DESCRIPTIONS": ["Whenever you draw a #yStatus or #yCurse card, draw #b"," card."," cards."]
   }
 }

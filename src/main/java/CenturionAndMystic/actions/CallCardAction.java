@@ -69,6 +69,11 @@ public class CallCardAction extends AbstractGameAction {
                 ((OnCallPower) p).onCall(cardsMoved);
             }
         }
+        for (AbstractCard c : Wiz.getAllCardsInCardGroups(true, true)) {
+            if (c instanceof OnCallOtherCard) {
+                ((OnCallOtherCard) c).onCall(cardsMoved);
+            }
+        }
         callback.accept(cardsMoved);
         isDone = true;
     }
@@ -83,5 +88,9 @@ public class CallCardAction extends AbstractGameAction {
 
     public interface OnCallThisCard {
         void onCalled();
+    }
+
+    public interface OnCallOtherCard {
+        void onCall(List<AbstractCard> calledCards);
     }
 }

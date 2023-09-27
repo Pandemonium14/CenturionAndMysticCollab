@@ -41,6 +41,10 @@
     "NAME": "Breathe Life",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain. NL ${ModID}:Infuse !M! ${ModID}:Might. NL Exhaust."
   },
+  "${ModID}:CallingCard": {
+    "NAME": "Calling Card",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you ${ModID}:Call, increase this card's damage by !M! this combat."
+  },
   "${ModID}:CallOfTheWild": {
     "NAME": "Call of the Wild",
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Exhaust."

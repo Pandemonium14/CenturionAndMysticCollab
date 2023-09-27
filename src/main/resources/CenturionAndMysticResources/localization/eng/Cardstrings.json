@@ -123,6 +123,10 @@
     "NAME": "Follow Me",
     "DESCRIPTION": "Whenever you ${ModID}:Call a card, gain !M! Block."
   },
+  "${ModID}:FragileStrike": {
+    "NAME": "Fragile Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy had Block, Exhaust this."
+  },
   "${ModID}:FullForce": {
     "NAME": "Full Force",
     "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."

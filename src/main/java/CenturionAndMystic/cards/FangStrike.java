@@ -17,6 +17,7 @@ public class FangStrike extends AbstractCenturionCard implements CallCardAction.
         super(ID, 0, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 7;
         baseMagicNumber = magicNumber = 1;
+        tags.add(CardTags.STRIKE);
         //CardModifierManager.addModifier(this, new PoisedMod(true));
     }
 

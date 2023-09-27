@@ -158,6 +158,10 @@
     "NAME": "Iron Head",
     "DESCRIPTION": "Deal !D! damage. NL Shuffle a *Dazed into your draw pile."
   },
+  "${ModID}:Keris": {
+    "NAME": "Keris",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, deals !M! additional damage."
+  },
   "${ModID}:LesserPolymorph": {
     "NAME": "Lesser Polymorph",
     "DESCRIPTION": "Enemy becomes a Louse. Reverts back in !M! turn{@@}{!M!|>1=s} or when killed. NL Exhaust."

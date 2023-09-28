@@ -111,6 +111,10 @@
     "NAME": "Fang Strike",
     "DESCRIPTION": "Deal !D! damage. NL Whenever you ${ModID}:Call this card, ${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}."
   },
+  "${ModID}:FeatherFall": {
+    "NAME": "Feather Fall",
+    "DESCRIPTION": "The next !M! times a card is Exhausted, move it into your discard pile."
+  },
   "${ModID}:FieldTactics": {
     "NAME": "Field Tactics",
     "DESCRIPTION": "${ModID}:Call a ${ModID}:Centurion card. NL ${ModID}:Call a ${ModID}:Mystic card. NL Next turn, draw !M! additional card{@@}{!M!|>1=s}."
@@ -122,6 +126,10 @@
   "${ModID}:FollowMe": {
     "NAME": "Follow Me",
     "DESCRIPTION": "Whenever you ${ModID}:Call a card, gain !M! Block."
+  },
+  "${ModID}:Foray": {
+    "NAME": "Foray",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Infuse ${ModID}:Might equal to unblocked damage dealt."
   },
   "${ModID}:FragileStrike": {
     "NAME": "Fragile Strike",
@@ -218,6 +226,10 @@
     "NAME": "Sheer Power",
     "DESCRIPTION": "Attacks deal !M! additional damage while you do not have an ${ModID}:Infusion."
   },
+  "${ModID}:ShieldBoomerang": {
+    "NAME": "Shield Boomerang",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage to ALL enemies."
+  },
   "${ModID}:Slither": {
     "NAME": "Slither",
     "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Shed !M! card{@@}{!M!|>1=s} at random.",
@@ -234,6 +246,10 @@
   "${ModID}:SnakeEyes": {
     "NAME": "Snake Eyes",
     "DESCRIPTION": "Set the cost of ALL your cards to 1 for the rest of combat. NL Exhaust."
+  },
+  "${ModID}:Spectre": {
+    "NAME": "Spectre",
+    "DESCRIPTION": "${ModID}:Shed your hand. NL Gain !B! Block for each card ${ModID}:Shed. NL Exhaust."
   },
   "${ModID}:Springload": {
     "NAME": "Springload",
@@ -266,7 +282,7 @@
   },
   "${ModID}:Teamwork": {
     "NAME": "Teamwork",
-    "DESCRIPTION": "This turn, whenever you play a ${ModID}:Centurion or ${ModID}:Mystic card, ${ModID}:Call a card of the other type. NL Exhaust."
+    "DESCRIPTION": "This turn, whenever you play a ${ModID}:Centurion or ${ModID}:Mystic card that costs 1 or more, ${ModID}:Call a card of the other type. NL Exhaust."
   },
   "${ModID}:TemperedForm": {
     "NAME": "Tempered Form",

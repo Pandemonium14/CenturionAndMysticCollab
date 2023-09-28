@@ -121,5 +121,9 @@
   "${ModID}:TempleWithinPower": {
     "NAME": "Temple Within",
     "DESCRIPTIONS": ["Whenever you draw a #yStatus or #yCurse card, draw #b"," card."," cards."]
+  },
+  "${ModID}:FeatherFallPower": {
+    "NAME": "Feather Fall",
+    "DESCRIPTIONS": ["Move the next card that #yExhausts into your discard pile.","Move the next #b"," cards that #yExhaust into your discard pile."]
   }
 }

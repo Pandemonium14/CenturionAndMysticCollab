@@ -200,7 +200,7 @@
   },
   "${ModID}:PreemptiveStrike": {
     "NAME": "Preemptive Strike",
-    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Apply !M! Weak. NL Apply !M! Vulnerable. NL Exhaust."
+    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Deals double damage if the enemy does not intend to attack. NL Exhaust."
   },
   "${ModID}:PurestSteel": {
     "NAME": "Purest Steel",

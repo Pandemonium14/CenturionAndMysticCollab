@@ -1,11 +1,12 @@
 package CenturionAndMystic.powers;
 
 import CenturionAndMystic.MainModfile;
+import CenturionAndMystic.actions.ApplyCardModifierAction;
+import CenturionAndMystic.cardmods.MightMod;
 import CenturionAndMystic.damageMods.AbstractDamageType;
 import CenturionAndMystic.damageMods.MightDamage;
 import CenturionAndMystic.vfx.ColoredWrathParticleEffect;
 import com.badlogic.gdx.graphics.Color;
-import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -19,6 +20,7 @@ public class InfuseMightPower extends AbstractInfusionPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private boolean added;
 
     public InfuseMightPower(AbstractCreature owner, int amount) {
         super(POWER_ID, NAME, owner, amount);
@@ -39,8 +41,10 @@ public class InfuseMightPower extends AbstractInfusionPower {
     @Override
     public void onAddedDamageModsToDamageInfo(DamageInfo info, Object instigator) {
         super.onAddedDamageModsToDamageInfo(info, instigator);
-        if (instigator instanceof AbstractCard) {
-            addToBot(new ModifyDamageAction(((AbstractCard) instigator).uuid, amount));
+        if (instigator instanceof AbstractCard && !added) {
+            added = true;
+            addToBot(new ApplyCardModifierAction((AbstractCard) instigator, new MightMod(amount)));
+            //addToBot(new ModifyDamageAction(((AbstractCard) instigator).uuid, amount));
         }
     }
 

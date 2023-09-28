@@ -190,6 +190,11 @@
     "NAME": "Open Wound",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Venom."
   },
+  "${ModID}:Parry": {
+    "NAME": "Parry",
+    "DESCRIPTION": "Unplayable. Retain. While in hand, the next time you are attacked, gain !B! Block and deal !D! damage back.",
+    "EXTENDED_DESCRIPTION": ["I can't play this card."]
+  },
   "${ModID}:PileUp": {
     "NAME": "Pile Up",
     "DESCRIPTION": "Gain !B! Block. NL Next turn, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}. NL Exhaust."

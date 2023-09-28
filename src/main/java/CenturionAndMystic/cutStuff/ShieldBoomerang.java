@@ -1,4 +1,4 @@
-package CenturionAndMystic.cards;
+package CenturionAndMystic.cutStuff;
 
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

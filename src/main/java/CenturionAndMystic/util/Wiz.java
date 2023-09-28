@@ -8,6 +8,7 @@ import CenturionAndMystic.patches.EnergyPatches;
 import CenturionAndMystic.powers.AbstractInfusionPower;
 import CenturionAndMystic.powers.LosePowerPower;
 import CenturionAndMystic.powers.NextTurnPowerPower;
+import basemod.ReflectionHacks;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -314,5 +315,15 @@ public class Wiz {
 
     public static boolean isCenturionCard(AbstractCard c) {
         return EnergyPatches.isCenturionCard(c);
+    }
+
+    public static int getHitIntents(AbstractMonster m) {
+        if (!Wiz.isAttacking(m)) {
+            return 0;
+        }
+        if (ReflectionHacks.getPrivate(m, AbstractMonster.class, "isMultiDmg")) {
+            return ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentMultiAmt");
+        }
+        return 1;
     }
 }

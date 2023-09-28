@@ -27,7 +27,7 @@
   },
   "${ModID}:Bless": {
     "NAME": "Bless",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Might. NL Gain !M! Temporary_HP."
+    "DESCRIPTION": "Gain !M! Temporary_HP."
   },
   "${ModID}:BlessedWeapon": {
     "NAME": "Blessed Weapon",

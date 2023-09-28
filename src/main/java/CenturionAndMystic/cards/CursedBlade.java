@@ -1,6 +1,6 @@
 package CenturionAndMystic.cards;
 
-import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
+import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class CursedBlade extends AbstractMysticCard {
+public class CursedBlade extends AbstractCenturionCard {
     public final static String ID = makeID(CursedBlade.class.getSimpleName());
 
     public CursedBlade() {

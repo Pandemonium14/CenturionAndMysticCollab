@@ -42,6 +42,7 @@ public abstract class AbstractMysticCard extends AbstractEasyCard {
     }
 
     public CardArtRoller.ReskinInfo reskinInfo(String ID) {
-        return new CardArtRoller.ReskinInfo(ID, WHITE, BLACK, WHITE, MYSTIC_ART_COLOR, false);
+        return new CardArtRoller.ReskinInfo(ID, 0.5f, 0.5f, 0.5f, 0.5f, false);
+        //return new CardArtRoller.ReskinInfo(ID, WHITE, BLACK, WHITE, MYSTIC_ART_COLOR, false);
     }
 }

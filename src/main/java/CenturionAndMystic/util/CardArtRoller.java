@@ -331,6 +331,7 @@ public class CardArtRoller {
             }
             if (needsMask(c, artCard) || !c.itemArt().isEmpty()) {
                 sb.setBlendFunction(GL_DST_COLOR, GL_ZERO);
+                sb.setColor(Color.WHITE);
                 Texture mask = getMask(c);
                 sb.setProjectionMatrix(new OrthographicCamera(250, 190).combined);
                 sb.draw(mask, -125, -95, -125, -95, 250, 190, 1, 1, 0, 0, 0, mask.getWidth(), mask.getHeight(), false, true);
@@ -411,6 +412,7 @@ public class CardArtRoller {
         }
         if (needsMask(c, artCard) || !c.itemArt().isEmpty()) {
             sb.setBlendFunction(GL_DST_COLOR, GL_ZERO);
+            sb.setColor(Color.WHITE);
             Texture mask = getMask(c);
             sb.setProjectionMatrix(new OrthographicCamera(500, 380).combined);
             sb.draw(mask, -250, -190, -250, -190, 500, 380, 1, 1, 0, 0, 0, mask.getWidth(), mask.getHeight(), false, true);

@@ -168,6 +168,14 @@
       "combo"
     ],
     "DESCRIPTION": "Whenever you play a card during a #yCombo, gain #yVigor equal to the number of cards played during this #yCombo. Ends at the end of your turn or if you play two cards of the same energy type in a row."
+  },
+  {
+    "ID": "intimidated",
+    "PROPER_NAME": "Intimidated",
+    "NAMES": [
+      "intimidated"
+    ],
+    "DESCRIPTION": "Intimidated enemies will instead intend to Block the next time this exceeds their intended Attack damage."
   }
 
 ]

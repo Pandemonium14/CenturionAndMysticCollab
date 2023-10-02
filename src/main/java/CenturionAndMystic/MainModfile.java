@@ -282,6 +282,7 @@ public class MainModfile implements
         BaseMod.addPower(UnstablePower.class, UnstablePower.POWER_ID);
         BaseMod.addPower(CoilPower.class, CoilPower.POWER_ID);
         BaseMod.addPower(StaggerPower.class, StaggerPower.POWER_ID);
+        BaseMod.addPower(IntimidatedPower.class, IntimidatedPower.POWER_ID);
 
         BaseMod.addPower(InfuseMightPower.class, InfuseMightPower.POWER_ID);
         BaseMod.addPower(InfuseHexPower.class, InfuseHexPower.POWER_ID);

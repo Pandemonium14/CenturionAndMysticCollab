@@ -154,6 +154,10 @@
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",
     "UPGRADE_DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s} and Upgrade {!M!|1=it|@=them}. NL {!M!|1=It costs|@=They cost} 0 this turn."
   },
+  "${ModID}:HexOfTheFrail": {
+    "NAME": "Hex of the Frail",
+    "DESCRIPTION": "Apply !M! Vulnerable. NL The next time this target attempts to Block, it instead loses that much HP."
+  },
   "${ModID}:Indefatigable": {
     "NAME": "Indefatigable",
     "DESCRIPTION": "Whenever a card is Exhausted, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."

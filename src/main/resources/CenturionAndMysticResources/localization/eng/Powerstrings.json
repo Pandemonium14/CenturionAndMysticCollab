@@ -125,5 +125,14 @@
   "${ModID}:FeatherFallPower": {
     "NAME": "Feather Fall",
     "DESCRIPTIONS": ["Move the next card that #yExhausts into your discard pile.","Move the next #b"," cards that #yExhaust into your discard pile."]
+  },
+  "${ModID}:IntimidatedPower": {
+    "NAME": "Intimidated",
+    "DESCRIPTIONS": ["If this enemy intends to Attack for #b"," or less damage, it instead intends to #yBlock and loses #yIntimidated."]
+  },
+  "${ModID}:CursedFrailPower": {
+    "NAME": "Hex of the Frail",
+    "DESCRIPTIONS": ["The next time this creature attempts to #yBlock, it instead loses that much HP.",
+      "The next time this creature attempts to #yBlock, it instead loses #b"," times that much HP."]
   }
 }

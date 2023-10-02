@@ -16,6 +16,7 @@ public class KeywordManager {
     public static String INFUSE;
     public static String SURVEY;
     public static String VENOM;
+    public static String INTIMIDATED;
 
     public static String TOXIN;
     public static String NOX;

@@ -3,7 +3,7 @@ package CenturionAndMystic.cards;
 import CenturionAndMystic.actions.CustomRandomizeHandCostAction;
 import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.cards.green.CalculatedGamble;
+import com.megacrit.cardcrawl.cards.colorless.Blind;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -31,6 +31,6 @@ public class VisionsOfSnecko extends AbstractMysticCard {
 
     @Override
     public String cardArtCopy() {
-        return CalculatedGamble.ID;
+        return Blind.ID;
     }
 }

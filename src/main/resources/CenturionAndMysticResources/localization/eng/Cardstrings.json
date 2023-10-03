@@ -52,7 +52,7 @@
   },
   "${ModID}:BreatheLife": {
     "NAME": "Breathe Life",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain. NL ${ModID}:Infuse !M! ${ModID}:Might. NL Exhaust."
+    "DESCRIPTION": "Discard all non-Attack cards in your hand. NL ${ModID}:Infuse !M! ${ModID}:Might for each card discarded. NL Exhaust."
   },
   "${ModID}:CallingCard": {
     "NAME": "Calling Card",

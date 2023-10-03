@@ -111,6 +111,10 @@
     "NAME": "Distract",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Call !M! ${ModID}:Mystic card{@@}{!M!|>1=s}."
   },
+  "${ModID}:DrainingTouch": {
+    "NAME": "Draining Touch",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Temporary_HP."
+  },
   "${ModID}:Empower": {
     "NAME": "Empower",
     "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Might."
@@ -199,6 +203,10 @@
     "NAME": "Keris",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, deals !M! additional damage."
   },
+  "${ModID}:KillingIntent": {
+    "NAME": "Killing Intent",
+    "DESCRIPTION": "At the start of your turn, apply !M! ${ModID}:Intimidated to ALL enemies."
+  },
   "${ModID}:LesserPolymorph": {
     "NAME": "Lesser Polymorph",
     "DESCRIPTION": "Enemy becomes a Louse. Reverts back in !M! turn{@@}{!M!|>1=s} or when killed. NL Exhaust."
@@ -207,17 +215,13 @@
     "NAME": "Lethal Torrent",
     "DESCRIPTION": "Deal !D! damage. NL Repeat for each ${ModID}:Infusion you have."
   },
-  "${ModID}:Lifeblood": {
-    "NAME": "Lifeblood",
-    "DESCRIPTION": "${ModID}:Infuse !M! ${ModID}:Drain."
-  },
   "${ModID}:LifeToLifeless": {
     "NAME": "Life to Lifeless",
     "DESCRIPTION": "Whenever you apply a debuff to an enemy, they lose HP equal to {@@}{!M!|>1=!M! times }its amount."
   },
   "${ModID}:MaceCrash": {
     "NAME": "Mace Crash",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage if you have an ${ModID}:Infusion."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy does not intend to attack, deal !D! damage again."
   },
   "${ModID}:OpenWound": {
     "NAME": "Open Wound",

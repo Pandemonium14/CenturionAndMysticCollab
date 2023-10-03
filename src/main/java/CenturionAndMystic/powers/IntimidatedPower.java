@@ -1,6 +1,7 @@
 package CenturionAndMystic.powers;
 
 import CenturionAndMystic.MainModfile;
+import CenturionAndMystic.actions.DoAction;
 import CenturionAndMystic.powers.interfaces.MonsterCalcDamagePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateShakeAction;
@@ -45,14 +46,8 @@ public class IntimidatedPower extends AbstractPower implements MonsterCalcDamage
             addToBot(new AnimateShakeAction(owner, 1.0f, 0.3f));
             addToBot(new GainBlockAction(owner, blockAmount));
             addToBot(new ReducePowerAction(owner, owner, this, blockAmount));
+            addToBot(new DoAction(() -> triggered = false));
             addToBot(new RollMoveAction((AbstractMonster) owner));
-        }
-    }
-
-    @Override
-    public void atEndOfRound() {
-        if (triggered) {
-            triggered = false;
         }
     }
 
@@ -78,7 +73,7 @@ public class IntimidatedPower extends AbstractPower implements MonsterCalcDamage
             if (isMulti) {
                 dmg *= multiAmount;
             }
-            if (amount >= dmg && !triggered) {
+            if (amount >= dmg) {
                 triggered = true;
                 blockAmount = dmg;
                 flash();

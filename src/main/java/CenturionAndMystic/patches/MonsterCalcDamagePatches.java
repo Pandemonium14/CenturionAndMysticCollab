@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class MonsterCalcDamagePatches {
-    @SpirePatch2(clz = AbstractMonster.class, method = "applyPowers")
+    @SpirePatch2(clz = AbstractMonster.class, method = "calculateDamage")
     public static class CalcPatch {
         @SpirePostfixPatch
         public static void postCalc(AbstractMonster __instance, int ___intentDmg, boolean ___isMultiDmg, int ___intentMultiAmt) {

@@ -176,6 +176,15 @@
       "intimidated"
     ],
     "DESCRIPTION": "Intimidated enemies will instead intend to Block the next time this exceeds their intended Attack damage."
+  },
+  {
+    "ID": "heavy_plating",
+    "PROPER_NAME": "Heavy Plating",
+    "NAMES": [
+      "heavy plating",
+      "heavy_plating"
+    ],
+    "DESCRIPTION": "Take less damage from Attacks this turn."
   }
 
 ]

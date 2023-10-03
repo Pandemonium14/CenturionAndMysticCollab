@@ -1,4 +1,8 @@
 {
+  "${ModID}:NextTurnPowerPower": {
+    "NAME": "Next Turn ",
+    "DESCRIPTIONS": ["Next turn, gain #b"," ","."]
+  },
   "${ModID}:CoilPower": {
     "NAME": "Coiled",
     "DESCRIPTIONS": ["Your next #yBlock gaining card gains #b", " additional #yBlock."]
@@ -134,5 +138,9 @@
     "NAME": "Hex of the Frail",
     "DESCRIPTIONS": ["The next time this creature attempts to #yBlock, it instead loses that much HP.",
       "The next time this creature attempts to #yBlock, it instead loses #b"," times that much HP."]
+  },
+  "${ModID}:HeavyPlatingPower": {
+    "NAME": "Heavy Plating",
+    "DESCRIPTIONS": ["Take #b"," less damage from Attacks this turn."]
   }
 }

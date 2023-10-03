@@ -1,12 +1,11 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
+import CenturionAndMystic.powers.HeavyPlatingPower;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.blue.AutoShields;
-import com.megacrit.cardcrawl.cards.red.Defend_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.BlurPower;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
@@ -14,21 +13,23 @@ public class Anchor extends AbstractCenturionCard {
     public final static String ID = makeID(Anchor.class.getSimpleName());
 
     public Anchor() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseBlock = block = 10;
-        isInnate = true;
+        super(ID, 2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        baseBlock = block = 12;
+        baseMagicNumber = magicNumber = 4;
+        //isInnate = true;
         exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        Wiz.applyToSelf(new BlurPower(p, 1));
+        Wiz.applyToSelf(new HeavyPlatingPower(p, magicNumber));
     }
 
     @Override
     public void upp() {
-        upgradeBlock(3);
+        upgradeBlock(4);
+        upgradeMagicNumber(2);
     }
 
     @Override

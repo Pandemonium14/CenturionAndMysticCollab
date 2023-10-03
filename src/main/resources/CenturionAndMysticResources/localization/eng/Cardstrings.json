@@ -5,13 +5,18 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Adaption": {
+    "NAME": "Adaption",
+    "DESCRIPTION": "The next Attack you play costs 0. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "The next Attack you play costs 0."
+  },
   "${ModID}:Aftermath": {
     "NAME": "Aftermath",
     "DESCRIPTION": "Whenever a card is Exhausted, apply !M! ${ModID}:Venom to ALL enemies."
   },
   "${ModID}:Anchor": {
     "NAME": "Anchor",
-    "DESCRIPTION": "Innate. NL Gain !B! Block. NL Block is not removed at the start of your next turn. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Heavy_Plating. NL Exhaust."
   },
   "${ModID}:Backswing": {
     "NAME": "Backswing",
@@ -19,7 +24,7 @@
   },
   "${ModID}:Bide": {
     "NAME": "Bide",
-    "DESCRIPTION": "Add a *Wound into your hand. NL Next turn, NL gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
+    "DESCRIPTION": "Gain !M! ${ModID}:Heavy_Plating. NL Add a *Wound into your hand."
   },
   "${ModID}:BlackMist": {
     "NAME": "Black Mist",
@@ -33,9 +38,17 @@
     "NAME": "Blessed Weapon",
     "DESCRIPTION": "At the end of your turn, if you have an ${ModID}:Infusion, gain !M! Block."
   },
+  "${ModID}:Bloodcast": {
+    "NAME": "Bloodcast",
+    "DESCRIPTION": "Add a *Wound into your hand. NL Next turn, NL gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
+  },
   "${ModID}:BookClub": {
     "NAME": "Book Club",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+  "${ModID}:BoxOfSecrets": {
+    "NAME": "Box of Secrets",
+    "DESCRIPTION": "Add a random Attack into your hand for each enemy in combat. NL They cost 0 this turn. NL Exhaust."
   },
   "${ModID}:BreatheLife": {
     "NAME": "Breathe Life",
@@ -52,6 +65,10 @@
   "${ModID}:Clairvoyance": {
     "NAME": "Clairvoyance",
     "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Choose 1 of !M! random card{!M!|>1=s} in your draw pile to add into your hand."
+  },
+  "${ModID}:CloseCombat": {
+    "NAME": "Close Combat",
+    "DESCRIPTION": "Deal !D! damage. NL Deal damage to ALL enemies equal to unblocked damage dealt."
   },
   "${ModID}:Concoct": {
     "NAME": "Concoct",
@@ -101,6 +118,10 @@
   "${ModID}:EnchantingForm": {
     "NAME": "Enchanting Form",
     "DESCRIPTION": "Whenever you gain an ${ModID}:Infusion, gain !M! Strength."
+  },
+  "${ModID}:Enfeeble": {
+    "NAME": "Enfeeble",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses !M! Strength. NL Exhaust."
   },
   "${ModID}:Enforce": {
     "NAME": "Enforce",
@@ -154,6 +175,10 @@
     "DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s}. NL {!M!|1=It costs|@=They cost} 0 this turn.",
     "UPGRADE_DESCRIPTION": "${ModID}:Call !M! ${ModID}:Centurion card{@@}{!M!|>1=s} and Upgrade {!M!|1=it|@=them}. NL {!M!|1=It costs|@=They cost} 0 this turn."
   },
+  "${ModID}:HeavyMetal": {
+    "NAME": "Heavy Metal",
+    "DESCRIPTION": "Gain !M! ${ModID}:Heavy_Plating. NL Next turn, gain !M! ${ModID}:Heavy_Plating."
+  },
   "${ModID}:HexOfTheFrail": {
     "NAME": "Hex of the Frail",
     "DESCRIPTION": "Apply !M! Vulnerable. NL The next time this target attempts to Block, it instead loses that much HP."
@@ -177,6 +202,10 @@
   "${ModID}:LesserPolymorph": {
     "NAME": "Lesser Polymorph",
     "DESCRIPTION": "Enemy becomes a Louse. Reverts back in !M! turn{@@}{!M!|>1=s} or when killed. NL Exhaust."
+  },
+  "${ModID}:LethalTorrent": {
+    "NAME": "Lethal Torrent",
+    "DESCRIPTION": "Deal !D! damage. NL Repeat for each ${ModID}:Infusion you have. NL Add a *Burn into your hand."
   },
   "${ModID}:Lifeblood": {
     "NAME": "Lifeblood",

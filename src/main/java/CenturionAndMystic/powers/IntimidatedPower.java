@@ -113,7 +113,7 @@ public class IntimidatedPower extends AbstractPower {
             dmg *= ReflectionHacks.<Integer>getPrivate(owner, AbstractMonster.class, "intentMultiAmt");
         }
 
-        if (amount >= dmg) {
+        if (amount >= dmg && !triggered) {
             triggered = true;
             blockAmount = dmg;
             flash();

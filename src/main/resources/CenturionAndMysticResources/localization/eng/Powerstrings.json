@@ -132,7 +132,7 @@
   },
   "${ModID}:IntimidatedPower": {
     "NAME": "Intimidated",
-    "DESCRIPTIONS": ["If this enemy intends to Attack for #b"," or less damage, it instead intends to #yBlock and loses #yIntimidated."]
+    "DESCRIPTIONS": ["If this enemy intends to Attack for #b"," or less damage, it instead intends to #yBlock and reduce its #yIntimidated equal to its Attack amount."]
   },
   "${ModID}:CursedFrailPower": {
     "NAME": "Hex of the Frail",

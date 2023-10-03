@@ -175,7 +175,7 @@
     "NAMES": [
       "intimidated"
     ],
-    "DESCRIPTION": "Intimidated enemies will instead intend to Block the next time this exceeds their intended Attack damage."
+    "DESCRIPTION": "Intimidated enemies will instead intend to Block and reduce their Intimidated the next time it exceeds their intended Attack damage."
   },
   {
     "ID": "heavy_plating",

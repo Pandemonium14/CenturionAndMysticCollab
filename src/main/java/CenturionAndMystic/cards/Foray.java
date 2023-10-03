@@ -22,7 +22,11 @@ public class Foray extends AbstractMysticCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageFollowupAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL, mon -> Wiz.applyToSelfTop(new InfuseMightPower(p, mon.lastDamageTaken))));
+        addToBot(new DamageFollowupAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL, mon -> {
+            if (mon.lastDamageTaken > 0) {
+                Wiz.applyToSelfTop(new InfuseMightPower(p, mon.lastDamageTaken));
+            }
+        }));
     }
 
     @Override

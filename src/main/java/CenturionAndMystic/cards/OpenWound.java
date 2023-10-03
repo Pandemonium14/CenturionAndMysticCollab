@@ -14,9 +14,9 @@ public class OpenWound extends AbstractMysticCard {
     public final static String ID = makeID(OpenWound.class.getSimpleName());
 
     public OpenWound() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 4;
-        baseMagicNumber = magicNumber = 6;
+        super(ID, 0, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        baseDamage = damage = 3;
+        baseMagicNumber = magicNumber = 5;
     }
 
     @Override

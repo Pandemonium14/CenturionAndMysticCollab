@@ -1,7 +1,10 @@
 package CenturionAndMystic.powers;
 
 import CenturionAndMystic.MainModfile;
-import CenturionAndMystic.util.Wiz;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -29,11 +32,11 @@ public class SheerPowerPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        if (!Wiz.hasInfusion() && type == DamageInfo.DamageType.NORMAL) {
-            damage += this.amount;
+    @Override
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        if ((card.costForTurn >= 2 && !card.freeToPlayOnce) || (card.cost == -1 && card.energyOnUse >= 2)) {
+            flash();
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
         }
-        return damage;
     }
-
 }

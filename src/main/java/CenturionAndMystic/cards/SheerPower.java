@@ -14,7 +14,7 @@ public class SheerPower extends AbstractMysticCard {
 
     public SheerPower() {
         super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 3;
+        baseMagicNumber = magicNumber = 5;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class SheerPower extends AbstractMysticCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeMagicNumber(2);
     }
 
     @Override

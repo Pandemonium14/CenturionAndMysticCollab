@@ -5,7 +5,6 @@ import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.Hemokinesis;
-import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -17,7 +16,7 @@ public class LethalTorrent extends AbstractCenturionCard {
     public LethalTorrent() {
         super(ID, 0, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
         baseDamage = damage = 8;
-        cardsToPreview = new Burn();
+        //cardsToPreview = new Burn();
     }
 
     @Override
@@ -26,7 +25,7 @@ public class LethalTorrent extends AbstractCenturionCard {
         for (int i = 0 ; i < Wiz.infusionCount() ; i++) {
             dmg(m, AbstractGameAction.AttackEffect.BLUNT_HEAVY, true);
         }
-        Wiz.makeInHand(new Burn());
+        //Wiz.makeInHand(new Burn());
     }
 
     public void triggerOnGlowCheck() {

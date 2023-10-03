@@ -60,7 +60,7 @@
   },
   "${ModID}:SheerPowerPower": {
     "NAME": "Sheer Power",
-    "DESCRIPTIONS": ["Attacks deal #b"," additional damage while you do not have an #yInfusion."]
+    "DESCRIPTIONS": ["Whenever you play a card that costs #b2 or more, deal #b"," damage to ALL enemies."]
   },
   "${ModID}:AftermathPower": {
     "NAME": "Aftermath",
@@ -101,7 +101,7 @@
   },
   "${ModID}:WillBreakerPower": {
     "NAME": "Will Breaker",
-    "DESCRIPTIONS": ["Whenever you play a card that costs #b2 or more, deal #b"," damage to ALL enemies."]
+    "DESCRIPTIONS": ["Whenever an Attack deals unblocked damage, apply #b"," #yIntimidated."]
   },
   "${ModID}:TeamworkPower": {
     "NAME": "Teamwork",

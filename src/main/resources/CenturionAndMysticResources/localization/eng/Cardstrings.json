@@ -205,7 +205,7 @@
   },
   "${ModID}:LethalTorrent": {
     "NAME": "Lethal Torrent",
-    "DESCRIPTION": "Deal !D! damage. NL Repeat for each ${ModID}:Infusion you have. NL Add a *Burn into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Repeat for each ${ModID}:Infusion you have."
   },
   "${ModID}:Lifeblood": {
     "NAME": "Lifeblood",
@@ -262,7 +262,7 @@
   },
   "${ModID}:SheerPower": {
     "NAME": "Sheer Power",
-    "DESCRIPTION": "Attacks deal !M! additional damage while you do not have an ${ModID}:Infusion."
+    "DESCRIPTION": "Whenever you play a card that costs 2 or more, deal !M! damage to ALL enemies."
   },
   "${ModID}:ShieldBoomerang": {
     "NAME": "Shield Boomerang",
@@ -356,6 +356,6 @@
   },
   "${ModID}:WillBreaker": {
     "NAME": "Will Breaker",
-    "DESCRIPTION": "Whenever you play a card that costs 2 or more, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! ${ModID}:Intimidated."
   }
 }

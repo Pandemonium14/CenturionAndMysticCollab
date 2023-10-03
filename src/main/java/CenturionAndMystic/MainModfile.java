@@ -279,7 +279,6 @@ public class MainModfile implements
         BaseMod.registerModBadge(badgeTexture, EXTRA_TEXT[0], AUTHOR, EXTRA_TEXT[1], settingsPanel);
 
         //Add Powers
-        BaseMod.addPower(UnstablePower.class, UnstablePower.POWER_ID);
         BaseMod.addPower(CoilPower.class, CoilPower.POWER_ID);
         BaseMod.addPower(StaggerPower.class, StaggerPower.POWER_ID);
         BaseMod.addPower(IntimidatedPower.class, IntimidatedPower.POWER_ID);

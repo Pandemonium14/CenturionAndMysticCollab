@@ -24,7 +24,8 @@ public class WillBreaker extends AbstractCenturionCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        //upgradeMagicNumber(1);
+        updateCost(1);
     }
 
     @Override

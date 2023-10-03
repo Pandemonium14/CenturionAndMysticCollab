@@ -93,7 +93,7 @@
   },
   "${ModID}:Crush": {
     "NAME": "Crush",
-    "DESCRIPTION": "Deal !D! damage. NL If you do not have an ${ModID}:Infusion, deal !D! damage again."
+    "DESCRIPTION": "Deal !D! damage. NL Deals additional damage equal to the enemy's Block."
   },
   "${ModID}:CursedBlade": {
     "NAME": "Cursed Blade",

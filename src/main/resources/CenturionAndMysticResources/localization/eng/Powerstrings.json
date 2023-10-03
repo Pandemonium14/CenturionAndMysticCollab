@@ -142,5 +142,9 @@
   "${ModID}:HeavyPlatingPower": {
     "NAME": "Heavy Plating",
     "DESCRIPTIONS": ["Take #b"," less damage from Attacks this turn."]
+  },
+  "${ModID}:SteadfastPower": {
+    "NAME": "Steadfast",
+    "DESCRIPTIONS": ["Take #b"," less damage from Attacks."]
   }
 }

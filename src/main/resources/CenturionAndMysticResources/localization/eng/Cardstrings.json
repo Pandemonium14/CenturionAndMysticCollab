@@ -297,6 +297,10 @@
     "NAME": "Stand Strong",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Shed !M! cards. NL Exhaust."
   },
+  "${ModID}:Steadfast": {
+    "NAME": "Steadfast",
+    "DESCRIPTION": "Take !M! less damage from Attacks this combat."
+  },
   "${ModID}:Strategize": {
     "NAME": "Strategize",
     "DESCRIPTION": "Discard any number of cards. For each ${ModID}:Centurion or ${ModID}:Mystic card discarded, ${ModID}:Call a card of the other type. NL Exhaust.",

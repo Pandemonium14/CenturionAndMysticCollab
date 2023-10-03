@@ -85,7 +85,7 @@
   },
   "${ModID}:CrackGround": {
     "NAME": "Crack Ground",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL If you have an ${ModID}:Infusion, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}."
+    "DESCRIPTION": "Deal !D! damage and apply !M! ${ModID}:Intimidated to ALL enemies."
   },
   "${ModID}:CripplingDarts": {
     "NAME": "Crippling Darts",
@@ -162,7 +162,7 @@
   },
   "${ModID}:Fury": {
     "NAME": "Fury",
-    "DESCRIPTION": "Deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Apply !${ModID}:M2! ${ModID}:Intimidated."
   },
   "${ModID}:Harmony": {
     "NAME": "Harmony",
@@ -225,8 +225,8 @@
   },
   "${ModID}:Parry": {
     "NAME": "Parry",
-    "DESCRIPTION": "Unplayable. Retain. While in hand, the next time you are attacked, gain !B! Block and deal !D! damage back.",
-    "EXTENDED_DESCRIPTION": ["I can't play this card."]
+    "DESCRIPTION": "Can only be played if the enemy intends to attack. NL Deal !D! damage. NL Apply !M! ${ModID}:Intimidated.",
+    "EXTENDED_DESCRIPTION": ["This enemy does not intend to attack."]
   },
   "${ModID}:PileUp": {
     "NAME": "Pile Up",

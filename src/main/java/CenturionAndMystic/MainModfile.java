@@ -9,6 +9,8 @@ import CenturionAndMystic.patches.GlowChangePatch;
 import CenturionAndMystic.powers.*;
 import CenturionAndMystic.powers.interfaces.InfusionTriggerPower;
 import CenturionAndMystic.powers.interfaces.OnUpgradePower;
+import CenturionAndMystic.powers.interfaces.PostApplyPowerPower;
+import CenturionAndMystic.powers.interfaces.PostReceivePowerPower;
 import CenturionAndMystic.relics.AbstractEasyRelic;
 import CenturionAndMystic.ui.CenturionEnergyPanel;
 import CenturionAndMystic.ui.MysticEnergyPanel;
@@ -35,6 +37,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -55,7 +58,7 @@ public class MainModfile implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, OnPlayerTurnStartSubscriber, OnStartBattleSubscriber, PostRenderSubscriber {
+        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, OnPlayerTurnStartSubscriber, OnStartBattleSubscriber, PostRenderSubscriber, PostPowerApplySubscriber {
 
     public static final String modID = "CenturionAndMystic";
     public static final Logger logger = LogManager.getLogger(MainModfile.class.getName());
@@ -414,5 +417,23 @@ public class MainModfile implements
     @Override
     public void receivePostRender(SpriteBatch spriteBatch) {
         PlayPreviewManager.renderIcons(spriteBatch);
+    }
+
+    @Override
+    public void receivePostPowerApplySubscriber(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if (source != null) {
+            for (AbstractPower p : source.powers) {
+                if (p instanceof PostApplyPowerPower) {
+                    ((PostApplyPowerPower) p).onApply(power, target);
+                }
+            }
+        }
+        if (target != null) {
+            for (AbstractPower p : target.powers) {
+                if (p instanceof PostReceivePowerPower) {
+                    ((PostReceivePowerPower) p).onReceive(power, source);
+                }
+            }
+        }
     }
 }

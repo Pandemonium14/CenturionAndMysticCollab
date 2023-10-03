@@ -13,8 +13,8 @@ public class WillBreaker extends AbstractCenturionCard {
     public final static String ID = makeID(WillBreaker.class.getSimpleName());
 
     public WillBreaker() {
-        super(ID, 2, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 2;
+        super(ID, 2, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 3;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class WillBreaker extends AbstractCenturionCard {
     @Override
     public void upp() {
         //upgradeMagicNumber(1);
-        updateCost(1);
+        upgradeBaseCost(1);
     }
 
     @Override

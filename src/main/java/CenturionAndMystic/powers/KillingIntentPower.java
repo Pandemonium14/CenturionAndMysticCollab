@@ -20,7 +20,7 @@ public class KillingIntentPower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
-        this.loadRegion("rupture");
+        this.loadRegion("infiniteBlades");
         updateDescription();
     }
 

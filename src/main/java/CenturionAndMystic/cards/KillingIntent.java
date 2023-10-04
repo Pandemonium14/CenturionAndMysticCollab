@@ -3,7 +3,7 @@ package CenturionAndMystic.cards;
 import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
 import CenturionAndMystic.powers.KillingIntentPower;
 import CenturionAndMystic.util.Wiz;
-import com.megacrit.cardcrawl.cards.red.Intimidate;
+import com.megacrit.cardcrawl.cards.red.Berserk;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -30,6 +30,6 @@ public class KillingIntent extends AbstractCenturionCard {
 
     @Override
     public String cardArtCopy() {
-        return Intimidate.ID;
+        return Berserk.ID;
     }
 }

@@ -146,5 +146,9 @@
   "${ModID}:SteadfastPower": {
     "NAME": "Steadfast",
     "DESCRIPTIONS": ["Take #b"," less damage from Attacks."]
+  },
+  "${ModID}:KillingIntentPower": {
+    "NAME": "Killing Intent",
+    "DESCRIPTIONS": ["At the start of your turn, apply #b"," #yIntimidated to ALL enemies."]
   }
 }

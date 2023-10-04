@@ -1,7 +1,6 @@
 package CenturionAndMystic.powers;
 
 import CenturionAndMystic.MainModfile;
-import CenturionAndMystic.actions.DoAction;
 import CenturionAndMystic.powers.interfaces.MonsterCalcDamagePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateShakeAction;
@@ -22,8 +21,18 @@ public class IntimidatedPower extends AbstractPower implements MonsterCalcDamage
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    public boolean triggered;
+    private static final EnemyMoveInfo stunMove = new EnemyMoveInfo((byte) -1, AbstractMonster.Intent.DEFEND, -1, 0, false);
+    private static final Field moveField;
     public int blockAmount;
+
+    static {
+        try {
+            moveField = AbstractMonster.class.getDeclaredField("move");
+            moveField.setAccessible(true);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public IntimidatedPower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
@@ -42,48 +51,60 @@ public class IntimidatedPower extends AbstractPower implements MonsterCalcDamage
 
     @Override
     public void duringTurn() {
-        if (triggered) {
+        if (isTriggered()) {
             addToBot(new AnimateShakeAction(owner, 1.0f, 0.3f));
             addToBot(new GainBlockAction(owner, blockAmount));
             addToBot(new ReducePowerAction(owner, owner, this, blockAmount));
-            addToBot(new DoAction(() -> triggered = false));
+            //addToBot(new DoAction(() -> triggered = false));
             addToBot(new RollMoveAction((AbstractMonster) owner));
-        }
-    }
-
-    private void changeIntent() {
-        if (owner instanceof AbstractMonster) {
-            byte moveByte = ((AbstractMonster)owner).nextMove;
-            try {
-                Field f = AbstractMonster.class.getDeclaredField("move");
-                f.setAccessible(true);
-                EnemyMoveInfo stunMove = new EnemyMoveInfo(moveByte, AbstractMonster.Intent.DEFEND, -1, 0, false);
-                f.set(owner, stunMove);
-                ((AbstractMonster)owner).createIntent();
-            } catch (NoSuchFieldException | IllegalAccessException var3) {
-                var3.printStackTrace();
-            }
         }
     }
 
     @Override
     public void onCalculateDamage(int intentDamage, boolean isMulti, int multiAmount) {
-        if (!triggered && owner instanceof AbstractMonster && ((AbstractMonster) owner).getIntentBaseDmg() >= 0 && !owner.isDeadOrEscaped()) {
+        if (!isTriggered() && ((AbstractMonster) owner).getIntentBaseDmg() >= 0 && !owner.isDeadOrEscaped()) {
             int dmg = intentDamage;
             if (isMulti) {
                 dmg *= multiAmount;
             }
             if (amount >= dmg) {
-                triggered = true;
                 blockAmount = dmg;
                 flash();
                 addToBot(new AbstractGameAction() {
                     @Override
                     public void update() {
-                        changeIntent();
+                        setMove();
                         this.isDone = true;
                     }
                 });
+            }
+        }
+    }
+
+    public boolean isTriggered() {
+        return owner instanceof AbstractMonster && getMove() == stunMove;
+    }
+
+    private EnemyMoveInfo getMove() {
+        if (owner instanceof AbstractMonster) {
+            try {
+                return (EnemyMoveInfo) moveField.get(owner);
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return null;
+    }
+
+    private void setMove() {
+        if (owner instanceof AbstractMonster) {
+            byte moveByte = ((AbstractMonster)owner).nextMove;
+            try {
+                stunMove.nextMove = moveByte;
+                moveField.set(owner, stunMove);
+                ((AbstractMonster)owner).createIntent();
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
             }
         }
     }

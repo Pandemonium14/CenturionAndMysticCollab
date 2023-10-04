@@ -10,7 +10,7 @@ import javassist.expr.MethodCall;
 
 public class IntimidatedPatches {
     public static boolean checkIntimidated(AbstractMonster m) {
-        return m.hasPower(IntimidatedPower.POWER_ID) && ((IntimidatedPower)m.getPower(IntimidatedPower.POWER_ID)).triggered;
+        return m.hasPower(IntimidatedPower.POWER_ID) && ((IntimidatedPower)m.getPower(IntimidatedPower.POWER_ID)).isTriggered();
     }
 
     /*@SpirePatch(clz = AbstractMonster.class, method = "rollMove")

@@ -1,7 +1,7 @@
 package CenturionAndMystic.cards;
 
 import CenturionAndMystic.actions.CallCardAction;
-import CenturionAndMystic.cards.abstracts.AbstractCenturionCard;
+import CenturionAndMystic.cards.abstracts.AbstractMysticCard;
 import CenturionAndMystic.util.Wiz;
 import com.megacrit.cardcrawl.cards.colorless.MasterOfStrategy;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import static CenturionAndMystic.MainModfile.makeID;
 
-public class FieldTactics extends AbstractCenturionCard {
+public class FieldTactics extends AbstractMysticCard {
     public final static String ID = makeID(FieldTactics.class.getSimpleName());
 
     public FieldTactics() {

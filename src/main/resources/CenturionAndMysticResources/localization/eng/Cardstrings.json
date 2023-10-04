@@ -295,7 +295,7 @@
   },
   "${ModID}:Springload": {
     "NAME": "Springload",
-    "DESCRIPTION": "Your next Block gaining card gains !M! additional Block. NL Next turn, gain !B! Block."
+    "DESCRIPTION": "Apply !M! ${ModID}:Intimidated to ALL enemies. NL Your next Block gaining card gains !M! additional Block."
   },
   "${ModID}:StandStrong": {
     "NAME": "Stand Strong",
@@ -337,6 +337,10 @@
   "${ModID}:TempleWithin": {
     "NAME": "Temple Within",
     "DESCRIPTION": "Whenever you draw a Status or Curse card, draw !M! card{@@}{!M!|>1=s}."
+  },
+  "${ModID}:Terrorize": {
+    "NAME": "Terrorize",
+    "DESCRIPTION": "Apply !M! ${ModID}:Intimidated."
   },
   "${ModID}:Unyielding": {
     "NAME": "Unyielding",

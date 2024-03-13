@@ -2,7 +2,8 @@
   "modid": "${ModID}",
   "name": "${project.name}",
   "author_list": [
-    "Mistress Alison"
+    "Mistress Autumn",
+    "Pandemonium"
   ],
   "credits": "Vex'd - ProTemplate",
   "description": "${project.description}",
